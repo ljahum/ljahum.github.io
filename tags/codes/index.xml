@@ -17,5 +17,19 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[又是不记一下立马就会忘的东西]]></description>
+</item><item>
+    <title>openssl-rsa和一些有关pem格式秘钥的一些情报</title>
+    <link>https://ljahum.github.io/openssl-rsa/</link>
+    <pubDate>Fri, 09 Oct 2020 15:33:01 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/openssl-rsa/</guid>
+    <description><![CDATA[这种东西不记下来马上就会忘记 openssl下载速度就十分玄学。。。最后要自己配环境变量]]></description>
+</item><item>
+    <title>MathJax常用符号使用细节</title>
+    <link>https://ljahum.github.io/mathjax%E5%B8%B8%E7%94%A8/</link>
+    <pubDate>Sat, 06 Jun 2020 17:13:47 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/mathjax%E5%B8%B8%E7%94%A8/</guid>
+    <description><![CDATA[持续更新]]></description>
 </item></channel>
 </rss>

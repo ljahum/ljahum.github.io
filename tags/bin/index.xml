@@ -10,5 +10,26 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/huawei-xctf-sth/</guid>
     <description><![CDATA[一个逆向  解题思路逐渐离谱 &mdash;- pandaos]]></description>
+</item><item>
+    <title>Rctf2020复现wp</title>
+    <link>https://ljahum.github.io/rctf2020%E5%A4%8D%E7%8E%B0wp/</link>
+    <pubDate>Sun, 07 Jun 2020 23:35:06 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/rctf2020%E5%A4%8D%E7%8E%B0wp/</guid>
+    <description><![CDATA[太马了。。。。]]></description>
+</item><item>
+    <title>一次SMC的实现</title>
+    <link>https://ljahum.github.io/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Sat, 09 May 2020 00:58:50 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[VC6实现SMC动态代码加密技术  自己做re经常碰到smc，折腾久了也会手痒痒自己弄一个，算是对PE结构的巩固。。。技术本身也不太难懂，折腾完发现也没弄出啥有技术含量的东西，就算作学习加密技术的一个开端吧]]></description>
+</item><item>
+    <title>xctf2020-高校战役</title>
+    <link>https://ljahum.github.io/xctf2020/</link>
+    <pubDate>Tue, 10 Mar 2020 01:13:31 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/xctf2020/</guid>
+    <description><![CDATA[xctf-cycle graph 没有其他乱七八糟的东西，就是算法]]></description>
 </item></channel>
 </rss>

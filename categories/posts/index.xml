@@ -31,5 +31,26 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[又是不记一下立马就会忘的东西]]></description>
+</item><item>
+    <title>openssl-rsa和一些有关pem格式秘钥的一些情报</title>
+    <link>https://ljahum.github.io/openssl-rsa/</link>
+    <pubDate>Fri, 09 Oct 2020 15:33:01 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/openssl-rsa/</guid>
+    <description><![CDATA[这种东西不记下来马上就会忘记 openssl下载速度就十分玄学。。。最后要自己配环境变量]]></description>
+</item><item>
+    <title>MathJax常用符号使用细节</title>
+    <link>https://ljahum.github.io/mathjax%E5%B8%B8%E7%94%A8/</link>
+    <pubDate>Sat, 06 Jun 2020 17:13:47 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/mathjax%E5%B8%B8%E7%94%A8/</guid>
+    <description><![CDATA[持续更新]]></description>
+</item><item>
+    <title>一次SMC的实现</title>
+    <link>https://ljahum.github.io/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+    <pubDate>Sat, 09 May 2020 00:58:50 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+    <description><![CDATA[VC6实现SMC动态代码加密技术  自己做re经常碰到smc，折腾久了也会手痒痒自己弄一个，算是对PE结构的巩固。。。技术本身也不太难懂，折腾完发现也没弄出啥有技术含量的东西，就算作学习加密技术的一个开端吧]]></description>
 </item></channel>
 </rss>
