@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>less tags more effectiveness - Tag - ljahum&#39;s blog</title>
+        <link>https://ljahum.github.io/tags/less-tags-more-effectiveness/</link>
+        <description>less tags more effectiveness - Tag - ljahum&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 20 Feb 2021 13:23:11 &#43;0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/less-tags-more-effectiveness/" rel="self" type="application/rss+xml" /><item>
+    <title>手动置顶</title>
+    <link>https://ljahum.github.io/test/</link>
+    <pubDate>Sat, 20 Feb 2021 13:23:11 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/test/</guid>
+    <description><![CDATA[description 1 手动置顶]]></description>
+</item></channel>
+</rss>

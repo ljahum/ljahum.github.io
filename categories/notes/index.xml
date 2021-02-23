@@ -1,0 +1,42 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>notes - Category - ljahum&#39;s blog</title>
+        <link>https://ljahum.github.io/categories/notes/</link>
+        <description>notes - Category - ljahum&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Feb 2021 00:07:06 &#43;0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>sagemath入门笔记.md</title>
+    <link>https://ljahum.github.io/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Tue, 23 Feb 2021 00:07:06 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[<p>[toc]</p>]]></description>
+</item><item>
+    <title>爱德华曲线-蒙哥马利.md</title>
+    <link>https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/</link>
+    <pubDate>Tue, 23 Feb 2021 00:06:51 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/</guid>
+    <description><![CDATA[[toc]]]></description>
+</item><item>
+    <title>ntru密码算法.md</title>
+    <link>https://ljahum.github.io/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/</link>
+    <pubDate>Mon, 22 Feb 2021 19:22:03 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/</guid>
+    <description><![CDATA[[toc]]]></description>
+</item><item>
+    <title>连分数代码.md</title>
+    <link>https://ljahum.github.io/%E8%BF%9E%E5%88%86%E6%95%B0%E4%BB%A3%E7%A0%81/</link>
+    <pubDate>Mon, 22 Feb 2021 19:19:39 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/%E8%BF%9E%E5%88%86%E6%95%B0%E4%BB%A3%E7%A0%81/</guid>
+    <description><![CDATA[[toc]]]></description>
+</item><item>
+    <title>sagemath基础</title>
+    <link>https://ljahum.github.io/sagemath/</link>
+    <pubDate>Tue, 24 Nov 2020 20:46:21 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/sagemath/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36  #整数域,有理数域和实数域 ZZ(3) QQ(0.]]></description>
+</item></channel>
+</rss>

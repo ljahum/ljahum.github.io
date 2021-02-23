@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>爱德华曲线-蒙哥马利.md - ljahum&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="爱德华曲线-蒙哥马利.md" />
+<meta property="og:description" content="[toc]" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-02-23T00:06:51&#43;00:00" />
+<meta property="article:modified_time" content="2021-02-23T00:06:51&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="爱德华曲线-蒙哥马利.md"/>
+<meta name="twitter:description" content="[toc]"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/" /><link rel="prev" href="https://ljahum.github.io/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/" /><link rel="next" href="https://ljahum.github.io/gin%E7%AC%94%E8%AE%B0/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "爱德华曲线-蒙哥马利.md",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ljahum.github.io\/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9\/"
+        },"image": ["https:\/\/ljahum.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "crypto, math","wordcount":  45 ,
+        "url": "https:\/\/ljahum.github.io\/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9\/","datePublished": "2021-02-23T00:06:51+00:00","dateModified": "2021-02-23T00:06:51+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "ljahum","logo": "https:\/\/ljahum.github.io\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "ljahum"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="ljahum&#39;s blog"><span class="header-title-pre"><i class='far fas fa-home fa-fw'></i></span>blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="/wakatime/" title="GitHub"><i class='fab fas fa-clock fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="ljahum&#39;s blog"><span class="header-title-pre"><i class='far fas fa-home fa-fw'></i></span>blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="/wakatime/" title="GitHub"><i class='fab fas fa-clock fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">爱德华曲线-蒙哥马利.md</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ljahum</a></span>&nbsp;<span class="post-category">included in <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>notes</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-23">2021-02-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;45 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#ecc回顾">ecc回顾</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#加法">加法</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>[toc]</p>
+<h1 id="sm2">sm2</h1>
+<p>SM2是<a href="https://baike.baidu.com/item/%e5%9b%bd%e5%ae%b6%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e5%b1%80/2712999" target="_blank" rel="noopener noreffer">国家密码管理局</a>于2010年12月17日发布的椭圆曲线公钥密码算法。</p>
+<h2 id="ecc回顾">ecc回顾</h2>
+<ol>
+<li>选取曲线 Ep(a,b)</li>
+<li>Alice取 基点G和私钥k,计算公钥 pubk.传pubk和G给bob</li>
+<li>bob计算 C1=M+rK；C2=rG传给alice</li>
+<li>A接到信息后，计算C1-kC2，结果就是点M</li>
+</ol>
+<p>描述一条Fp上的椭圆曲线，常用到六个参量：T=(p,a,b,G,n,h)</p>
+<p>p a b用来确定曲线</p>
+<p>G为基点，n为点G的阶，h 是椭圆曲线上所有点的个数m与n整除</p>
+<h1 id="爱德华曲线简介">爱德华曲线简介</h1>
+<p>形如</p>
+<p>$x^2+y^2=1-d\cdot x^2 \cdot y^2$</p>
+<h2 id="加法">加法</h2>
+<p>p1+p2</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.learnblockchain.cn/2020/10/21/16032559470087.jpg"
+        data-srcset="https://img.learnblockchain.cn/2020/10/21/16032559470087.jpg, https://img.learnblockchain.cn/2020/10/21/16032559470087.jpg 1.5x, https://img.learnblockchain.cn/2020/10/21/16032559470087.jpg 2x"
+        data-sizes="auto"
+        alt="https://img.learnblockchain.cn/2020/10/21/16032559470087.jpg"
+        title="https://img.learnblockchain.cn/2020/10/21/16032559470087.jpg" /></p>
+<p>2*p</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img.learnblockchain.cn/2020/10/21/16032561222472.jpg"
+        data-srcset="https://img.learnblockchain.cn/2020/10/21/16032561222472.jpg, https://img.learnblockchain.cn/2020/10/21/16032561222472.jpg 1.5x, https://img.learnblockchain.cn/2020/10/21/16032561222472.jpg 2x"
+        data-sizes="auto"
+        alt="https://img.learnblockchain.cn/2020/10/21/16032561222472.jpg"
+        title="img" /></p>
+<p>逆元</p>
+<p>（x，y）-&gt;(-x,y)</p>
+<p>零元</p>
+<p>（0，1）</p>
+<h1 id="爱德华曲线运算的几何意义">爱德华曲线运算的几何意义</h1>
+<p>先考虑常规圆</p>
+<p>先建立一个但为远$x^2+y^2=1$</p>
+<p><img src="https://dm2302files.storage.live.com/y4mEDmTtnbaTfHUnckxRG7aJo7v8sGJCk3FgfjnoOHzJeCAGSDQuYXHLZg73-yu8AADKPxf9e8QGqAcSK6jiJj3W2ctR6t_Ptd2k1CyytU7BBIAh0Xs8tyDMgY5Cr8dBwB_yoL1GR33PTTLwQZiX9PeRG-gZEj-Nbqyyd8IbiuaQWIIWgpwxo4VYC84P-docN3m?width=660&height=297&cropmode=none" width="660" height="297" /></p>
+<p>考虑一个爱德华单位曲线</p>
+<p><img src="https://dm2302files.storage.live.com/y4mmj6OL31DJou99Ko3_sfF75WNWs9Kq6i31VQ9-tM_B2d_mdgbRjO-vvk3u7M8nrWBUTKao2SQYFw5yV2tN1kPsgCbFnF2sa9yQFROSb6IH96DO3pBKHBBSsOpNN7CHZhFeKMoh_4-Qn8W_ATLE8D6aphkEZwvqPK95Q2-ixfxzEBI7Q-ZdrmhvFbMJTFEp4vJ?width=615&height=660&cropmode=none" width="615" height="660" /></p>
+<p>常规爱德华曲线基本性质就这些了</p>
+<h1 id="蒙哥马利曲线-ed25519-签名">蒙哥马利曲线 Ed25519 签名</h1>
+<p>蒙哥马利曲线（Montgomery curve）是另一种形式的椭圆曲线</p>
+<p>常规ecc</p>
+<p>$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$</p>
+<p>蒙哥马利曲线</p>
+<p>$By^2=x^3+Ax^2+x$</p>
+<p><img src="https://dm2302files.storage.live.com/y4mwDuFHPEZelA3A5TwaWOTHNhnkuy2MdGETIieJIYv_Ifakm_FCixgDn0KjCxZDpXqB9d1tnEtFHPuiv53_uhcUbSxkIO5iIyavN9tg324OUZfwdzNJbMHWvh90TPsBBvL60LqQrw3-HaKPC7iB_yHxod_iiJ91UoclTYz7qnvLNmZjab_sp34fDGX04gi1Kuh?width=476&height=660&cropmode=none" width="476" height="660" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-02-23</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/" data-title="爱德华曲线-蒙哥马利.md" data-hashtags="crypto,math"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/" data-hashtag="crypto"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/" data-title="爱德华曲线-蒙哥马利.md"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/" data-title="爱德华曲线-蒙哥马利.md"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://ljahum.github.io/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/" data-title="爱德华曲线-蒙哥马利.md"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/crypto/">crypto</a>,&nbsp;<a href="/tags/math/">math</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/" class="prev" rel="prev" title="ntru密码算法.md"><i class="fas fa-angle-left fa-fw"></i>ntru密码算法.md</a>
+            <a href="/gin%E7%AC%94%E8%AE%B0/" class="next" rel="next" title="gin笔记.md">gin笔记.md<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.81.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">ljahum</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

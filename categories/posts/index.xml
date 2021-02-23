@@ -1,0 +1,35 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>posts - Category - ljahum&#39;s blog</title>
+        <link>https://ljahum.github.io/categories/posts/</link>
+        <description>posts - Category - ljahum&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Feb 2021 00:07:00 &#43;0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>手动置顶</title>
+    <link>https://ljahum.github.io/test/</link>
+    <pubDate>Sat, 20 Feb 2021 13:23:11 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/test/</guid>
+    <description><![CDATA[description 1 手动置顶]]></description>
+</item><item>
+    <title>gin笔记.md</title>
+    <link>https://ljahum.github.io/gin%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Tue, 23 Feb 2021 00:07:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/gin%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[[toc]]]></description>
+</item><item>
+    <title>又一个好玩的东西</title>
+    <link>https://ljahum.github.io/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</link>
+    <pubDate>Sat, 20 Feb 2021 23:24:05 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
+    <description><![CDATA[安全多方计算 很重要的老东西了，但应用范围极其广泛，作为科普学习一下蛮好的]]></description>
+</item><item>
+    <title>Github基本使用</title>
+    <link>https://ljahum.github.io/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
+    <pubDate>Thu, 05 Nov 2020 21:17:53 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[又是不记一下立马就会忘的东西]]></description>
+</item></channel>
+</rss>
