@@ -3,7 +3,7 @@
         <title>ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Feb 2021 18:20:30 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Feb 2021 21:40:44 &#43;0800</lastBuildDate>
             <atom:link href="https://ljahum.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>手动置顶</title>
@@ -12,6 +12,13 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/test/</guid>
     <description><![CDATA[description 1 手动置顶]]></description>
+</item><item>
+    <title>hgame2021 密码学 writeup</title>
+    <link>https://ljahum.github.io/hgame2021/</link>
+    <pubDate>Fri, 26 Feb 2021 21:40:44 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/hgame2021/</guid>
+    <description><![CDATA[]]></description>
 </item><item>
     <title>dicectf2021</title>
     <link>https://ljahum.github.io/dicectf2021/</link>
@@ -68,12 +75,5 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
     <description><![CDATA[安全多方计算 很重要的老东西了，但应用范围极其广泛，作为科普学习一下蛮好的]]></description>
-</item><item>
-    <title>很古典的思维catthefish2021</title>
-    <link>https://ljahum.github.io/catthefish/</link>
-    <pubDate>Tue, 16 Feb 2021 14:27:29 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://ljahum.github.io/catthefish/</guid>
-    <description><![CDATA[蛮有意思的小case]]></description>
 </item></channel>
 </rss>

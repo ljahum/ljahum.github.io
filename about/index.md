@@ -10,12 +10,16 @@ qq：1695325350
 
 G-mail：roomoflja@gmail.com
 
-github[储存库](https://github.com/ljahum)
+github[储存库](https://github.com/ljahum)  | [留言板](http://roomoflja.cn:9999/)
 
 网安菜鸡，希望在遥远的将来不会被饿死
 
+
+
 ## 憨批lu和他的朋友们
 > 随缘排序
+
+- [longlong](http://longlone.best/)
 - [wlz](https://lingze.xyz/)
 - [羽鸽鸽](http://www.cl4y.top/)
 - [leohreats 芋头](https://leohearts.com/)
@@ -26,6 +30,7 @@ github[储存库](https://github.com/ljahum)
 - [zoniony](https://zoniony.github.io/#/)
 - [const27](https://const27.com/)
 - [翰总](https://evoa.me/)
+- [泪笑](https://l3yx.github.io/)
 - [雷总](https://0xe4s0n.github.io/)
 - [王过年](https://skywanggg.github.io/)
 - [姥爷](https://l1m3syc.github.io/about/)
