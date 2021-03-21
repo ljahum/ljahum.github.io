@@ -3,7 +3,14 @@
         <title>notes - Category - ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/categories/notes/</link>
         <description>notes - Category - ljahum&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Feb 2021 00:07:06 &#43;0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 20 Mar 2021 16:42:54 &#43;0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>d3ctf2021</title>
+    <link>https://ljahum.github.io/d3ctf2021/</link>
+    <pubDate>Sat, 20 Mar 2021 16:42:54 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/d3ctf2021/</guid>
+    <description><![CDATA[d^3ctf2021]]></description>
+</item><item>
     <title>sagemath入门笔记.md</title>
     <link>https://ljahum.github.io/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
     <pubDate>Tue, 23 Feb 2021 00:07:06 &#43;0000</pubDate>

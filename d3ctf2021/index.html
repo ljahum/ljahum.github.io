@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>d3ctf2021 - ljahum&#39;s blog</title><meta name="Description" content="d^3ctf2021"><meta property="og:title" content="d3ctf2021" />
+<meta property="og:description" content="d^3ctf2021" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ljahum.github.io/d3ctf2021/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-20T16:42:54&#43;00:00" />
+<meta property="article:modified_time" content="2021-03-20T16:42:54&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="d3ctf2021"/>
+<meta name="twitter:description" content="d^3ctf2021"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://ljahum.github.io/d3ctf2021/" /><link rel="prev" href="https://ljahum.github.io/hgame2021/" /><link rel="next" href="https://ljahum.github.io/test/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "d3ctf2021",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ljahum.github.io\/d3ctf2021\/"
+        },"image": ["https:\/\/ljahum.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "crypto","wordcount":  307 ,
+        "url": "https:\/\/ljahum.github.io\/d3ctf2021\/","datePublished": "2021-03-20T16:42:54+00:00","dateModified": "2021-03-20T16:42:54+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "ljahum","logo": "https:\/\/ljahum.github.io\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "ljahum"
+            },"description": "d^3ctf2021"
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="ljahum&#39;s blog"><span class="header-title-pre"><i class='far fas fa-home fa-fw'></i></span>blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="/wakatime/" title="GitHub"><i class='fab fas fa-clock fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="ljahum&#39;s blog"><span class="header-title-pre"><i class='far fas fa-home fa-fw'></i></span>blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="/wakatime/" title="GitHub"><i class='fab fas fa-clock fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">d3ctf2021</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ljahum</a></span>&nbsp;<span class="post-category">included in <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>notes</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-20">2021-03-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;307 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#simplegroup">simpleGroup</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="d3ctf2021">d^3ctf2021</h1>
+<ul>
+<li>babyLattice done
+<ul>
+<li>LLL分解n的应用</li>
+</ul>
+</li>
+<li>simpleGroup done
+<ul>
+<li>babyLattice LLL分解n + 中国剩余定理特殊应用 + n次剩余判断</li>
+</ul>
+</li>
+<li>AliceWantFlag todo</li>
+<li>EasyCurve todo</li>
+</ul>
+<h2 id="simplegroup">simpleGroup</h2>
+<p>得矩阵 A 分解 n</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">
+<span class="n">n</span> <span class="o">=</span> <span class="mi">69804507328197961654128697510310109608046244030437362639637009184945533884294737870524186521509776189989451383438084507903660182212556466321058025788319193059894825570785105388123718921480698851551024108844782091117408753782599961943040695892323702361910107399806150571836786642746371968124465646209366215361</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">65473938578022920848984901484624361251869406821863616908777213906525858437236185832214198627510663632409869363143982594947164139220013904654196960829350642413348771918422220404777505345053202159200378935309593802916875681436442734667249049535670986673774487031873808527230023029662915806344014429627710399196</span>
+
+<span class="n">M</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">(</span><span class="n">ZZ</span><span class="p">,</span> <span class="p">[</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">b</span> <span class="o">^</span> <span class="mi">2</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+    <span class="p">])</span>
+<span class="n">M</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">LLL</span><span class="p">()</span>
+<span class="c1">#</span>
+<span class="n">tmp1</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">tmp2</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">factor</span><span class="p">(</span><span class="n">tmp1</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">factor</span><span class="p">(</span><span class="n">tmp2</span><span class="p">))</span>
+
+<span class="n">a12</span> <span class="o">=</span> <span class="mi">1018979931854255696816714991181</span>
+<span class="n">a22</span> <span class="o">=</span> <span class="mi">1151291153120610849180830073509</span>
+<span class="n">a11</span> <span class="o">=</span> <span class="mi">1017199123798810531137951821909</span>
+<span class="n">a21</span> <span class="o">=</span> <span class="mi">207806651167586080788016046729</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>crt</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">icecream</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="mi">7669036313101194621345265255994200133006921565596653797956940811601516306410232120057637504305295677357422367597831138570269733177579895994340511712373309</span>
+<span class="n">q</span> <span class="o">=</span> <span class="mi">9102122415165681824420871673621781250311822805618731863628192549895693024247220594372897360668046264863189831887100676431439200352775676467952192600956629</span>
+<span class="n">e</span> <span class="o">=</span> <span class="mi">1928983487</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">12064801545723347322936991186738560311049061235541031580807549422258814170771738262264930441670708308259694588963224372530498305648578520552038029773849342206125074212912788823834152785756697757209804475031974445963691941515756901268376267360542656449669715367587909233618109269372332127072063171947435639328</span>
+<span class="n">C</span> <span class="o">=</span> <span class="p">[</span><span class="mi">63173987757788284988620600191109581820396865828379773315280703314093571300861961873159324234626635582246705378908610341772657840682572386153960342976445563045427986000105931341168525422286612417662391801508953619857648844420751306271090777865836201978470895906780036112804110135446130976275516908136806153488</span><span class="p">,</span> <span class="mi">9763526786754236516067080717710975805995955013877681492195771779269768465872108434027813610978940562101906769209984501196515248675767910499405415921162131390513502065270491854965819776080041506584540996447044249409209699608342257964093713589580983775580171905489797513718769578177025063630080394722500351718</span><span class="p">,</span> <span class="mi">37602000735227732258462226884765737048138920479521815995321941033382094711120810035265327876995207117707635304728511052367297062940325564085193593024741832905771507189762521426736369667607865137900432117426385504101413622851293642219573920971637080154905579082646915297543490131171875075081464735374022745371</span><span class="p">,</span> <span class="mi">1072671768043618032698040622345664216689606325179075270470875647188092538287671951027561894188700732117175202207361845034630743422559130952899064461493359903596018309221581071025635286144053941851624510600383725195476917014535032481197737938329722082022363122585603600777143850326268988298415885565240343957</span><span class="p">,</span> <span class="mi">27796821408982345007197248748277202310092789604135169328103109167649193262824176309353412519763498156841477483757818317945381469765077400076181689745139555466187324921460327576193198145058918081061285618767976454153221256648341316332169223400180283361166887912012807743326710962143011946929516083281306203120</span><span class="p">,</span>
+     <span class="mi">27578857139265869760149251280906035333246393024444009493717159606257881466594628022512140403127178174789296810502616834123420723261733024810610501421455454191654733275226507268803879479462533730695515454997186867769363797096196096976825300792616487723840475500246639213793315097434400920355043141319680299224</span><span class="p">,</span> <span class="mi">29771574667682104634602808909981269404867338382394257360936831559517858873826664867201410081659799334286847985842898792091629138292008512383903137248343194156307703071975381090326280520578349920827357328925184297610245746674712939135025013001878893129144027068837197196517160934998930493581708256039240833145</span><span class="p">,</span> <span class="mi">33576194603243117173665354646070700520263517823066685882273435337247665798346350495639466826097821472152582124503891668755684596123245873216775681469053052037610568862670212856073776960384038120245095140019195900547005026888186973915360493993404372991791346105083429461661784366706770467146420310246467262823</span><span class="p">,</span> <span class="mi">5843375768465467361166168452576092245582688894123491517095586796557653258335684018047406320846455642101431751502161722135934408574660609773328141061123577914919960794180555848119813522996120885320995386856042271846703291295871836092712205058173403525430851695443361660808933971009396237274706384697230238104</span><span class="p">,</span> <span class="mi">61258574367240969784057122450219123953816453759807167817741267194076389100252707986788076240792732730306129067314036402554937862139293741371969020708475839483175856346263848768229357814022084723576192520349994310793246498385086373753553311071932502861084141758640546428958475211765697766922596613007928849964</span><span class="p">,</span> <span class="mi">13558124437758868592198924133563305430225927636261069774349770018130041045454468021737709434182703704611453555980636131119350668691330635012675418568518296882257236341035371057355328669188453984172750580977924222375208440790994249194313841200024395796760938258751149376135149958855550611392962977597279393428</span><span class="p">]</span>
+<span class="c1"># 36493 * 52859</span>
+<span class="n">e1</span> <span class="o">=</span> <span class="mi">36493</span>
+<span class="n">e2</span> <span class="o">=</span> <span class="mi">52859</span>
+<span class="n">ic</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">C</span><span class="p">))</span>
+<span class="s1">&#39;&#39;&#39;
+</span><span class="s1">p-1 e2互质
+</span><span class="s1">q-1 e1互质
+</span><span class="s1">&#39;&#39;&#39;</span>
+
+<span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">((</span><span class="n">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">pow</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="n">gcd</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">pow</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">k</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+<span class="k">def</span> <span class="nf">getM</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">e</span><span class="p">):</span>
+        <span class="n">inv</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span>
+        <span class="n">tmpc</span> <span class="o">=</span> <span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">inverse</span><span class="p">(</span><span class="n">inv</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span> <span class="o">%</span> <span class="n">p</span>
+        <span class="k">if</span> <span class="n">check</span><span class="p">(</span><span class="n">tmpc</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">e</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">i</span>
+    <span class="nb">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+    <span class="n">cq</span> <span class="o">=</span> <span class="n">c</span> <span class="o">%</span> <span class="n">q</span>
+    <span class="n">cp</span> <span class="o">=</span> <span class="n">c</span> <span class="o">%</span> <span class="n">p</span>
+
+    <span class="n">m1</span> <span class="o">=</span> <span class="n">getM</span><span class="p">(</span><span class="n">cp</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+    <span class="n">m2</span> <span class="o">=</span> <span class="n">getM</span><span class="p">(</span><span class="n">cq</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span>
+    <span class="n">ic</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span><span class="n">m2</span><span class="p">)</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="n">crt</span><span class="p">([</span><span class="n">m1</span><span class="p">,</span><span class="n">m2</span><span class="p">],[</span><span class="n">e1</span><span class="p">,</span><span class="n">e2</span><span class="p">])</span>
+    <span class="n">ic</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">ans</span>
+<span class="n">ans</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">C</span><span class="p">:</span>
+    <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">func</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+<span class="n">tot</span> <span class="o">=</span><span class="mi">0</span>
+<span class="n">ans</span><span class="o">=</span><span class="n">ans</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ans</span><span class="p">:</span>
+    <span class="n">tot</span><span class="o">*=</span><span class="n">e</span>
+    <span class="n">tot</span><span class="o">+=</span><span class="n">i</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tot</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">long_to_bytes</span><span class="p">(</span><span class="n">tot</span><span class="p">))</span>
+
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-03-20</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/d3ctf2021/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://ljahum.github.io/d3ctf2021/" data-title="d3ctf2021" data-hashtags="crypto"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://ljahum.github.io/d3ctf2021/" data-hashtag="crypto"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://ljahum.github.io/d3ctf2021/" data-title="d3ctf2021"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://ljahum.github.io/d3ctf2021/" data-title="d3ctf2021"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://ljahum.github.io/d3ctf2021/" data-title="d3ctf2021"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/crypto/">crypto</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/hgame2021/" class="prev" rel="prev" title="hgame2021 密码学 writeup"><i class="fas fa-angle-left fa-fw"></i>hgame2021 密码学 writeup</a>
+            <a href="/test/" class="next" rel="next" title="手动置顶">手动置顶<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.81.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">ljahum</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
