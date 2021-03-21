@@ -35,7 +35,7 @@ github[储存库](https://github.com/ljahum)  | [留言板](http://roomoflja.cn:
 - [王过年](https://skywanggg.github.io/)
 - [姥爷](https://l1m3syc.github.io/about/)
 - [马爷爷](https://afkl-cuit.github.io/)
-- [晋爷爷](https://www.f4de.ink/)
+- [晋爷爷](https://f4de-bak.github.io/)
 - [燕乘风](https://0xfocu5.github.io/)
 - [panda0s](https://panda0s.top/)
 - [锅老师](https://0xpoker.cn/)
