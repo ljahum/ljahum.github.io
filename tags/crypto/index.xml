@@ -3,21 +3,7 @@
         <title>crypto - Tag - ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/tags/crypto/</link>
         <description>crypto - Tag - ljahum&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Apr 2021 21:14:40 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/tags/crypto/" rel="self" type="application/rss+xml" /><item>
-    <title>DemytkoSystem</title>
-    <link>https://ljahum.github.io/demytkosystem/</link>
-    <pubDate>Thu, 08 Apr 2021 21:14:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://ljahum.github.io/demytkosystem/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>d3ctf2021</title>
-    <link>https://ljahum.github.io/d3ctf2021/</link>
-    <pubDate>Sun, 21 Mar 2021 16:42:54 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://ljahum.github.io/d3ctf2021/</guid>
-    <description><![CDATA[d3ctf2021]]></description>
-</item><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Feb 2021 21:40:44 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/tags/crypto/" rel="self" type="application/rss+xml" /><item>
     <title>hgame2021 密码学 writeup</title>
     <link>https://ljahum.github.io/hgame2021/</link>
     <pubDate>Fri, 26 Feb 2021 21:40:44 &#43;0800</pubDate>
@@ -73,5 +59,19 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/catthefish/</guid>
     <description><![CDATA[蛮有意思的小case]]></description>
+</item><item>
+    <title>一点好玩的东西</title>
+    <link>https://ljahum.github.io/huawei-xctf-sth/</link>
+    <pubDate>Sun, 27 Dec 2020 20:50:38 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/huawei-xctf-sth/</guid>
+    <description><![CDATA[一个逆向  解题思路逐渐离谱 &mdash;- pandaos]]></description>
+</item><item>
+    <title>安寻wp</title>
+    <link>https://ljahum.github.io/%E5%AE%89%E5%AF%BBwp/</link>
+    <pubDate>Thu, 26 Nov 2020 01:10:59 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/%E5%AE%89%E5%AF%BBwp/</guid>
+    <description><![CDATA[做了一点微小的工作]]></description>
 </item></channel>
 </rss>

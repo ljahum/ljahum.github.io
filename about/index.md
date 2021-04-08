@@ -43,3 +43,9 @@ github[储存库](https://github.com/ljahum)  | [留言板](http://roomoflja.cn:
 - [孙老板](https://ch1o3nr.com/)
 - [❤肥猫嘤嘤](https://fmyy.pro/)
 - [N0vice](https://n0vice.gitee.io/tags/index.html)
+
+## 鉴于hugo对于公式近乎于没有的渲染
+
+- [notion](https://www.notion.so/Shared-073326638a86449c9a06d6467fed470f)
+
+
