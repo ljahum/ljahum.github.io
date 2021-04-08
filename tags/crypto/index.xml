@@ -3,7 +3,14 @@
         <title>crypto - Tag - ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/tags/crypto/</link>
         <description>crypto - Tag - ljahum&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Feb 2021 21:40:44 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/tags/crypto/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Apr 2021 21:34:27 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/tags/crypto/" rel="self" type="application/rss+xml" /><item>
+    <title>虎符2021</title>
+    <link>https://ljahum.github.io/%E8%99%8E%E7%AC%A62021/</link>
+    <pubDate>Thu, 08 Apr 2021 21:34:27 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/%E8%99%8E%E7%AC%A62021/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>hgame2021 密码学 writeup</title>
     <link>https://ljahum.github.io/hgame2021/</link>
     <pubDate>Fri, 26 Feb 2021 21:40:44 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/huawei-xctf-sth/</guid>
     <description><![CDATA[一个逆向  解题思路逐渐离谱 &mdash;- pandaos]]></description>
-</item><item>
-    <title>安寻wp</title>
-    <link>https://ljahum.github.io/%E5%AE%89%E5%AF%BBwp/</link>
-    <pubDate>Thu, 26 Nov 2020 01:10:59 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://ljahum.github.io/%E5%AE%89%E5%AF%BBwp/</guid>
-    <description><![CDATA[做了一点微小的工作]]></description>
 </item></channel>
 </rss>
