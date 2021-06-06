@@ -3,7 +3,14 @@
         <title>CTF - Category - ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/categories/ctf/</link>
         <description>CTF - Category - ljahum&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Apr 2021 21:34:27 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/categories/ctf/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Jun 2021 21:34:27 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/categories/ctf/" rel="self" type="application/rss+xml" /><item>
+    <title>蓝😼2021</title>
+    <link>https://ljahum.github.io/bluehat2021/</link>
+    <pubDate>Sat, 05 Jun 2021 21:34:27 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/bluehat2021/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>虎符2021</title>
     <link>https://ljahum.github.io/%E8%99%8E%E7%AC%A62021/</link>
     <pubDate>Thu, 08 Apr 2021 21:34:27 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/%E7%94%B5%E4%BF%A1/</guid>
     <description><![CDATA[周五打了个电信的破比赛，本来从教室赶回来只剩一个半小时了，刚写好exp服务器有炸了， 一气之下直接吃饭 :( 晚上7点才打到flag]]></description>
-</item><item>
-    <title>字节CTF2020</title>
-    <link>https://ljahum.github.io/bytectf2020/</link>
-    <pubDate>Thu, 05 Nov 2020 19:05:14 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://ljahum.github.io/bytectf2020/</guid>
-    <description><![CDATA[NOiSE 2021-1-19更新  CRT 同余式性质及其应用  $$ \begin{aligned} n_i\times r_i\equiv c_i mod ;s \\]]></description>
 </item></channel>
 </rss>

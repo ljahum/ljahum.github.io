@@ -3,7 +3,14 @@
         <title>crypto - Tag - ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/tags/crypto/</link>
         <description>crypto - Tag - ljahum&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 08 Apr 2021 21:34:27 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/tags/crypto/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Jun 2021 21:34:27 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/tags/crypto/" rel="self" type="application/rss+xml" /><item>
+    <title>蓝😼2021</title>
+    <link>https://ljahum.github.io/bluehat2021/</link>
+    <pubDate>Sat, 05 Jun 2021 21:34:27 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/bluehat2021/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>虎符2021</title>
     <link>https://ljahum.github.io/%E8%99%8E%E7%AC%A62021/</link>
     <pubDate>Thu, 08 Apr 2021 21:34:27 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
     <description><![CDATA[安全多方计算 很重要的老东西了，但应用范围极其广泛，作为科普学习一下蛮好的]]></description>
-</item><item>
-    <title>很古典的思维catthefish2021</title>
-    <link>https://ljahum.github.io/catthefish/</link>
-    <pubDate>Tue, 16 Feb 2021 14:27:29 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://ljahum.github.io/catthefish/</guid>
-    <description><![CDATA[蛮有意思的小case]]></description>
 </item></channel>
 </rss>
