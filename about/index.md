@@ -15,7 +15,6 @@ github[储存库](https://github.com/ljahum)  | [留言板](http://roomoflja.cn:
 网安菜鸡，希望在遥远的将来不会被饿死
 
 
-
 ## 憨批lu和他的朋友们
 > 随缘排序
 
@@ -44,8 +43,4 @@ github[储存库](https://github.com/ljahum)  | [留言板](http://roomoflja.cn:
 - [❤肥猫嘤嘤](https://fmyy.pro/)
 - [N0vice](https://n0vice.gitee.io/tags/index.html)
 
-## 鉴于hugo对于公式近乎于没有的渲染
-
-- [notion](https://www.notion.so/Shared-073326638a86449c9a06d6467fed470f)
-
-
+<del>如果你喜欢嘉然,哪我们就是异父异母的好兄弟</del>
