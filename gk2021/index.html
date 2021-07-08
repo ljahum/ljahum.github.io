@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>闲题杂记 - ljahum&#39;s blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="闲题杂记" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ljahum.github.io/gk2021/" /><meta property="og:image" content="https://ljahum.github.io/images/avatar.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-26T21:34:27&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-26T21:34:27&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ljahum.github.io/images/avatar.jpg"/>
+
+<meta name="twitter:title" content="闲题杂记"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="https://ljahum.github.io/gk2021/" /><link rel="prev" href="https://ljahum.github.io/bluehat2021/" /><link rel="next" href="https://ljahum.github.io/about/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "闲题杂记",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ljahum.github.io\/gk2021\/"
+        },"image": ["https:\/\/ljahum.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "crypto, math","wordcount":  707 ,
+        "url": "https:\/\/ljahum.github.io\/gk2021\/","datePublished": "2021-06-26T21:34:27+08:00","dateModified": "2021-06-26T21:34:27+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "ljahum","logo": "https:\/\/ljahum.github.io\/images\/avatar.jpg"},"author": {
+                "@type": "Person",
+                "name": "ljahum"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="ljahum&#39;s blog"><span class="header-title-pre"><i class='far fas fa-home fa-fw'></i></span>blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://www.notion.so/Shared-073326638a86449c9a06d6467fed470f" rel="noopener noreffer" target="_blank"><i class='fas fa-book'></i> notion </a><a class="menu-item" href="/wakatime/" title="GitHub"><i class='fab fas fa-clock fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="ljahum&#39;s blog"><span class="header-title-pre"><i class='far fas fa-home fa-fw'></i></span>blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://www.notion.so/Shared-073326638a86449c9a06d6467fed470f" title="" rel="noopener noreffer" target="_blank"><i class='fas fa-book'></i>notion</a><a class="menu-item" href="/wakatime/" title="GitHub"><i class='fab fas fa-clock fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">闲题杂记</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>ljahum</a></span>&nbsp;<span class="post-category">included in <a href="/categories/ctf/"><i class="far fa-folder fa-fw"></i>CTF</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-26">2021-06-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;707 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#gkctf2021-6-25">gkctf2021 6-25</a>
+      <ul>
+        <li><a href="#pythonrandom通杀脚本">pythonrandom通杀脚本</a></li>
+        <li><a href="#rrrrsa">rrrrsa</a></li>
+        <li><a href="#xor">XOR</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>[toc]</p>
+<h2 id="gkctf2021-6-25">gkctf2021 6-25</h2>
+<p>太菜了,只做了两个题,时间还不够了呜呜</p>
+<h3 id="pythonrandom通杀脚本">pythonrandom通杀脚本</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">randcrack</span> <span class="kn">import</span> <span class="n">RandCrack</span>
+<span class="n">rc</span> <span class="o">=</span> <span class="n">RandCrack</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+    <span class="n">r1</span> <span class="o">=</span> <span class="n">r</span><span class="p">[:</span><span class="mi">32</span><span class="p">]</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="mi">32</span><span class="p">:]</span>
+    <span class="n">rc</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">r2</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="n">rc</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">r1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+<span class="n">tmp</span> <span class="o">=</span> <span class="n">rc</span><span class="o">.</span><span class="n">predict_getrandbits</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="rrrrsa">rrrrsa</h3>
+<p>小数论题</p>
+<p>注意mod n和mod q之间的关系</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">libnum</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">icecream</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+<span class="n">c</span><span class="o">=</span><span class="mi">13492392717469817866883431475453770951837476241371989714683737558395769731416522300851917887957945766132864151382877462142018129852703437240533684604508379950293643294877725773675505912622208813435625177696614781601216465807569201380151669942605208425645258372134465547452376467465833013387018542999562042758</span>
+<span class="n">n1</span><span class="o">=</span><span class="mi">75003557379080252219517825998990183226659117019770735080523409561757225883651040882547519748107588719498261922816865626714101556207649929655822889945870341168644508079317582220034374613066751916750036253423990673764234066999306874078424803774652754587494762629397701664706287999727238636073466137405374927829</span>
+
+<span class="n">c1</span><span class="o">=</span><span class="mi">68111901092027813007099627893896838517426971082877204047110404787823279211508183783468891474661365139933325981191524511345219830693064573462115529345012970089065201176142417462299650761299758078141504126185921304526414911455395289228444974516503526507906721378965227166653195076209418852399008741560796631569</span>
+<span class="n">cc1</span><span class="o">=</span><span class="mi">23552090716381769484990784116875558895715552896983313406764042416318710076256166472426553520240265023978449945974218435787929202289208329156594838420190890104226497263852461928474756025539394996288951828172126419569993301524866753797584032740426259804002564701319538183190684075289055345581960776903740881951</span>
+<span class="n">cc2</span><span class="o">=</span><span class="mi">52723229698530767897979433914470831153268827008372307239630387100752226850798023362444499211944996778363894528759290565718266340188582253307004810850030833752132728256929572703630431232622151200855160886614350000115704689605102500273815157636476901150408355565958834764444192860513855376978491299658773170270</span>
+<span class="c1"># hint1 = pow(2020 * p1 + q1, 202020, n1)</span>
+<span class="c1"># hint2 = pow(2021 * p1 + 212121, q1, n1)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2020</span>
+<span class="n">e1</span> <span class="o">=</span> <span class="mi">202020</span>
+<span class="n">e2</span> <span class="o">=</span> <span class="mi">212121</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="p">((</span><span class="n">cc2</span><span class="o">-</span><span class="n">e2</span><span class="p">)</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">invmod</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">n1</span><span class="p">))</span><span class="o">%</span><span class="n">n1</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">e1</span><span class="p">,</span><span class="n">n1</span><span class="p">)</span><span class="o">-</span><span class="n">cc1</span><span class="o">%</span><span class="n">n1</span>
+<span class="n">q1</span> <span class="o">=</span> <span class="n">gcd</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">n1</span><span class="p">)</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">n1</span><span class="o">//</span><span class="n">q1</span>
+<span class="n">ic</span><span class="p">(</span><span class="n">q1</span><span class="p">,</span><span class="n">n1</span><span class="o">%</span><span class="n">q1</span><span class="p">)</span>
+<span class="n">phi1</span> <span class="o">=</span> <span class="p">(</span><span class="n">p1</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">q1</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">d1</span> <span class="o">=</span> <span class="n">invmod</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">phi1</span><span class="p">)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span><span class="n">d1</span><span class="p">,</span><span class="n">n1</span><span class="p">)</span>
+
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2020</span>
+<span class="n">e1</span> <span class="o">=</span> <span class="mi">202020</span>
+<span class="n">e2</span> <span class="o">=</span> <span class="mi">212121</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">e1</span><span class="o">*</span><span class="n">e2</span>
+<span class="n">n2</span><span class="o">=</span><span class="mi">114535923043375970380117920548097404729043079895540320742847840364455024050473125998926311644172960176471193602850427607899191810616953021324742137492746159921284982146320175356395325890407704697018412456350862990849606200323084717352630282539156670636025924425865741196506478163922312894384285889848355244489</span>
+<span class="n">c2</span><span class="o">=</span><span class="mi">67054203666901691181215262587447180910225473339143260100831118313521471029889304176235434129632237116993910316978096018724911531011857469325115308802162172965564951703583450817489247675458024801774590728726471567407812572210421642171456850352167810755440990035255967091145950569246426544351461548548423025004</span>
+<span class="n">cc1</span><span class="o">=</span><span class="mi">25590923416756813543880554963887576960707333607377889401033718419301278802157204881039116350321872162118977797069089653428121479486603744700519830597186045931412652681572060953439655868476311798368015878628002547540835719870081007505735499581449077950263721606955524302365518362434928190394924399683131242077</span>
+<span class="n">cc2</span><span class="o">=</span><span class="mi">104100726926923869566862741238876132366916970864374562947844669556403268955625670105641264367038885706425427864941392601593437305258297198111819227915453081797889565662276003122901139755153002219126366611021736066016741562232998047253335141676203376521742965365133597943669838076210444485458296240951668402513</span>
+<span class="n">f1</span> <span class="o">=</span> <span class="n">cc2</span> <span class="o">*</span><span class="nb">pow</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">e2</span><span class="p">,</span><span class="n">n2</span><span class="p">)</span><span class="o">*</span><span class="n">invmod</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">e2</span><span class="p">,</span><span class="n">n2</span><span class="p">),</span><span class="n">n2</span><span class="p">)</span><span class="o">%</span><span class="n">n2</span>
+<span class="n">tmp</span> <span class="o">=</span> <span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">f1</span><span class="p">,</span><span class="n">e1</span><span class="p">,</span><span class="n">n2</span><span class="p">)</span><span class="o">-</span><span class="nb">pow</span><span class="p">(</span><span class="n">cc1</span><span class="p">,</span><span class="n">e2</span><span class="p">,</span><span class="n">n2</span><span class="p">))</span><span class="o">%</span><span class="n">n2</span>
+<span class="n">q2</span> <span class="o">=</span> <span class="n">gcd</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">n2</span><span class="p">)</span>
+<span class="n">ic</span><span class="p">(</span><span class="n">q2</span><span class="p">,</span><span class="n">n2</span><span class="o">%</span><span class="n">q2</span><span class="p">)</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="n">n2</span><span class="o">//</span><span class="n">q2</span>
+<span class="n">phi2</span> <span class="o">=</span> <span class="p">(</span><span class="n">p2</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">q2</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="n">invmod</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">phi2</span><span class="p">)</span>
+<span class="n">Q</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c2</span><span class="p">,</span><span class="n">d2</span><span class="p">,</span><span class="n">n2</span><span class="p">)</span>
+
+
+<span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+<span class="n">c</span><span class="o">=</span><span class="mi">13492392717469817866883431475453770951837476241371989714683737558395769731416522300851917887957945766132864151382877462142018129852703437240533684604508379950293643294877725773675505912622208813435625177696614781601216465807569201380151669942605208425645258372134465547452376467465833013387018542999562042758</span>
+<span class="n">p</span><span class="o">=</span><span class="n">P</span>
+<span class="n">q</span><span class="o">=</span><span class="n">Q</span>
+<span class="n">n</span><span class="o">=</span><span class="n">p</span><span class="o">*</span><span class="n">q</span>
+<span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">invmod</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">phi</span><span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m</span><span class="p">))</span>
+<span class="c1"># GKCTF{f64310b5-d5e6-45cb-ae69-c86600cdf8d8}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="xor">XOR</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">md5</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">getPrime</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">getPrime</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">getPrime</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">getPrime</span><span class="p">(</span><span class="mi">512</span><span class="p">)</span>
+<span class="n">d1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="n">d</span><span class="p">)[</span><span class="mi">2</span><span class="p">:][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">n1</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">a</span><span class="o">^</span><span class="n">b</span>
+
+<span class="n">n2</span> <span class="o">=</span> <span class="n">c</span><span class="o">*</span><span class="n">d</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">c</span><span class="o">^</span><span class="n">d1</span>
+<span class="n">flag</span> <span class="o">=</span> <span class="n">md5</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">+</span><span class="n">c</span><span class="o">+</span><span class="n">d</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;n1 =&#34;</span><span class="p">,</span><span class="n">n1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;x1 =&#34;</span><span class="p">,</span><span class="n">x1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;n2 =&#34;</span><span class="p">,</span><span class="n">n2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;x2 =&#34;</span><span class="p">,</span><span class="n">x2</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这个题基本是靠约束条件对多余情况进行剪枝，捡到运算量在合理范围就可以了</p>
+<p>顺序不变时只需要考虑低位，除开异或条件外还计 算 $a*b =n;mod;2^{i}-1$ 来对已猜测数据进行低位检测</p>
+<p>这是一种模糊的条件，该条件是最终条件的必要条件</p>
+<hr>
+<p>顺序改变的情况，异或需要考虑高低位交换的情况，每次要四个bit同时运算看是否同时满足 n的高位和低位</p>
+<p>乘法条件中，低位由于没有进位，直接判断$a*b =n;mod;2^{i}-1$</p>
+<p>高位由于又进位，使用高位相同时的必要条件<code>if n_highbits-temp2 &gt;= 0 and n_highbits-temp2 &lt;=((2&lt;&lt;i+1)-1): </code></p>
+<p>a = 111</p>
+<p>b = 100</p>
+<p>a*a = 1 1000 1</p>
+<p>b*b = 010000</p>
+<p>当然，这依旧是一个十分粗略的必要条件。。。。</p>
+<p>正序exp</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">
+<span class="c1"># 初始化第1位的已知数：0</span>
+<span class="k">def</span> <span class="nf">getab</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">lenth</span><span class="p">):</span>
+    <span class="n">a_list</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">b_list</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="c1"># 这里判断512位应该就够了阿。。。。</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">lenth</span><span class="p">):</span>
+        <span class="c1"># 取第n位</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+        <span class="n">xi</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">&gt;&gt;</span><span class="n">i</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mi">1</span>
+        <span class="n">nextA_list</span><span class="o">=</span><span class="p">[]</span>
+        <span class="n">nextB_list</span><span class="o">=</span><span class="p">[]</span>
+        
+        <span class="k">for</span> <span class="n">ai</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">bi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a_list</span><span class="p">)):</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">ai</span><span class="o">^</span><span class="n">bi</span> <span class="o">==</span> <span class="n">xi</span><span class="p">):</span>
+                        <span class="n">nlow</span> <span class="o">=</span> <span class="n">n</span> <span class="o">&amp;</span> <span class="n">mask</span>
+                        <span class="n">axbLow</span> <span class="o">=</span> <span class="p">(((</span><span class="n">ai</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="n">a_list</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">*</span><span class="p">((</span><span class="n">bi</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="n">b_list</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span><span class="o">&amp;</span><span class="n">mask</span>
+                        <span class="k">if</span><span class="p">(</span><span class="n">nlow</span><span class="o">==</span><span class="n">axbLow</span><span class="p">):</span>
+                            <span class="n">nextA_list</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ai</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="n">a_list</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+                            <span class="n">nextB_list</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">bi</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="n">b_list</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+        <span class="c1"># </span>
+        <span class="n">a_list</span> <span class="o">=</span> <span class="n">nextA_list</span>
+        <span class="n">b_list</span> <span class="o">=</span> <span class="n">nextB_list</span>
+
+    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">a_list</span><span class="p">:</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="n">a</span><span class="o">==</span><span class="mi">0</span><span class="p">):</span>
+            <span class="k">return</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">lenth</span> <span class="o">=</span> <span class="mi">512</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">83876349443792695800858107026041183982320923732817788196403038436907852045968678032744364820591254653790102051548732974272946672219653204468640915315703578520430635535892870037920414827506578157530920987388471203455357776260856432484054297100045972527097719870947170053306375598308878558204734888246779716599</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">4700741767515367755988979759237706359789790281090690245800324350837677624645184526110027943983952690246679445279368999008839183406301475579349891952257846</span>
+<span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="n">getab</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">lenth</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">icecream</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">ic</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>倒序exp</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_cd</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">lenth</span><span class="p">):</span> 
+	<span class="n">p_low</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+	<span class="n">q_high</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+	<span class="n">q_low</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+	<span class="n">p_high</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+	<span class="c1"># maskn = 2</span>
+	<span class="n">maskn</span>  <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">lenth</span><span class="o">//</span><span class="mi">2</span><span class="p">):</span> 
+		<span class="n">maskn</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+		<span class="n">xi</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="n">i</span> <span class="p">)</span><span class="o">&amp;</span><span class="mi">1</span>
+		<span class="n">n_lowbits</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">&amp;</span> <span class="n">maskn</span><span class="p">)</span> 
+		<span class="c1"># 高位判断从lenth-1处开始</span>
+		<span class="n">High_index</span> <span class="o">=</span> <span class="n">lenth</span><span class="o">-</span><span class="mi">1</span> <span class="o">-</span><span class="n">i</span>
+		<span class="n">XHi</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">High_index</span><span class="p">))</span><span class="o">&amp;</span><span class="mi">1</span> 
+		<span class="n">n_highbits</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">&gt;&gt;</span> <span class="p">(</span><span class="n">High_index</span><span class="p">)</span> <span class="o">*</span><span class="mi">2</span>
+		<span class="n">nextP_l</span> <span class="o">=</span> <span class="p">[]</span> 
+		<span class="n">nextQ_l</span> <span class="o">=</span> <span class="p">[]</span> 
+		<span class="n">nextP_h</span> <span class="o">=</span><span class="p">[]</span> 
+		<span class="n">nextQ_h</span> <span class="o">=</span><span class="p">[]</span> 
+		
+		<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">p_low</span><span class="p">)):</span> 
+			<span class="k">for</span> <span class="n">pl</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> 
+				<span class="k">for</span> <span class="n">ql</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> 
+					<span class="k">for</span> <span class="n">ph</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> 
+						<span class="k">for</span> <span class="n">qh</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> 
+							<span class="k">if</span> <span class="n">pl</span> <span class="o">^</span> <span class="n">qh</span> <span class="o">==</span> <span class="n">xi</span> <span class="ow">and</span> <span class="n">ql</span> <span class="o">^</span> <span class="n">ph</span> <span class="o">==</span> <span class="n">XHi</span><span class="p">:</span>
+								<span class="n">PlxQl</span> <span class="o">=</span> <span class="p">(((</span><span class="n">pl</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="n">p_low</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="o">*</span> <span class="p">((</span><span class="n">ql</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="n">q_low</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span> <span class="o">&amp;</span> <span class="n">maskn</span> 
+								<span class="n">PhxQh</span> <span class="o">=</span> <span class="p">(((</span><span class="n">ph</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">High_index</span><span class="p">))</span> <span class="o">+</span> <span class="n">p_high</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="o">*</span> <span class="p">((</span><span class="n">qh</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">High_index</span><span class="p">))</span> <span class="o">+</span> <span class="n">q_high</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">High_index</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span> 
+								<span class="k">if</span> <span class="n">PlxQl</span> <span class="o">==</span> <span class="n">n_lowbits</span> <span class="p">:</span> 
+									<span class="c1"># if n_highbits-PhxQh &gt;= 0 and n_highbits-PhxQh &lt;=((2&lt;&lt;i+1)-1)</span>
+									<span class="c1"># 高n位的差在 2^(i+1)-1以内是 高位相同的必要条件</span>
+									<span class="k">if</span> <span class="n">n_highbits</span><span class="o">-</span><span class="n">PhxQh</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">n_highbits</span><span class="o">-</span><span class="n">PhxQh</span> <span class="o">&lt;=</span><span class="p">((</span><span class="mi">2</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span> 
+										<span class="n">nextP_l</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">pl</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="n">p_low</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> 
+										<span class="n">nextQ_l</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ql</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="n">q_low</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> 
+										<span class="n">nextP_h</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ph</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">High_index</span><span class="p">))</span><span class="o">+</span><span class="n">p_high</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> 
+										<span class="n">nextQ_h</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">qh</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">High_index</span><span class="p">))</span><span class="o">+</span><span class="n">q_high</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> 
+		<span class="n">p_low</span> <span class="o">=</span> <span class="n">nextP_l</span> 
+		<span class="n">q_low</span> <span class="o">=</span> <span class="n">nextQ_l</span> 
+		<span class="n">p_high</span> <span class="o">=</span> <span class="n">nextP_h</span> 
+		<span class="n">q_high</span> <span class="o">=</span> <span class="n">nextQ_h</span> 
+	<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">p_low</span><span class="p">:</span> 
+		<span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">p_high</span><span class="p">:</span> 
+			<span class="k">if</span> <span class="n">n</span> <span class="o">%</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span> 
+				<span class="n">p</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> 
+				<span class="n">q</span> <span class="o">=</span> <span class="n">n</span><span class="o">//</span><span class="n">p</span>                                             
+				<span class="k">print</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">)</span>
+				<span class="k">break</span>
+
+
+<span class="n">n2</span> <span class="o">=</span> <span class="mi">65288148454377101841888871848806704694477906587010755286451216632701868457722848139696036928561888850717442616782583309975714172626476485483361217174514747468099567870640277441004322344671717444306055398513733053054597586090074921540794347615153542286893272415931709396262118416062887003290070001173035587341</span>
+<span class="n">x2</span> <span class="o">=</span><span class="mi">3604386688612320874143532262988384562213659798578583210892143261576908281112223356678900083870327527242238237513170367660043954376063004167228550592110478</span>
+<span class="n">lenth</span> <span class="o">=</span> <span class="mi">512</span>
+<span class="n">get_cd</span><span class="p">(</span><span class="n">n2</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">lenth</span><span class="p">)</span>
+
+<span class="c1"># ic(p,q)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>稍微改了一下原p阴间的位运算</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-06-26</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/gk2021/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://ljahum.github.io/gk2021/" data-title="闲题杂记" data-hashtags="crypto,math"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://ljahum.github.io/gk2021/" data-hashtag="crypto"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://ljahum.github.io/gk2021/" data-title="闲题杂记"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://ljahum.github.io/gk2021/" data-title="闲题杂记"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://ljahum.github.io/gk2021/" data-title="闲题杂记"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/crypto/">crypto</a>,&nbsp;<a href="/tags/math/">math</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/bluehat2021/" class="prev" rel="prev" title="蓝😼2021"><i class="fas fa-angle-left fa-fw"></i>蓝😼2021</a>
+            <a href="/about/" class="next" rel="next" title="About">About<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">ljahum</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,5 +1,7 @@
-# about
+# About
 
+
+<!--more-->
 # about
 
 ## 我事谁？
@@ -10,9 +12,13 @@ qq：1695325350
 
 G-mail：roomoflja@gmail.com
 
-github[储存库](https://github.com/ljahum)  | [留言板](http://roomoflja.cn:9999/)
+[github](https://github.com/ljahum)
 
 网安菜鸡，希望在遥远的将来不会被饿死
+
+想搞好玩的东西，想恰到饭，想实现梦想 无奈能力不够智商低下习惯邋遢
+
+只能当个咸鱼混吃等死
 
 
 ## 憨批lu和他的朋友们

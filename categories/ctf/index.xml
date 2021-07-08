@@ -3,7 +3,14 @@
         <title>CTF - Category - ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/categories/ctf/</link>
         <description>CTF - Category - ljahum&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Jun 2021 21:34:27 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/categories/ctf/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Jun 2021 21:34:27 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/categories/ctf/" rel="self" type="application/rss+xml" /><item>
+    <title>闲题杂记</title>
+    <link>https://ljahum.github.io/gk2021/</link>
+    <pubDate>Sat, 26 Jun 2021 21:34:27 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/gk2021/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>蓝😼2021</title>
     <link>https://ljahum.github.io/bluehat2021/</link>
     <pubDate>Sat, 05 Jun 2021 21:34:27 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/%E7%BF%94%E4%BA%91/</guid>
     <description><![CDATA[🧓第一次打翔☁🧺，被迫读了一篇论文，晚上恰🔥锅想到了第二个脑残题，本来想着晚上来激情LLL结果被队友背刺了，]]></description>
-</item><item>
-    <title>socket快乐无边</title>
-    <link>https://ljahum.github.io/%E7%94%B5%E4%BF%A1/</link>
-    <pubDate>Sun, 08 Nov 2020 14:21:55 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://ljahum.github.io/%E7%94%B5%E4%BF%A1/</guid>
-    <description><![CDATA[周五打了个电信的破比赛，本来从教室赶回来只剩一个半小时了，刚写好exp服务器有炸了， 一气之下直接吃饭 :( 晚上7点才打到flag]]></description>
 </item></channel>
 </rss>
