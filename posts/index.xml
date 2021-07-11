@@ -3,7 +3,7 @@
         <title>All Posts - ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/posts/</link>
         <description>All Posts | ljahum&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Jun 2021 21:34:27 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Jul 2021 16:42:54 &#43;0800</lastBuildDate><atom:link href="https://ljahum.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>About</title>
     <link>https://ljahum.github.io/about/</link>
     <pubDate>Sat, 20 Feb 2021 13:23:11 &#43;0000</pubDate>
@@ -13,11 +13,18 @@
                 <img src="https://dm2302files.storage.live.com/y4ml2dMOBLt_UjW216M8tP8L5O_NKvm0RllY1k-whh_4NR_8fYC58Ni5XXvY03bbPknsLCQyrf5TdzdBHSODu2NLmVajgZABp-gA0E_6eXSzl3tlJxLscmtBnJ_nrtpfiNVoDWQay0-hy2QSAxqUO94RvhNCvFzsohsIla8GXDEzkIy4ZcIODjM2sipek5o6ool?width=2999&amp;height=2398&amp;cropmode=none" referrerpolicy="no-referrer">
             </div>Personal Information]]></description>
 </item><item>
+    <title>2021第五届强网杯网络安全挑战赛决赛-crypto writeup</title>
+    <link>https://ljahum.github.io/qwbs5wp/</link>
+    <pubDate>Sun, 11 Jul 2021 16:42:54 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/qwbs5wp/</guid>
+    <description><![CDATA[强网杯2021]]></description>
+</item><item>
     <title>闲题杂记</title>
-    <link>https://ljahum.github.io/gk2021/</link>
+    <link>https://ljahum.github.io/misc_crypto/</link>
     <pubDate>Sat, 26 Jun 2021 21:34:27 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://ljahum.github.io/gk2021/</guid>
+    <guid>https://ljahum.github.io/misc_crypto/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>蓝😼2021</title>
@@ -68,12 +75,5 @@
     <author>Author</author>
     <guid>https://ljahum.github.io/loving-2020/</guid>
     <description><![CDATA[[toc]]]></description>
-</item><item>
-    <title>sagemath入门笔记.md</title>
-    <link>https://ljahum.github.io/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
-    <pubDate>Tue, 23 Feb 2021 00:07:06 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://ljahum.github.io/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
-    <description><![CDATA[<p>[toc]</p>]]></description>
 </item></channel>
 </rss>
