@@ -3,7 +3,14 @@
         <title>codes - Tag - ljahum&#39;s blog</title>
         <link>https://ljahum.github.io/tags/codes/</link>
         <description>codes - Tag - ljahum&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Feb 2021 00:07:00 &#43;0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/codes/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Jun 2021 00:07:00 &#43;0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/codes/" rel="self" type="application/rss+xml" /><item>
+    <title>RsaAllInOne</title>
+    <link>https://ljahum.github.io/rsaallinone/</link>
+    <pubDate>Mon, 14 Jun 2021 00:07:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://ljahum.github.io/rsaallinone/</guid>
+    <description><![CDATA[一些RSA垃圾题]]></description>
+</item><item>
     <title>gin笔记.md</title>
     <link>https://ljahum.github.io/gin%E7%AC%94%E8%AE%B0/</link>
     <pubDate>Tue, 23 Feb 2021 00:07:00 &#43;0000</pubDate>
