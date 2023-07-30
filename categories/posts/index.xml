@@ -2,268 +2,268 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>posts on #cd /home</title>
-    <link>https://your_domain.com/categories/posts/</link>
+    <link>https://ljahum.github.io/categories/posts/</link>
     <description>Recent content in posts on #cd /home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Wed, 15 Feb 2023 15:39:27 +0800</lastBuildDate><atom:link href="https://your_domain.com/categories/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Feb 2023 15:39:27 +0800</lastBuildDate><atom:link href="https://ljahum.github.io/categories/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://your_domain.com/achieve/about/</link>
+      <link>https://ljahum.github.io/achieve/about/</link>
       <pubDate>Sat, 20 Feb 2021 13:23:11 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/about/</guid>
+      <guid>https://ljahum.github.io/achieve/about/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>OpenSSL 调用EVP框架 几种加密模式</title>
-      <link>https://your_domain.com/achieve/openssl_evp/</link>
+      <link>https://ljahum.github.io/achieve/openssl_evp/</link>
       <pubDate>Wed, 15 Feb 2023 15:39:27 +0800</pubDate>
       
-      <guid>https://your_domain.com/achieve/openssl_evp/</guid>
+      <guid>https://ljahum.github.io/achieve/openssl_evp/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>A tour of solidity</title>
-      <link>https://your_domain.com/achieve/2019to2021/solidity-document/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/solidity-document/</link>
       <pubDate>Sat, 27 Nov 2021 00:07:00 +0800</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/solidity-document/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/solidity-document/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>A simple tour of C</title>
-      <link>https://your_domain.com/achieve/2019to2021/cpplearn/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/cpplearn/</link>
       <pubDate>Mon, 27 Sep 2021 00:07:00 +0800</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/cpplearn/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/cpplearn/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>A simple study of OCB2</title>
-      <link>https://your_domain.com/articles/ocb2/</link>
+      <link>https://ljahum.github.io/articles/ocb2/</link>
       <pubDate>Sun, 29 Aug 2021 00:07:00 +0800</pubDate>
       
-      <guid>https://your_domain.com/articles/ocb2/</guid>
+      <guid>https://ljahum.github.io/articles/ocb2/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://your_domain.com/articles/ocb2/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/ocb2/featured.png" />
     </item>
     
     <item>
       <title>Chaos encrypt system</title>
-      <link>https://your_domain.com/achieve/2019to2021/chaostc/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/chaostc/</link>
       <pubDate>Sat, 31 Jul 2021 00:07:00 +0800</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/chaostc/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/chaostc/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>openssl/pem</title>
-      <link>https://your_domain.com/achieve/2019to2021/openssl/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/openssl/</link>
       <pubDate>Tue, 27 Jul 2021 15:33:01 +0800</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/openssl/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/openssl/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>RsaAllInOne</title>
-      <link>https://your_domain.com/achieve/2019to2021/rsaallinone/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/rsaallinone/</link>
       <pubDate>Mon, 14 Jun 2021 00:07:00 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/rsaallinone/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/rsaallinone/</guid>
       <description>一些RSA垃圾题</description>
       
     </item>
     
     <item>
       <title>gin笔记.md</title>
-      <link>https://your_domain.com/achieve/2019to2021/gin%E7%AC%94%E8%AE%B0/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/gin%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Tue, 23 Feb 2021 00:07:00 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/gin%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/gin%E7%AC%94%E8%AE%B0/</guid>
       <description>[toc]</description>
       
     </item>
     
     <item>
       <title>又一个好玩的东西</title>
-      <link>https://your_domain.com/achieve/2019to2021/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</link>
       <pubDate>Sat, 20 Feb 2021 23:24:05 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
       <description>安全多方计算 # 很重要的老东西了，但应用范围极其广泛，作为科普学习一下蛮好的</description>
       
     </item>
     
     <item>
       <title>Github基本使用</title>
-      <link>https://your_domain.com/achieve/2019to2021/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Thu, 05 Nov 2020 21:17:53 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
       <description>又是不记一下立马就会忘的东西</description>
       
     </item>
     
     <item>
       <title>openssl-rsa和一些有关pem格式秘钥的一些情报</title>
-      <link>https://your_domain.com/achieve/2019to2021/openssl-rsa/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/openssl-rsa/</link>
       <pubDate>Fri, 09 Oct 2020 15:33:01 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/openssl-rsa/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/openssl-rsa/</guid>
       <description>这种东西不记下来马上就会忘记 openssl下载速度就十分玄学。。。最后要自己配环境变量</description>
       
     </item>
     
     <item>
       <title>MathJax常用符号使用细节</title>
-      <link>https://your_domain.com/achieve/2019to2021/mathjax%E5%B8%B8%E7%94%A8/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/mathjax%E5%B8%B8%E7%94%A8/</link>
       <pubDate>Sat, 06 Jun 2020 17:13:47 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/mathjax%E5%B8%B8%E7%94%A8/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/mathjax%E5%B8%B8%E7%94%A8/</guid>
       <description>持续更新</description>
       
     </item>
     
     <item>
       <title>从零开始的深入浅出密码学day 2</title>
-      <link>https://your_domain.com/achieve/2019to2021/re0%E3%81%AEcrypt2/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/re0%E3%81%AEcrypt2/</link>
       <pubDate>Fri, 05 Jun 2020 17:22:55 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/re0%E3%81%AEcrypt2/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/re0%E3%81%AEcrypt2/</guid>
       <description>秘钥生成与正确性 # 算法不再赘述</description>
       
     </item>
     
     <item>
       <title>从零开始的深入浅出密码学day 1</title>
-      <link>https://your_domain.com/achieve/2019to2021/re0%E3%81%AEcrypt1/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/re0%E3%81%AEcrypt1/</link>
       <pubDate>Thu, 04 Jun 2020 23:50:59 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/re0%E3%81%AEcrypt1/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/re0%E3%81%AEcrypt1/</guid>
       <description>今天深入了解了一下 RSA 背后的一些数学原理</description>
       
     </item>
     
     <item>
       <title>用与、或、非表示异或的几种方式</title>
-      <link>https://your_domain.com/achieve/2019to2021/%E4%B8%8E%E6%88%96%E9%9D%9E%E8%A1%A8%E7%A4%BA%E5%BC%82%E6%88%96/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E4%B8%8E%E6%88%96%E9%9D%9E%E8%A1%A8%E7%A4%BA%E5%BC%82%E6%88%96/</link>
       <pubDate>Thu, 28 May 2020 01:32:55 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/%E4%B8%8E%E6%88%96%E9%9D%9E%E8%A1%A8%E7%A4%BA%E5%BC%82%E6%88%96/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E4%B8%8E%E6%88%96%E9%9D%9E%E8%A1%A8%E7%A4%BA%E5%BC%82%E6%88%96/</guid>
       <description>常见几种： # (a &amp;amp; ~(b &amp;amp; a) |~(b &amp;amp; a) &amp;amp; b) (a | b) &amp;amp; ( ~a | ~b ) ~(~a &amp;amp; ~b) &amp;amp; ~(a &amp;amp; b) (a &amp;amp; ~b)|(~a &amp;amp; b) 理论基础： # 收集来的资料里面提到了 反演规则 和 对偶规则</description>
       
     </item>
     
     <item>
       <title>wsl &#43; zsh进行美化时的注意事项</title>
-      <link>https://your_domain.com/achieve/2019to2021/wsl%E7%BE%8E%E5%8C%96/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/wsl%E7%BE%8E%E5%8C%96/</link>
       <pubDate>Thu, 28 May 2020 01:27:26 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/wsl%E7%BE%8E%E5%8C%96/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/wsl%E7%BE%8E%E5%8C%96/</guid>
       <description>如果普通用户无法显示先检查$ ~/.</description>
       
     </item>
     
     <item>
       <title>一次SMC的实现</title>
-      <link>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Sat, 09 May 2020 00:58:50 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
       <description>VC6实现SMC动态代码加密技术 # 自己做re经常碰到smc，折腾久了也会手痒痒自己弄一个，算是对PE结构的巩固。。。技术本身也不太难懂，折腾完发现也没弄出啥有技术含量的东西，就算作学习加密技术的一个开端吧</description>
       
     </item>
     
     <item>
       <title>一些linux常用指令</title>
-      <link>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E4%BA%9Blinux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E4%B8%80%E4%BA%9Blinux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
       <pubDate>Fri, 08 May 2020 23:38:59 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E4%BA%9Blinux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E4%B8%80%E4%BA%9Blinux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
       <description>一些（最近用到的）常用指令： # 没事不想用vim : (</description>
       
     </item>
     
     <item>
       <title>wsl安装angr</title>
-      <link>https://your_domain.com/achieve/2019to2021/wsl%E5%AE%89%E8%A3%85angr/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/wsl%E5%AE%89%E8%A3%85angr/</link>
       <pubDate>Fri, 08 May 2020 22:53:30 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/wsl%E5%AE%89%E8%A3%85angr/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/wsl%E5%AE%89%E8%A3%85angr/</guid>
       <description>在wsl上安装angr框架 # 折腾了好几天终于是把这套东西给折腾完了，windows上折腾一天最后还是无法解决报错，干脆按在了wsl上。就把从头到尾踩过的坑全部拿出来写一下好了</description>
       
     </item>
     
     <item>
       <title>Git代理问题</title>
-      <link>https://your_domain.com/achieve/2019to2021/git%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/git%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 07 May 2020 15:33:37 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/git%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/git%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98/</guid>
       <description>被一个很坑爹的问题折腾了一天-解决git下载速度过慢 # 碰到的问题都是比较个例的，所以才会放在博客</description>
       
     </item>
     
     <item>
       <title>python密码学常用库</title>
-      <link>https://your_domain.com/achieve/2019to2021/pycypto/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/pycypto/</link>
       <pubDate>Mon, 30 Mar 2020 00:05:31 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/pycypto/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/pycypto/</guid>
       <description>SymPy中数论部分使用说明 # sympy是一个Python的科学计算库，用一套强大的符号计算体系完成诸如多项式求值、求极限、解方程、求积分、微分方程、级数展开、矩阵运算等等计算问题 :D</description>
       
     </item>
     
     <item>
       <title>cpp_vector</title>
-      <link>https://your_domain.com/achieve/2019to2021/cpp_vector/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/cpp_vector/</link>
       <pubDate>Fri, 20 Mar 2020 01:26:54 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/cpp_vector/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/cpp_vector/</guid>
       <description>简单实例: # #include&amp;lt;iostream&amp;gt; #include&amp;lt;stdlib.</description>
       
     </item>
     
     <item>
       <title>python一些常用语法（自认为）</title>
-      <link>https://your_domain.com/achieve/2019to2021/py_useful/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/py_useful/</link>
       <pubDate>Fri, 20 Mar 2020 01:08:00 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/py_useful/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/py_useful/</guid>
       <description>bytes类型: # Python 3 新增了 bytes 类型，用于代表字节串（这是作者生造的一个词，与字符串对应）。字符串（str）由多个字符组成，以字符为单位进行操作；字节串（bytes）由多个字节组成，以字节为单位进行操作。</description>
       
     </item>
     
     <item>
       <title>修饰函数规则</title>
-      <link>https://your_domain.com/achieve/2019to2021/cppxiushi/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/cppxiushi/</link>
       <pubDate>Sat, 14 Mar 2020 15:12:51 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/cppxiushi/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/cppxiushi/</guid>
       <description>C编译器的函数名修饰规则 ： # __stdcall在输出函数名前加上一个下划线前缀，函数名后面加上一个“@”符号和其参数的字节数，例如_functionname@number。 __cdecl调用约定仅在输出函数名前加上一个下划线前缀，例如_functionname。 __fstcall在输出函数名前加上一个“@”符号，后面也是一个“@”和其参数的字节数，例如@functionname@number</description>
       
     </item>
     
     <item>
       <title>初探ras加密</title>
-      <link>https://your_domain.com/achieve/2019to2021/%E5%88%9D%E6%8E%A2ras%E5%8A%A0%E5%AF%86/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E5%88%9D%E6%8E%A2ras%E5%8A%A0%E5%AF%86/</link>
       <pubDate>Thu, 05 Mar 2020 00:35:13 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/%E5%88%9D%E6%8E%A2ras%E5%8A%A0%E5%AF%86/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E5%88%9D%E6%8E%A2ras%E5%8A%A0%E5%AF%86/</guid>
       <description>初探RAS加密 # 加密准备: # 找两个比较大的质数 p 、q</description>
       
     </item>

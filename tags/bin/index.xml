@@ -2,98 +2,98 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bin on #cd /home</title>
-    <link>https://your_domain.com/tags/bin/</link>
+    <link>https://ljahum.github.io/tags/bin/</link>
     <description>Recent content in bin on #cd /home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Sun, 27 Dec 2020 20:50:38 +0000</lastBuildDate><atom:link href="https://your_domain.com/tags/bin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 20:50:38 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/bin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一点好玩的东西</title>
-      <link>https://your_domain.com/achieve/2019to2021/huawei-xctf-sth/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/huawei-xctf-sth/</link>
       <pubDate>Sun, 27 Dec 2020 20:50:38 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/huawei-xctf-sth/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/huawei-xctf-sth/</guid>
       <description>一个逆向 # 解题思路逐渐离谱 &amp;mdash;- pandaos</description>
       
     </item>
     
     <item>
       <title>安恒六月赛-2020-re部分</title>
-      <link>https://your_domain.com/achieve/2019to2021/dasctf-2020-6/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/dasctf-2020-6/</link>
       <pubDate>Sat, 27 Jun 2020 12:03:36 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/dasctf-2020-6/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/dasctf-2020-6/</guid>
       <description>端午节回山里玩了一趟，做题时间仅有半天，做了的依旧只有re。。。。</description>
       
     </item>
     
     <item>
       <title>GkCTF2020逆向wp</title>
-      <link>https://your_domain.com/achieve/2019to2021/gkctf2020%E9%80%86%E5%90%91wp/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/gkctf2020%E9%80%86%E5%90%91wp/</link>
       <pubDate>Tue, 16 Jun 2020 16:20:44 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/gkctf2020%E9%80%86%E5%90%91wp/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/gkctf2020%E9%80%86%E5%90%91wp/</guid>
       <description>发现GKCTF在buu上面挂了好久，干脆做着玩玩好了</description>
       
     </item>
     
     <item>
       <title>新手pwn练习汇总</title>
-      <link>https://your_domain.com/achieve/2019to2021/%E5%87%A0%E4%B8%AA%E6%96%B0%E6%89%8Bpwn/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E5%87%A0%E4%B8%AA%E6%96%B0%E6%89%8Bpwn/</link>
       <pubDate>Fri, 12 Jun 2020 12:39:50 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/%E5%87%A0%E4%B8%AA%E6%96%B0%E6%89%8Bpwn/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E5%87%A0%E4%B8%AA%E6%96%B0%E6%89%8Bpwn/</guid>
       <description>string： # 格式化字符串漏洞 x64传参规则 抄来的原理 # 原理挺底层的，得认真看看 https://blog.</description>
       
     </item>
     
     <item>
       <title>Rctf2020复现wp</title>
-      <link>https://your_domain.com/achieve/2019to2021/rctf2020%E5%A4%8D%E7%8E%B0wp/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/rctf2020%E5%A4%8D%E7%8E%B0wp/</link>
       <pubDate>Sun, 07 Jun 2020 23:35:06 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/rctf2020%E5%A4%8D%E7%8E%B0wp/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/rctf2020%E5%A4%8D%E7%8E%B0wp/</guid>
       <description>太马了。。。。</description>
       
     </item>
     
     <item>
       <title>安恒五月赛-2020-re部分</title>
-      <link>https://your_domain.com/achieve/2019to2021/dasctf-2020-5/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/dasctf-2020-5/</link>
       <pubDate>Tue, 26 May 2020 01:16:19 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/dasctf-2020-5/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/dasctf-2020-5/</guid>
       <description>我就是铁废物了，整场比赛只做出来两个题</description>
       
     </item>
     
     <item>
       <title>一次SMC的实现</title>
-      <link>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Sat, 09 May 2020 00:58:50 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
       <description>VC6实现SMC动态代码加密技术 # 自己做re经常碰到smc，折腾久了也会手痒痒自己弄一个，算是对PE结构的巩固。。。技术本身也不太难懂，折腾完发现也没弄出啥有技术含量的东西，就算作学习加密技术的一个开端吧</description>
       
     </item>
     
     <item>
       <title>MRCTF_2020</title>
-      <link>https://your_domain.com/achieve/2019to2021/mrctf2020/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/mrctf2020/</link>
       <pubDate>Fri, 20 Mar 2020 01:27:40 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/mrctf2020/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/mrctf2020/</guid>
       <description>自己博客就懒得放wp这种东西了,写一点总结性的东西，过几天吧密码学学习成果po出来好了 你是懒得pi爆</description>
       
     </item>
     
     <item>
       <title>xctf2020-高校战役</title>
-      <link>https://your_domain.com/achieve/2019to2021/xctf2020/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/xctf2020/</link>
       <pubDate>Tue, 10 Mar 2020 01:13:31 +0000</pubDate>
       
-      <guid>https://your_domain.com/achieve/2019to2021/xctf2020/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/xctf2020/</guid>
       <description>xctf-cycle graph # 没有其他乱七八糟的东西，就是算法</description>
       
     </item>

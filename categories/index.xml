@@ -2,68 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on #cd /home</title>
-    <link>https://your_domain.com/categories/</link>
+    <link>https://ljahum.github.io/categories/</link>
     <description>Recent content in Categories on #cd /home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Sun, 30 Jul 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://your_domain.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2023</title>
-      <link>https://your_domain.com/categories/2023/</link>
+      <link>https://ljahum.github.io/categories/2023/</link>
       <pubDate>Sun, 30 Jul 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://your_domain.com/categories/2023/</guid>
+      <guid>https://ljahum.github.io/categories/2023/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>categories1</title>
-      <link>https://your_domain.com/categories/categories1/</link>
+      <link>https://ljahum.github.io/categories/categories1/</link>
       <pubDate>Thu, 20 Jul 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://your_domain.com/categories/categories1/</guid>
+      <guid>https://ljahum.github.io/categories/categories1/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>posts</title>
-      <link>https://your_domain.com/categories/posts/</link>
+      <link>https://ljahum.github.io/categories/posts/</link>
       <pubDate>Wed, 15 Feb 2023 15:39:27 +0800</pubDate>
       
-      <guid>https://your_domain.com/categories/posts/</guid>
+      <guid>https://ljahum.github.io/categories/posts/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>其他</title>
-      <link>https://your_domain.com/categories/%E5%85%B6%E4%BB%96/</link>
+      <link>https://ljahum.github.io/categories/%E5%85%B6%E4%BB%96/</link>
       <pubDate>Sat, 11 Feb 2023 12:20:30 +0800</pubDate>
       
-      <guid>https://your_domain.com/categories/%E5%85%B6%E4%BB%96/</guid>
+      <guid>https://ljahum.github.io/categories/%E5%85%B6%E4%BB%96/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>CTF</title>
-      <link>https://your_domain.com/categories/ctf/</link>
+      <link>https://ljahum.github.io/categories/ctf/</link>
       <pubDate>Tue, 08 Mar 2022 00:07:00 +0800</pubDate>
       
-      <guid>https://your_domain.com/categories/ctf/</guid>
+      <guid>https://ljahum.github.io/categories/ctf/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>notes</title>
-      <link>https://your_domain.com/categories/notes/</link>
+      <link>https://ljahum.github.io/categories/notes/</link>
       <pubDate>Tue, 23 Feb 2021 00:07:06 +0000</pubDate>
       
-      <guid>https://your_domain.com/categories/notes/</guid>
+      <guid>https://ljahum.github.io/categories/notes/</guid>
       <description></description>
       
     </item>
