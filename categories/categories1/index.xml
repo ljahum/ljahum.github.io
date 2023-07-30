@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>categories1 on #cd /home</title>
+    <link>https://your_domain.com/categories/categories1/</link>
+    <description>Recent content in categories1 on #cd /home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 ベーコン</copyright>
+    <lastBuildDate>Thu, 20 Jul 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://your_domain.com/categories/categories1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://your_domain.com/about/</link>
+      <pubDate>Thu, 20 Jul 2023 13:23:11 +0000</pubDate>
+      
+      <guid>https://your_domain.com/about/</guid>
+      <description>Info # 「以前の名前はljahumですが、ベーコンとも呼んでください。」</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://your_domain.com/about/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

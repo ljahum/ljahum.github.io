@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>archive on #cd /home</title>
+    <link>https://your_domain.com/achieve/</link>
+    <description>Recent content in archive on #cd /home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 ベーコン</copyright>
+    <lastBuildDate>Wed, 15 Feb 2023 15:39:27 +0800</lastBuildDate><atom:link href="https://your_domain.com/achieve/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://your_domain.com/achieve/about/</link>
+      <pubDate>Sat, 20 Feb 2021 13:23:11 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/about/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>迁移</title>
+      <link>https://your_domain.com/achieve/to_noiton/</link>
+      <pubDate>Sat, 11 Feb 2023 12:20:30 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/to_noiton/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>OpenSSL 调用EVP框架 几种加密模式</title>
+      <link>https://your_domain.com/achieve/openssl_evp/</link>
+      <pubDate>Wed, 15 Feb 2023 15:39:27 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/openssl_evp/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>d3ctf2022🧀🧀🧀</title>
+      <link>https://your_domain.com/achieve/ctf/d3ctf2022/</link>
+      <pubDate>Tue, 08 Mar 2022 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/d3ctf2022/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Document for 西湖论🗡🔪⚔🖋✂</title>
+      <link>https://your_domain.com/achieve/ctf/%E8%A5%BF%E6%B9%96%E8%AE%BA%E5%89%912021crypto/</link>
+      <pubDate>Wed, 15 Dec 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/%E8%A5%BF%E6%B9%96%E8%AE%BA%E5%89%912021crypto/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>A tour of solidity</title>
+      <link>https://your_domain.com/achieve/2019to2021/solidity-document/</link>
+      <pubDate>Sat, 27 Nov 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/solidity-document/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>闲题杂记2</title>
+      <link>https://your_domain.com/achieve/%E5%A4%8D%E7%9B%982/</link>
+      <pubDate>Sun, 14 Nov 2021 21:34:27 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/%E5%A4%8D%E7%9B%982/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>L3HCTF2021</title>
+      <link>https://your_domain.com/achieve/ctf/l3hctf2021/</link>
+      <pubDate>Sun, 14 Nov 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/l3hctf2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>writeUP for ByteCTF 2021</title>
+      <link>https://your_domain.com/achieve/ctf/bytectf2021/</link>
+      <pubDate>Wed, 20 Oct 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/bytectf2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>loving-2021</title>
+      <link>https://your_domain.com/achieve/loving-2021/</link>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/loving-2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Personal document of cryptoChallenges for PBCTF2021</title>
+      <link>https://your_domain.com/achieve/ctf/pbctf2021/</link>
+      <pubDate>Mon, 18 Oct 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/pbctf2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>drunk gibberish</title>
+      <link>https://your_domain.com/achieve/sentence/</link>
+      <pubDate>Thu, 30 Sep 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/sentence/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>A simple tour of C</title>
+      <link>https://your_domain.com/achieve/2019to2021/cpplearn/</link>
+      <pubDate>Mon, 27 Sep 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/cpplearn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Writeup for crypto in RCTF 2021</title>
+      <link>https://your_domain.com/achieve/ctf/rctf2021/</link>
+      <pubDate>Tue, 14 Sep 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/rctf2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>养成杯2021</title>
+      <link>https://your_domain.com/achieve/ctf/%E5%85%BB%E6%88%90%E6%9D%AF2021/</link>
+      <pubDate>Sun, 12 Sep 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/%E5%85%BB%E6%88%90%E6%9D%AF2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>WMCTF 2021</title>
+      <link>https://your_domain.com/achieve/ctf/wmctf2021/</link>
+      <pubDate>Tue, 31 Aug 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/wmctf2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>WriteUp for crypto in 翔云ber 2021</title>
+      <link>https://your_domain.com/achieve/ctf/%E7%A5%A5%E4%BA%912021/</link>
+      <pubDate>Mon, 23 Aug 2021 00:21:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/%E7%A5%A5%E4%BA%912021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>WriteUp for crypto in InCTF2021</title>
+      <link>https://your_domain.com/achieve/ctf/inctf2021/</link>
+      <pubDate>Sun, 15 Aug 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/inctf2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>闲题杂记</title>
+      <link>https://your_domain.com/achieve/%E5%A4%8D%E7%9B%981/</link>
+      <pubDate>Mon, 09 Aug 2021 21:34:27 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/%E5%A4%8D%E7%9B%981/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Chaos encrypt system</title>
+      <link>https://your_domain.com/achieve/2019to2021/chaostc/</link>
+      <pubDate>Sat, 31 Jul 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/chaostc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Writeup for MedicalImage in 癫疯geekCtf 2021</title>
+      <link>https://your_domain.com/achieve/ctf/dfjk2021/</link>
+      <pubDate>Sat, 31 Jul 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/dfjk2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>垃圾题归档</title>
+      <link>https://your_domain.com/achieve/%E5%9E%83%E5%9C%BE%E9%A2%98%E5%BD%92%E6%A1%A3/</link>
+      <pubDate>Sat, 31 Jul 2021 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/%E5%9E%83%E5%9C%BE%E9%A2%98%E5%BD%92%E6%A1%A3/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>openssl/pem</title>
+      <link>https://your_domain.com/achieve/2019to2021/openssl/</link>
+      <pubDate>Tue, 27 Jul 2021 15:33:01 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/openssl/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Google CTF 2021</title>
+      <link>https://your_domain.com/achieve/ctf/google2021/</link>
+      <pubDate>Sun, 18 Jul 2021 12:20:30 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/google2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Writeup for BFV in 强网杯S5 final</title>
+      <link>https://your_domain.com/achieve/ctf/qwbs5wp/</link>
+      <pubDate>Sun, 11 Jul 2021 16:42:54 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/qwbs5wp/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Writeup for DozerCtf 2021</title>
+      <link>https://your_domain.com/achieve/ctf/dozer2021/</link>
+      <pubDate>Sat, 10 Jul 2021 21:34:27 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/dozer2021/</guid>
+      <description>gkctf2021 6-25 # 太菜了,只做了两个题,时间还不够了呜呜</description>
+      
+    </item>
+    
+    <item>
+      <title>RsaAllInOne</title>
+      <link>https://your_domain.com/achieve/2019to2021/rsaallinone/</link>
+      <pubDate>Mon, 14 Jun 2021 00:07:00 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/rsaallinone/</guid>
+      <description>一些RSA垃圾题</description>
+      
+    </item>
+    
+    <item>
+      <title>Writeup for crypto in 蓝😼2021</title>
+      <link>https://your_domain.com/achieve/ctf/bluehat2021/</link>
+      <pubDate>Sat, 05 Jun 2021 21:34:27 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/bluehat2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>虎符2021</title>
+      <link>https://your_domain.com/achieve/ctf/%E8%99%8E%E7%AC%A62021/</link>
+      <pubDate>Thu, 08 Apr 2021 21:34:27 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/%E8%99%8E%E7%AC%A62021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>d3ctf2021</title>
+      <link>https://your_domain.com/achieve/ctf/d3ctf2021/</link>
+      <pubDate>Sun, 21 Mar 2021 16:42:54 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/d3ctf2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>hgame2021 密码学 writeup</title>
+      <link>https://your_domain.com/achieve/ctf/hgame2021/</link>
+      <pubDate>Fri, 26 Feb 2021 21:40:44 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/hgame2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>dicectf2021</title>
+      <link>https://your_domain.com/achieve/ctf/dicectf2021/</link>
+      <pubDate>Tue, 23 Feb 2021 18:20:30 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/dicectf2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>loving-2020</title>
+      <link>https://your_domain.com/achieve/loving-2020/</link>
+      <pubDate>Tue, 23 Feb 2021 15:39:27 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/loving-2020/</guid>
+      <description>[toc]</description>
+      
+    </item>
+    
+    <item>
+      <title>sagemath入门笔记.md</title>
+      <link>https://your_domain.com/achieve/2019to2021/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 23 Feb 2021 00:07:06 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;p&gt;[toc]&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>gin笔记.md</title>
+      <link>https://your_domain.com/achieve/2019to2021/gin%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 23 Feb 2021 00:07:00 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/gin%E7%AC%94%E8%AE%B0/</guid>
+      <description>[toc]</description>
+      
+    </item>
+    
+    <item>
+      <title>爱德华曲线-蒙哥马利.md</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/</link>
+      <pubDate>Tue, 23 Feb 2021 00:06:51 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/</guid>
+      <description>[toc]</description>
+      
+    </item>
+    
+    <item>
+      <title>ntru密码算法.md</title>
+      <link>https://your_domain.com/achieve/2019to2021/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 22 Feb 2021 19:22:03 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/</guid>
+      <description>[toc]</description>
+      
+    </item>
+    
+    <item>
+      <title>连分数代码.md</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E8%BF%9E%E5%88%86%E6%95%B0%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Mon, 22 Feb 2021 19:19:39 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E8%BF%9E%E5%88%86%E6%95%B0%E4%BB%A3%E7%A0%81/</guid>
+      <description>[toc]</description>
+      
+    </item>
+    
+    <item>
+      <title>又一个好玩的东西</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</link>
+      <pubDate>Sat, 20 Feb 2021 23:24:05 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E5%8F%88%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
+      <description>安全多方计算 # 很重要的老东西了，但应用范围极其广泛，作为科普学习一下蛮好的</description>
+      
+    </item>
+    
+    <item>
+      <title>很古典的思维catthefish2021</title>
+      <link>https://your_domain.com/achieve/ctf/catthefish/</link>
+      <pubDate>Tue, 16 Feb 2021 14:27:29 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/catthefish/</guid>
+      <description>蛮有意思的小case</description>
+      
+    </item>
+    
+    <item>
+      <title>star CTF2021</title>
+      <link>https://your_domain.com/achieve/ctf/starctf/</link>
+      <pubDate>Tue, 05 Jan 2021 19:05:14 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/ctf/starctf/</guid>
+      <description>*ctf2021 # myenc # ct=iv for i in range(1,8): if keystream[cnt]==&amp;#39;1&amp;#39;: ct+=pow(m^q,i**i**i,n) ct%=n cnt=(cnt+1)%len(keystream) print(&amp;#34;done:&amp;#34;,ct) 主要难点在这里</description>
+      
+    </item>
+    
+    <item>
+      <title>一点好玩的东西</title>
+      <link>https://your_domain.com/achieve/2019to2021/huawei-xctf-sth/</link>
+      <pubDate>Sun, 27 Dec 2020 20:50:38 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/huawei-xctf-sth/</guid>
+      <description>一个逆向 # 解题思路逐渐离谱 &amp;mdash;- pandaos</description>
+      
+    </item>
+    
+    <item>
+      <title>安寻wp</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E5%AE%89%E5%AF%BBwp/</link>
+      <pubDate>Thu, 26 Nov 2020 01:10:59 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E5%AE%89%E5%AF%BBwp/</guid>
+      <description>做了一点微小的工作</description>
+      
+    </item>
+    
+    <item>
+      <title>翔云</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E7%BF%94%E4%BA%91/</link>
+      <pubDate>Wed, 25 Nov 2020 20:27:48 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E7%BF%94%E4%BA%91/</guid>
+      <description>🧓第一次打翔☁🧺，被迫读了一篇论文，晚上恰🔥锅想到了第二个脑残题，本来想着晚上来激情LLL结果被队友背刺了，</description>
+      
+    </item>
+    
+    <item>
+      <title>sagemath基础</title>
+      <link>https://your_domain.com/achieve/2019to2021/sagemath/</link>
+      <pubDate>Tue, 24 Nov 2020 20:46:21 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/sagemath/</guid>
+      <description>#整数域,有理数域和实数域 ZZ(3) QQ(0.</description>
+      
+    </item>
+    
+    <item>
+      <title>socket快乐无边</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E7%94%B5%E4%BF%A1/</link>
+      <pubDate>Sun, 08 Nov 2020 14:21:55 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E7%94%B5%E4%BF%A1/</guid>
+      <description>周五打了个电信的破比赛，本来从教室赶回来只剩一个半小时了，刚写好exp服务器有炸了， 一气之下直接吃饭 :( 晚上7点才打到flag</description>
+      
+    </item>
+    
+    <item>
+      <title>Github基本使用</title>
+      <link>https://your_domain.com/achieve/2019to2021/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Thu, 05 Nov 2020 21:17:53 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/github%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
+      <description>又是不记一下立马就会忘的东西</description>
+      
+    </item>
+    
+    <item>
+      <title>字节CTF2020</title>
+      <link>https://your_domain.com/achieve/2019to2021/bytectf2020/</link>
+      <pubDate>Thu, 05 Nov 2020 19:05:14 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/bytectf2020/</guid>
+      <description>NOiSE 2021-1-19更新 # CRT 同余式性质及其应用 $$ \begin{aligned} n_i\times r_i\equiv c_i mod ;s \\ n_i r_i= c_i +k_is \end{aligned} $$</description>
+      
+    </item>
+    
+    <item>
+      <title>openssl-rsa和一些有关pem格式秘钥的一些情报</title>
+      <link>https://your_domain.com/achieve/2019to2021/openssl-rsa/</link>
+      <pubDate>Fri, 09 Oct 2020 15:33:01 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/openssl-rsa/</guid>
+      <description>这种东西不记下来马上就会忘记 openssl下载速度就十分玄学。。。最后要自己配环境变量</description>
+      
+    </item>
+    
+    <item>
+      <title>[NCTF2019]childRSA</title>
+      <link>https://your_domain.com/achieve/2019to2021/nctf2019childrsa/</link>
+      <pubDate>Fri, 02 Oct 2020 01:40:43 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/nctf2019childrsa/</guid>
+      <description>今天碰巧又做了一遍这个题,除了之前用yafu嗯解，又去参考了一下paper解法</description>
+      
+    </item>
+    
+    <item>
+      <title>基础LFSR 学习</title>
+      <link>https://your_domain.com/achieve/2019to2021/lsfr%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Fri, 21 Aug 2020 23:38:59 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/lsfr%E5%AD%A6%E4%B9%A0/</guid>
+      <description>简单的LFSR模型 # 这是一个 度 m=3 、拥有三个触发器的LFSR</description>
+      
+    </item>
+    
+    <item>
+      <title>几个堆入门</title>
+      <link>https://your_domain.com/achieve/2019to2021/pwn_heap_818/</link>
+      <pubDate>Tue, 18 Aug 2020 23:49:21 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/pwn_heap_818/</guid>
+      <description>ciscn_2019_en_3 # 补充一下 double free的原理 ：堆上的某块内存被释放后，并没有将指向该堆块的指针清零，那么，我们就可以利用程序的其他部分对该内存进行再次的free，由于fast bin是LIFO队列的单向链表，对同一个元素free两次可以使其形成环状</description>
+      
+    </item>
+    
+    <item>
+      <title>中国剩余定理</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86/</link>
+      <pubDate>Sun, 26 Jul 2020 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Jarvis_OJ_pwn_level4to6</title>
+      <link>https://your_domain.com/achieve/2019to2021/jarvis-oj-pwn-level4to6/</link>
+      <pubDate>Wed, 08 Jul 2020 17:55:33 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/jarvis-oj-pwn-level4to6/</guid>
+      <description>levle4 # 没有libc了，要用 DynELF配合 leak 来找system的真正地址</description>
+      
+    </item>
+    
+    <item>
+      <title>Jarvis_OJ_pwn_level1to3</title>
+      <link>https://your_domain.com/achieve/2019to2021/jarvis-oj-pwn-level1to3/</link>
+      <pubDate>Wed, 08 Jul 2020 17:55:21 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/jarvis-oj-pwn-level1to3/</guid>
+      <description>level0 # x86栈溢出</description>
+      
+    </item>
+    
+    <item>
+      <title>安恒六月赛-2020-re部分</title>
+      <link>https://your_domain.com/achieve/2019to2021/dasctf-2020-6/</link>
+      <pubDate>Sat, 27 Jun 2020 12:03:36 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/dasctf-2020-6/</guid>
+      <description>端午节回山里玩了一趟，做题时间仅有半天，做了的依旧只有re。。。。</description>
+      
+    </item>
+    
+    <item>
+      <title>GkCTF2020逆向wp</title>
+      <link>https://your_domain.com/achieve/2019to2021/gkctf2020%E9%80%86%E5%90%91wp/</link>
+      <pubDate>Tue, 16 Jun 2020 16:20:44 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/gkctf2020%E9%80%86%E5%90%91wp/</guid>
+      <description>发现GKCTF在buu上面挂了好久，干脆做着玩玩好了</description>
+      
+    </item>
+    
+    <item>
+      <title>新手pwn练习汇总</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E5%87%A0%E4%B8%AA%E6%96%B0%E6%89%8Bpwn/</link>
+      <pubDate>Fri, 12 Jun 2020 12:39:50 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E5%87%A0%E4%B8%AA%E6%96%B0%E6%89%8Bpwn/</guid>
+      <description>string： # 格式化字符串漏洞 x64传参规则 抄来的原理 # 原理挺底层的，得认真看看 https://blog.</description>
+      
+    </item>
+    
+    <item>
+      <title>Rctf2020复现wp</title>
+      <link>https://your_domain.com/achieve/2019to2021/rctf2020%E5%A4%8D%E7%8E%B0wp/</link>
+      <pubDate>Sun, 07 Jun 2020 23:35:06 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/rctf2020%E5%A4%8D%E7%8E%B0wp/</guid>
+      <description>太马了。。。。</description>
+      
+    </item>
+    
+    <item>
+      <title>MathJax常用符号使用细节</title>
+      <link>https://your_domain.com/achieve/2019to2021/mathjax%E5%B8%B8%E7%94%A8/</link>
+      <pubDate>Sat, 06 Jun 2020 17:13:47 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/mathjax%E5%B8%B8%E7%94%A8/</guid>
+      <description>持续更新</description>
+      
+    </item>
+    
+    <item>
+      <title>CTF中RSA套路</title>
+      <link>https://your_domain.com/achieve/2019to2021/ctf%E4%B8%ADrsa%E5%A5%97%E8%B7%AF/</link>
+      <pubDate>Sat, 06 Jun 2020 15:25:15 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/ctf%E4%B8%ADrsa%E5%A5%97%E8%B7%AF/</guid>
+      <description>花了两天看把基础数论过了一遍，看这些东西的时候理解起来快了很多</description>
+      
+    </item>
+    
+    <item>
+      <title>从零开始的深入浅出密码学day 2</title>
+      <link>https://your_domain.com/achieve/2019to2021/re0%E3%81%AEcrypt2/</link>
+      <pubDate>Fri, 05 Jun 2020 17:22:55 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/re0%E3%81%AEcrypt2/</guid>
+      <description>秘钥生成与正确性 # 算法不再赘述</description>
+      
+    </item>
+    
+    <item>
+      <title>从零开始的深入浅出密码学day 1</title>
+      <link>https://your_domain.com/achieve/2019to2021/re0%E3%81%AEcrypt1/</link>
+      <pubDate>Thu, 04 Jun 2020 23:50:59 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/re0%E3%81%AEcrypt1/</guid>
+      <description>今天深入了解了一下 RSA 背后的一些数学原理</description>
+      
+    </item>
+    
+    <item>
+      <title>用与、或、非表示异或的几种方式</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E4%B8%8E%E6%88%96%E9%9D%9E%E8%A1%A8%E7%A4%BA%E5%BC%82%E6%88%96/</link>
+      <pubDate>Thu, 28 May 2020 01:32:55 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E4%B8%8E%E6%88%96%E9%9D%9E%E8%A1%A8%E7%A4%BA%E5%BC%82%E6%88%96/</guid>
+      <description>常见几种： # (a &amp;amp; ~(b &amp;amp; a) |~(b &amp;amp; a) &amp;amp; b) (a | b) &amp;amp; ( ~a | ~b ) ~(~a &amp;amp; ~b) &amp;amp; ~(a &amp;amp; b) (a &amp;amp; ~b)|(~a &amp;amp; b) 理论基础： # 收集来的资料里面提到了 反演规则 和 对偶规则</description>
+      
+    </item>
+    
+    <item>
+      <title>wsl &#43; zsh进行美化时的注意事项</title>
+      <link>https://your_domain.com/achieve/2019to2021/wsl%E7%BE%8E%E5%8C%96/</link>
+      <pubDate>Thu, 28 May 2020 01:27:26 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/wsl%E7%BE%8E%E5%8C%96/</guid>
+      <description>如果普通用户无法显示先检查$ ~/.</description>
+      
+    </item>
+    
+    <item>
+      <title>安恒五月赛-2020-re部分</title>
+      <link>https://your_domain.com/achieve/2019to2021/dasctf-2020-5/</link>
+      <pubDate>Tue, 26 May 2020 01:16:19 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/dasctf-2020-5/</guid>
+      <description>我就是铁废物了，整场比赛只做出来两个题</description>
+      
+    </item>
+    
+    <item>
+      <title>一次SMC的实现</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Sat, 09 May 2020 00:58:50 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E6%AC%A1smc%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <description>VC6实现SMC动态代码加密技术 # 自己做re经常碰到smc，折腾久了也会手痒痒自己弄一个，算是对PE结构的巩固。。。技术本身也不太难懂，折腾完发现也没弄出啥有技术含量的东西，就算作学习加密技术的一个开端吧</description>
+      
+    </item>
+    
+    <item>
+      <title>一些linux常用指令</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E4%BA%9Blinux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Fri, 08 May 2020 23:38:59 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E4%B8%80%E4%BA%9Blinux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+      <description>一些（最近用到的）常用指令： # 没事不想用vim : (</description>
+      
+    </item>
+    
+    <item>
+      <title>wsl安装angr</title>
+      <link>https://your_domain.com/achieve/2019to2021/wsl%E5%AE%89%E8%A3%85angr/</link>
+      <pubDate>Fri, 08 May 2020 22:53:30 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/wsl%E5%AE%89%E8%A3%85angr/</guid>
+      <description>在wsl上安装angr框架 # 折腾了好几天终于是把这套东西给折腾完了，windows上折腾一天最后还是无法解决报错，干脆按在了wsl上。就把从头到尾踩过的坑全部拿出来写一下好了</description>
+      
+    </item>
+    
+    <item>
+      <title>Git代理问题</title>
+      <link>https://your_domain.com/achieve/2019to2021/git%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 07 May 2020 15:33:37 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/git%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98/</guid>
+      <description>被一个很坑爹的问题折腾了一天-解决git下载速度过慢 # 碰到的问题都是比较个例的，所以才会放在博客</description>
+      
+    </item>
+    
+    <item>
+      <title>buuctf-rsa1</title>
+      <link>https://your_domain.com/achieve/2019to2021/buuctf-rsa1/</link>
+      <pubDate>Wed, 08 Apr 2020 00:15:53 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/buuctf-rsa1/</guid>
+      <description>题目： # p = 8637633767257008567099653486541091171320491509433615447539162437911244175885667806398411790524083553445158113502227745206205327690939504032994699902053229 q = 12640674973996472769176047937170883420927050821480010581593137135372473880595613737337630629752577346147039284030082593490776630572584959954205336880228469 dp = 6500795702216834621109042351193261530650043841056252930930949663358625016881832840728066026150264693076109354874099841380454881716097778307268116910582929 dq = 783472263673553449019532580386470672380574033551303889137911760438881683674556098098256795673512201963002175438762767516968043599582527539160811120550041 c = 24722305403887382073567316467649080662631552905960229399079107995602154418176056335800638887527614164073530437657085079676157350205351945222989351316076486573599576041978339872265925062764318536089007310270278526159678937431903862892400747915525118983959970607934142974736675784325993445942031372107342103852 已知 dq，dp，q，p，c，求 m ，一个中国剩余定理扩展的题，原理咱也不太懂，用就完事了</description>
+      
+    </item>
+    
+    <item>
+      <title>python密码学常用库</title>
+      <link>https://your_domain.com/achieve/2019to2021/pycypto/</link>
+      <pubDate>Mon, 30 Mar 2020 00:05:31 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/pycypto/</guid>
+      <description>SymPy中数论部分使用说明 # sympy是一个Python的科学计算库，用一套强大的符号计算体系完成诸如多项式求值、求极限、解方程、求积分、微分方程、级数展开、矩阵运算等等计算问题 :D</description>
+      
+    </item>
+    
+    <item>
+      <title>MRCTF_2020</title>
+      <link>https://your_domain.com/achieve/2019to2021/mrctf2020/</link>
+      <pubDate>Fri, 20 Mar 2020 01:27:40 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/mrctf2020/</guid>
+      <description>自己博客就懒得放wp这种东西了,写一点总结性的东西，过几天吧密码学学习成果po出来好了 你是懒得pi爆</description>
+      
+    </item>
+    
+    <item>
+      <title>cpp_vector</title>
+      <link>https://your_domain.com/achieve/2019to2021/cpp_vector/</link>
+      <pubDate>Fri, 20 Mar 2020 01:26:54 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/cpp_vector/</guid>
+      <description>简单实例: # #include&amp;lt;iostream&amp;gt; #include&amp;lt;stdlib.</description>
+      
+    </item>
+    
+    <item>
+      <title>python一些常用语法（自认为）</title>
+      <link>https://your_domain.com/achieve/2019to2021/py_useful/</link>
+      <pubDate>Fri, 20 Mar 2020 01:08:00 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/py_useful/</guid>
+      <description>bytes类型: # Python 3 新增了 bytes 类型，用于代表字节串（这是作者生造的一个词，与字符串对应）。字符串（str）由多个字符组成，以字符为单位进行操作；字节串（bytes）由多个字节组成，以字节为单位进行操作。</description>
+      
+    </item>
+    
+    <item>
+      <title>修饰函数规则</title>
+      <link>https://your_domain.com/achieve/2019to2021/cppxiushi/</link>
+      <pubDate>Sat, 14 Mar 2020 15:12:51 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/cppxiushi/</guid>
+      <description>C编译器的函数名修饰规则 ： # __stdcall在输出函数名前加上一个下划线前缀，函数名后面加上一个“@”符号和其参数的字节数，例如_functionname@number。 __cdecl调用约定仅在输出函数名前加上一个下划线前缀，例如_functionname。 __fstcall在输出函数名前加上一个“@”符号，后面也是一个“@”和其参数的字节数，例如@functionname@number</description>
+      
+    </item>
+    
+    <item>
+      <title>xctf2020-高校战役</title>
+      <link>https://your_domain.com/achieve/2019to2021/xctf2020/</link>
+      <pubDate>Tue, 10 Mar 2020 01:13:31 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/xctf2020/</guid>
+      <description>xctf-cycle graph # 没有其他乱七八糟的东西，就是算法</description>
+      
+    </item>
+    
+    <item>
+      <title>初探ras加密</title>
+      <link>https://your_domain.com/achieve/2019to2021/%E5%88%9D%E6%8E%A2ras%E5%8A%A0%E5%AF%86/</link>
+      <pubDate>Thu, 05 Mar 2020 00:35:13 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/%E5%88%9D%E6%8E%A2ras%E5%8A%A0%E5%AF%86/</guid>
+      <description>初探RAS加密 # 加密准备: # 找两个比较大的质数 p 、q</description>
+      
+    </item>
+    
+  </channel>
+</rss>

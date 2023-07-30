@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pwn on #cd /home</title>
+    <link>https://your_domain.com/tags/pwn/</link>
+    <description>Recent content in pwn on #cd /home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 ベーコン</copyright>
+    <lastBuildDate>Tue, 18 Aug 2020 23:49:21 +0000</lastBuildDate><atom:link href="https://your_domain.com/tags/pwn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>几个堆入门</title>
+      <link>https://your_domain.com/achieve/2019to2021/pwn_heap_818/</link>
+      <pubDate>Tue, 18 Aug 2020 23:49:21 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/pwn_heap_818/</guid>
+      <description>ciscn_2019_en_3 # 补充一下 double free的原理 ：堆上的某块内存被释放后，并没有将指向该堆块的指针清零，那么，我们就可以利用程序的其他部分对该内存进行再次的free，由于fast bin是LIFO队列的单向链表，对同一个元素free两次可以使其形成环状</description>
+      
+    </item>
+    
+    <item>
+      <title>Jarvis_OJ_pwn_level4to6</title>
+      <link>https://your_domain.com/achieve/2019to2021/jarvis-oj-pwn-level4to6/</link>
+      <pubDate>Wed, 08 Jul 2020 17:55:33 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/jarvis-oj-pwn-level4to6/</guid>
+      <description>levle4 # 没有libc了，要用 DynELF配合 leak 来找system的真正地址</description>
+      
+    </item>
+    
+    <item>
+      <title>Jarvis_OJ_pwn_level1to3</title>
+      <link>https://your_domain.com/achieve/2019to2021/jarvis-oj-pwn-level1to3/</link>
+      <pubDate>Wed, 08 Jul 2020 17:55:21 +0000</pubDate>
+      
+      <guid>https://your_domain.com/achieve/2019to2021/jarvis-oj-pwn-level1to3/</guid>
+      <description>level0 # x86栈溢出</description>
+      
+    </item>
+    
+  </channel>
+</rss>

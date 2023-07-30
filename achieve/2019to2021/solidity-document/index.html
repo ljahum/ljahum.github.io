@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>A tour of solidity &middot; #cd /home</title>
+  <meta name="title" content="A tour of solidity &middot; #cd /home" />
+  
+  <meta name="description" content="join the evaluation" />
+  <meta name="keywords" content="codes, " />
+  
+  
+  <link rel="canonical" href="https://your_domain.com/achieve/2019to2021/solidity-document/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.8d8ef9f406ae76aa0753f63221ea827aba6a09e5f22e065eb881e526880c7ba14c4c2c42e95cfee0b865d249aa0330266c5f7f926ce6e6218640879361dc8179.css"
+    integrity="sha512-jY759AaudqoHU/YyIeqCerpqCeXyLgZeuIHlJogMe6FMTCxC6Vz&#43;4Lhl0kmqAzAmbF9/kmzm5iGGQIeTYdyBeQ==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8dab968b186edba56ec5ea26dd8cbda8b6f520a7a162eb84e347ab2cb5aa113977f25f3a7a45bdba33fd3d5f3d7cc8062b60a295406127534ed81061299078de.js"
+    integrity="sha512-jauWixhu26Vuxeom3Yy9qLb1IKehYuuE40erLLWqETl38l86ekW9ujP9PV89fMgGK2CilUBhJ1NO2BBhKZB43g==" data-copy="" data-copied=""></script>
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="A tour of solidity" />
+<meta property="og:description" content="join the evaluation" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://your_domain.com/achieve/2019to2021/solidity-document/" /><meta property="article:section" content="achieve" />
+<meta property="article:published_time" content="2021-11-27T00:07:00+08:00" />
+<meta property="article:modified_time" content="2021-11-27T00:07:00+08:00" /><meta property="og:site_name" content="#cd /home" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A tour of solidity"/>
+<meta name="twitter:description" content="join the evaluation"/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "archive",
+    "name": "A tour of solidity",
+    "headline": "A tour of solidity",
+    "description": "join the evaluation",
+    
+    "inLanguage": "en",
+    "url" : "https:\/\/your_domain.com\/achieve\/2019to2021\/solidity-document\/",
+    "author" : {
+      "@type": "Person",
+      "name": "ベーコン"
+    },
+    "copyrightYear": "2021",
+    "dateCreated": "2021-11-27T00:07:00\u002b08:00",
+    "datePublished": "2021-11-27T00:07:00\u002b08:00",
+    
+    "dateModified": "2021-11-27T00:07:00\u002b08:00",
+    
+    "keywords": ["codes"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "578"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="ベーコン" />
+  
+  
+  
+  <link href="https://github.com/ljahum" rel="me" />
+  
+  
+  <link href="https://www.pinterest.jp/roomoflja/" rel="me" />
+  
+  
+  <link href="https://www.pinterest.jp/roomoflja/" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">#cd /home</a>
+
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/articles/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Projects">
+        Draft
+    </p>
+</a>
+
+
+            
+            
+  <a href="/about/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="About">
+        About
+    </p>
+</a>
+
+
+            
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a  href="/achieve/"   class="text-base font-medium text-gray-500 hover:text-gray-900" title="archive">
+      Archive
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/categories/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Categories">
+            Categories
+          </p>
+        </a>
+        
+        <a href="/tags/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+          </p>
+        </a>
+        
+        <a href="https://ljahum.notion.site/Bass-Ment-073326638a86449c9a06d6467fed470f?pvs=4" 
+          target="_blank"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Notion
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/articles/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Projects">
+            Draft
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="About">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                     
+  <li class="mt-1">
+    <a class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="archive">
+            Archive
+        </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Categories">
+            Categories
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/tags/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="https://ljahum.notion.site/Bass-Ment-073326638a86449c9a06d6467fed470f?pvs=4"  target="_blank"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Notion
+        </p>
+    </a>
+</li>
+
+<li class="mb-2"></li>
+
+
+
+                    
+                    
+
+                </ul>
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/img/background.jpg);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      A tour of solidity
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2021-11-27 00:07:00 &#43;0800 CST">27 November 2021</time><span class="px-2 text-primary-500">&middot;</span><span>578 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  
+
+  
+  
+  <span class="pl-2"><span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Draft
+  </span>
+</span>
+</span>
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+  
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-simple-smart-contract"><strong>A Simple Smart Contract</strong></a></li>
+    <li><a href="#练习平台">练习平台</a></li>
+    <li><a href="#stage1">stage1</a></li>
+    <li><a href="#stage2">stage2</a>
+      <ul>
+        <li><a href="#addresses-地址">addresses （地址</a></li>
+        <li><a href="#mapping映射"><strong>Mapping（映射）</strong></a></li>
+        <li><a href="#msgsender"><strong>msg.sender</strong></a></li>
+        <li><a href="#require">require</a></li>
+        <li><a href="#继承inheritance"><strong>继承（Inheritance）</strong></a></li>
+        <li><a href="#storage与memory"><strong>Storage与Memory</strong></a></li>
+        <li><a href="#函数可见性"><strong>函数可见性</strong></a></li>
+        <li><a href="#与其他合约的交互"><strong>与其他合约的交互</strong></a></li>
+        <li><a href="#使用接口"><strong>使用接口</strong></a></li>
+        <li><a href="#处理返回值"><strong>处理返回值</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-simple-smart-contract"><strong>A Simple Smart Contract</strong></a></li>
+    <li><a href="#练习平台">练习平台</a></li>
+    <li><a href="#stage1">stage1</a></li>
+    <li><a href="#stage2">stage2</a>
+      <ul>
+        <li><a href="#addresses-地址">addresses （地址</a></li>
+        <li><a href="#mapping映射"><strong>Mapping（映射）</strong></a></li>
+        <li><a href="#msgsender"><strong>msg.sender</strong></a></li>
+        <li><a href="#require">require</a></li>
+        <li><a href="#继承inheritance"><strong>继承（Inheritance）</strong></a></li>
+        <li><a href="#storage与memory"><strong>Storage与Memory</strong></a></li>
+        <li><a href="#函数可见性"><strong>函数可见性</strong></a></li>
+        <li><a href="#与其他合约的交互"><strong>与其他合约的交互</strong></a></li>
+        <li><a href="#使用接口"><strong>使用接口</strong></a></li>
+        <li><a href="#处理返回值"><strong>处理返回值</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="max-w-prose mb-20">
+          <div id="a-simple-smart-contract" class="anchor"></div>
+<h2 class="relative group"><strong>A Simple Smart Contract</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#a-simple-smart-contract" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>To access a member (like a state variable) of the current contract, you do not typically add the <code>this.</code> prefix, you just access it directly via its name. Unlike in some other languages, omitting it is not just a matter of style, it results in a completely different way to access the member, but more on this later.</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/img/Untitled.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>remix使用的三种环境，分别指:</p>
+<ul>
+<li>js VM:remix自带的sandbox环境练习环境 虚拟了一个节点</li>
+<li>inject web3和provider web3都是想要连接真实节点</li>
+</ul>
+<p>连接matemask一般用 inject web3</p>
+<p>连接ganache的本地虚拟用provider web3?</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/img/Untitled%201.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/img/Untitled%202.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>先搞一个数据存入storedata,get函数取出</p>
+<div id="练习平台" class="anchor"></div>
+<h2 class="relative group">练习平台 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bb%83%e4%b9%a0%e5%b9%b3%e5%8f%b0" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p><a href="https://cryptozombies.io/zh/"   target="_blank">
+    https://cryptozombies.io/zh/</a></p>
+<p>一个solidity练习平台，有点像js</p>
+<div id="stage1" class="anchor"></div>
+<h2 class="relative group">stage1 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#stage1" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>基础+event</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="k">pragma solidity</span> <span class="o">^</span><span class="mi">0</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">19</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">contract</span> <span class="nc">ZombieFactory</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">//event 是合约和区块链通讯的一种机制。你的前端应用“监听”某些事件，并做出反应。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">event</span> <span class="nc">NewZombie</span><span class="p">(</span><span class="kt">uint</span> <span class="n">zombieId</span><span class="p">,</span> <span class="kt">string</span> <span class="nb">name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">dna</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint</span> <span class="n">dnaDigits</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint</span> <span class="n">dnaModulus</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="n">dnaDigits</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">struct</span> <span class="nc">Zombie</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">string</span> <span class="nb">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">uint</span> <span class="n">dna</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">Zombie</span><span class="p">[]</span> <span class="k">public</span> <span class="n">zombies</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nf">_createZombie</span><span class="p">(</span><span class="kt">string</span> <span class="n">_name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">_dna</span><span class="p">)</span> <span class="k">private</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">//array.push() - 1 将是我们加入的僵尸的索引。 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="c1">//zombies.push() - 1 就是 id，数据类型是 uint。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">uint</span> <span class="n">id</span> <span class="o">=</span> <span class="n">zombies</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">Zombie</span><span class="p">(</span><span class="n">_name</span><span class="p">,</span> <span class="n">_dna</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">NewZombie</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">_name</span><span class="p">,</span> <span class="n">_dna</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">//函数修饰符
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="c1">//view 意味着它只能读取数据不能更改数据
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">function</span> <span class="nf">_generateRandomDna</span><span class="p">(</span><span class="kt">string</span> <span class="n">_str</span><span class="p">)</span> <span class="k">private</span> <span class="k">view</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">uint</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">//Ethereum 内部有一个散列函数keccak256，它用了SHA3版本。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">uint</span> <span class="n">rand</span> <span class="o">=</span> <span class="kt">uint</span><span class="p">(</span><span class="nb">keccak256</span><span class="p">(</span><span class="n">_str</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">rand</span> <span class="o">%</span> <span class="n">dnaModulus</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nf">createRandomZombie</span><span class="p">(</span><span class="kt">string</span> <span class="n">_name</span><span class="p">)</span> <span class="k">public</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">uint</span> <span class="n">randDna</span> <span class="o">=</span> <span class="n">_generateRandomDna</span><span class="p">(</span><span class="n">_name</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_createZombie</span><span class="p">(</span><span class="n">_name</span><span class="p">,</span> <span class="n">randDna</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span> 
+</span></span></code></pre></div><p>Solidity 还支持 <em><strong>pure</strong></em> 函数, 表明这个函数甚至都不访问应用里的数据，例如：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nf">_multiply</span><span class="p">(</span><span class="kt">uint</span> <span class="n">a</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">b</span><span class="p">)</span> <span class="k">private</span> <span class="k">pure</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">uint</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div id="stage2" class="anchor"></div>
+<h2 class="relative group">stage2 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#stage2" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<div id="addresses-地址" class="anchor"></div>
+<h3 class="relative group">addresses （地址 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#addresses-%e5%9c%b0%e5%9d%80" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>以太坊区块链由  <strong>_ account _</strong>  (账户)组成，你可以把它想象成银行账户。一个帐户的余额是  <strong>ETH</strong> （在以太坊区块链上使用的币种），你可以和其他帐户之间支付和接受以太币，就像你的银行帐户可以电汇资金到其他银行帐户一样。</p>
+<p>每个帐户都有一个“地址”，你可以把它想象成银行账号。这是账户唯一的标识符，它看起来长这样：</p>
+<p><code>0x0cE446255506E92DF41614C46F1d6df9Cc969183</code></p>
+<p>此处的address是一种独立的数据类型</p>
+<div id="mapping映射" class="anchor"></div>
+<h3 class="relative group"><strong>Mapping（映射）</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#mapping%e6%98%a0%e5%b0%84" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>在第1课中，我们看到了 <strong>_ 结构体 _</strong> 和 <strong>_ 数组 _</strong> 。 <strong><em>映射</em></strong> 是另一种在 Solidity 中存储有组织数据的方法。</p>
+<p>类似于python的字典，支持通过key查找value</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="c1">//对于金融应用程序，将用户的余额保存在一个 uint类型的变量中：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">mapping</span> <span class="p">(</span><span class="kt">address</span> <span class="o">=&gt;</span> <span class="kt">uint</span><span class="p">)</span> <span class="k">public</span> <span class="n">accountBalance</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//或者可以用来通过userId 存储/查找的用户名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">mapping</span> <span class="p">(</span><span class="kt">uint</span> <span class="o">=&gt;</span> <span class="kt">string</span><span class="p">)</span> <span class="n">userIdToName</span><span class="p">;</span>
+</span></span></code></pre></div><div id="msgsender" class="anchor"></div>
+<h3 class="relative group"><strong>msg.sender</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#msgsender" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>在 Solidity 中，有一些全局变量可以被所有函数调用。 其中一个就是 <code>msg.sender</code>，它指的是当前调用者（或智能合约）的 <code>addres</code>(即creator or admin)</p>
+<div id="require" class="anchor"></div>
+<h3 class="relative group">require 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#require" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>这玩意类似python的断言，若为假则会停止执行,并重置require管辖区域的修改</p>
+<div id="继承inheritance" class="anchor"></div>
+<h3 class="relative group"><strong>继承（Inheritance）</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bb%a7%e6%89%bfinheritance" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>当代码过于冗长的时候，最好将代码和逻辑分拆到多个不同的<strong>合约</strong>中，以便于管理。</p>
+<p>有个让 Solidity 的代码易于管理的功能，就是<strong>合约 <em>inheritance</em> (继承)</strong>：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="kd">contract</span> <span class="nc">Doge</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nf">catchphrase</span><span class="p">()</span> <span class="k">public</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s">&#34;So Wow CryptoDoge&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">contract</span> <span class="nc">BabyDoge</span> <span class="k">is</span> <span class="n">Doge</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nf">anotherCatchphrase</span><span class="p">()</span> <span class="k">public</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s">&#34;Such Moon BabyDoge&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div id="storage与memory" class="anchor"></div>
+<h3 class="relative group"><strong>Storage与Memory</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#storage%e4%b8%8ememory" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p><em><strong>Storage</strong></em> 变量是指永久存储在区块链中的变量。 <em><strong>Memory</strong></em> 变量则是临时的，当外部函数对某合约调用完成时，内存型变量即被移除。 你可以把它想象成存储在你电脑的硬盘或是RAM中数据的关系</p>
+<div id="函数可见性" class="anchor"></div>
+<h3 class="relative group"><strong>函数可见性</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%87%bd%e6%95%b0%e5%8f%af%e8%a7%81%e6%80%a7" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>我们尝试从 <code>ZombieFeeding</code> 中调用 <code>_createZombie</code> 函数，但 <code>_createZombie</code> 却是 <code>ZombieFactory</code> 的 <code>private</code> （私有）函数。</p>
+<p><code>internal</code> 和 <code>private</code> 类似，不过， 如果某个合约继承自其父合约，这个合约即可以访问父合约中定义的“内部”函数。</p>
+<p><code>external</code> 与<code>public</code> 类似，只不过这些函数只能在合约之外调用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="k">pragma solidity</span> <span class="o">^</span><span class="mi">0</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">19</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="s">&#34;./zombiefactory.sol&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">contract</span> <span class="nc">ZombieFeeding</span> <span class="k">is</span> <span class="n">ZombieFactory</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nf">feedAndMultiply</span><span class="p">(</span><span class="kt">uint</span> <span class="n">_zombieId</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">_targetDna</span><span class="p">)</span> <span class="k">public</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">require</span><span class="p">(</span><span class="nb">msg</span><span class="p">.</span><span class="nb">sender</span> <span class="o">==</span> <span class="n">zombieToOwner</span><span class="p">[</span><span class="n">_zombieId</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Zombie</span> <span class="k">storage</span> <span class="n">myZombie</span> <span class="o">=</span> <span class="n">zombies</span><span class="p">[</span><span class="n">_zombieId</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="n">_targetDna</span> <span class="o">=</span> <span class="n">_targetDna</span> <span class="o">%</span> <span class="n">dnaModulus</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">uint</span> <span class="n">newDna</span> <span class="o">=</span> <span class="p">(</span><span class="n">myZombie</span><span class="p">.</span><span class="n">dna</span> <span class="o">+</span> <span class="n">_targetDna</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">_createZombie</span><span class="p">(</span><span class="s">&#34;NoName&#34;</span><span class="p">,</span> <span class="n">newDna</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">-----</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nf">_createZombie</span><span class="p">(</span><span class="kt">string</span> <span class="n">_name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">_dna</span><span class="p">)</span> <span class="k">internal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	        <span class="kt">uint</span> <span class="n">id</span> <span class="o">=</span> <span class="n">zombies</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">Zombie</span><span class="p">(</span><span class="n">_name</span><span class="p">,</span> <span class="n">_dna</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	        <span class="n">zombieToOwner</span><span class="p">[</span><span class="n">id</span><span class="p">]</span> <span class="o">=</span> <span class="nb">msg</span><span class="p">.</span><span class="nb">sender</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	        <span class="n">ownerZombieCount</span><span class="p">[</span><span class="nb">msg</span><span class="p">.</span><span class="nb">sender</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	        <span class="n">NewZombie</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">_name</span><span class="p">,</span> <span class="n">_dna</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	 <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">----</span>
+</span></span></code></pre></div><div id="与其他合约的交互" class="anchor"></div>
+<h3 class="relative group"><strong>与其他合约的交互</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%b8%8e%e5%85%b6%e4%bb%96%e5%90%88%e7%ba%a6%e7%9a%84%e4%ba%a4%e4%ba%92" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>如果我们的合约需要和区块链上的其他的合约会话，则需先定义一个 <em><strong>interface</strong></em> (接口)。</p>
+<p>先举一个简单的栗子。 假设在区块链上有这么一个合约：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="kd">contract</span> <span class="nc">LuckyNumber</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">mapping</span><span class="p">(</span><span class="kt">address</span> <span class="o">=&gt;</span> <span class="kt">uint</span><span class="p">)</span> <span class="n">numbers</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nf">setNum</span><span class="p">(</span><span class="kt">uint</span> <span class="n">_num</span><span class="p">)</span> <span class="k">public</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">numbers</span><span class="p">[</span><span class="nb">msg</span><span class="p">.</span><span class="nb">sender</span><span class="p">]</span> <span class="o">=</span> <span class="n">_num</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nf">getNum</span><span class="p">(</span><span class="kt">address</span> <span class="n">_myAddress</span><span class="p">)</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">uint</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">numbers</span><span class="p">[</span><span class="n">_myAddress</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>这是个很简单的合约，您可以用它存储自己的幸运号码，并将其与您的以太坊地址关联。 这样其他人就可以通过您的地址查找您的幸运号码了。</p>
+<p>现在假设我们有一个外部合约，使用 <code>getNum</code> 函数可读取其中的数据。</p>
+<p>首先，我们定义 <code>LuckyNumber</code> 合约的 <em><strong>interface</strong></em> ：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="kd">contract</span> <span class="nc">NumberInterface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nf">getNum</span><span class="p">(</span><span class="kt">address</span> <span class="n">_myAddress</span><span class="p">)</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">uint</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>请注意，这个过程虽然看起来像在定义一个合约，但其实内里不同：</p>
+<p>首先，我们只声明了要与之交互的函数 —— 在本例中为 <code>getNum</code> —— 在其中我们没有使用到任何其他的函数或状态变量。</p>
+<p>其次，我们并没有使用大括号（<code>{</code> 和 <code>}</code>）定义函数体，我们单单用分号（<code>;</code>）结束了函数声明。这使它看起来像一个合约框架。</p>
+<p>编译器就是靠这些特征认出它是一个接口的。</p>
+<div id="使用接口" class="anchor"></div>
+<h3 class="relative group"><strong>使用接口</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8%e6%8e%a5%e5%8f%a3" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>继续前面 <code>NumberInterface</code> 的例子，我们既然将接口定义为：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="kd">contract</span> <span class="nc">NumberInterface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nf">getNum</span><span class="p">(</span><span class="kt">address</span> <span class="n">_myAddress</span><span class="p">)</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">uint</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>我们可以在合约中这样使用：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="kd">contract</span> <span class="nc">MyContract</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">address</span> <span class="n">NumberInterfaceAddress</span> <span class="o">=</span> <span class="mh">0xab38</span><span class="p">...</span> 
+</span></span><span class="line"><span class="cl">  <span class="c1">// ^ The address of the FavoriteNumber contract on Ethereum
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">NumberInterface</span> <span class="n">numberContract</span> <span class="o">=</span> <span class="n">NumberInterface</span><span class="p">(</span><span class="n">NumberInterfaceAddress</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Now `numberContract` is pointing to the other contract
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nf">someFunction</span><span class="p">()</span> <span class="k">public</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Now we can call `getNum` from that contract:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="c1">//利用接口来访问其他地址中的合约,(solidity特有交互模式)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">uint</span> <span class="n">num</span> <span class="o">=</span> <span class="n">numberContract</span><span class="p">.</span><span class="n">getNum</span><span class="p">(</span><span class="nb">msg</span><span class="p">.</span><span class="nb">sender</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...and do something with `num` here
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>通过这种方式，只要将您合约的可见性设置为<code>public</code>(公共)或<code>external</code>(外部)，它们就可以与以太坊区块链上的任何其他合约进行交互。</p>
+<p><strong>NumberInterface</strong> numberContract = <strong>NumberInterface</strong>(NumberInterfaceAddress);</p>
+<blockquote>
+<p>至此，我们掌握了基本的交互方法，可以尝试去完成一些测试链的智能合约操作了</p>
+<p>哦，注意一下，在开始前，最好找大哥们要一点测试链的ETH存入matemask以作为gas😀😀😀</p>
+</blockquote>
+<div id="处理返回值" class="anchor"></div>
+<h3 class="relative group"><strong>处理返回值</strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%a4%84%e7%90%86%e8%bf%94%e5%9b%9e%e5%80%bc" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>像python一样,sodity可以处理大量的返回值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-solidity" data-lang="solidity"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nf">processMultipleReturns</span><span class="p">()</span> <span class="k">external</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">uint</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">uint</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">uint</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 这样来做批量赋值:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="o">=</span> <span class="n">multipleReturns</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 或者如果我们只想返回其中一个变量:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nf">getLastReturnValue</span><span class="p">()</span> <span class="k">external</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">uint</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 可以对其他字段留空:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">(,,</span><span class="n">c</span><span class="p">)</span> <span class="o">=</span> <span class="n">multipleReturns</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+        </div>
+                
+        
+
+        
+
+          
+      </div>
+     
+     <script>
+        var oid = "views_achieve\\2019to2021\\solidity document.md"
+        var oid_likes = "likes_achieve\\2019to2021\\solidity document.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/achieve/%E5%A4%8D%E7%9B%982/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >闲题杂记2</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2021-11-14 21:34:27 &#43;0800 CST">14 November 2021</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/achieve/ctf/%E8%A5%BF%E6%B9%96%E8%AE%BA%E5%89%912021crypto/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Document for 西湖论🗡🔪⚔🖋✂</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2021-12-15 00:07:00 &#43;0800 CST">15 December 2021</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2023
+      ベーコン
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://your_domain.com/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

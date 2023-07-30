@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on #cd /home</title>
+    <link>https://your_domain.com/tags/</link>
+    <description>Recent content in Tags on #cd /home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 ベーコン</copyright>
+    <lastBuildDate>Sun, 30 Jul 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://your_domain.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Development</title>
+      <link>https://your_domain.com/tags/development/</link>
+      <pubDate>Sun, 30 Jul 2023 13:23:11 +0000</pubDate>
+      
+      <guid>https://your_domain.com/tags/development/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>codes</title>
+      <link>https://your_domain.com/tags/codes/</link>
+      <pubDate>Wed, 15 Feb 2023 15:39:27 +0800</pubDate>
+      
+      <guid>https://your_domain.com/tags/codes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nuil</title>
+      <link>https://your_domain.com/tags/nuil/</link>
+      <pubDate>Sat, 11 Feb 2023 12:20:30 +0800</pubDate>
+      
+      <guid>https://your_domain.com/tags/nuil/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>crypto</title>
+      <link>https://your_domain.com/tags/crypto/</link>
+      <pubDate>Tue, 08 Mar 2022 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/tags/crypto/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://your_domain.com/tags/math/</link>
+      <pubDate>Tue, 08 Mar 2022 00:07:00 +0800</pubDate>
+      
+      <guid>https://your_domain.com/tags/math/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>bin</title>
+      <link>https://your_domain.com/tags/bin/</link>
+      <pubDate>Sun, 27 Dec 2020 20:50:38 +0000</pubDate>
+      
+      <guid>https://your_domain.com/tags/bin/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>pwn</title>
+      <link>https://your_domain.com/tags/pwn/</link>
+      <pubDate>Tue, 18 Aug 2020 23:49:21 +0000</pubDate>
+      
+      <guid>https://your_domain.com/tags/pwn/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
