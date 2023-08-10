@@ -9,16 +9,6 @@
     <copyright>© 2023 ベーコン</copyright>
     <lastBuildDate>Wed, 09 Aug 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>https://ljahum.github.io/achieve/about/</link>
-      <pubDate>Sat, 20 Feb 2021 13:23:11 +0000</pubDate>
-      
-      <guid>https://ljahum.github.io/achieve/about/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>qemu from zero 2 hero</title>
       <link>https://ljahum.github.io/articles/qemu021/</link>
       <pubDate>Wed, 09 Aug 2023 13:23:11 +0000</pubDate>
@@ -34,26 +24,6 @@
       <pubDate>Wed, 15 Feb 2023 15:39:27 +0800</pubDate>
       
       <guid>https://ljahum.github.io/achieve/openssl_evp/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>A tour of solidity</title>
-      <link>https://ljahum.github.io/achieve/2019to2021/solidity-document/</link>
-      <pubDate>Sat, 27 Nov 2021 00:07:00 +0800</pubDate>
-      
-      <guid>https://ljahum.github.io/achieve/2019to2021/solidity-document/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>A simple tour of C</title>
-      <link>https://ljahum.github.io/achieve/2019to2021/cpplearn/</link>
-      <pubDate>Mon, 27 Sep 2021 00:07:00 +0800</pubDate>
-      
-      <guid>https://ljahum.github.io/achieve/2019to2021/cpplearn/</guid>
       <description></description>
       
     </item>
