@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>qemu from zero 2 hero &middot; #cd /home</title>
+  <meta name="title" content="qemu from zero 2 hero &middot; #cd /home" />
+  
+  
+  <meta name="keywords" content="bin, " />
+  
+  
+  <link rel="canonical" href="https://ljahum.github.io/articles/qemu021/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.8d8ef9f406ae76aa0753f63221ea827aba6a09e5f22e065eb881e526880c7ba14c4c2c42e95cfee0b865d249aa0330266c5f7f926ce6e6218640879361dc8179.css"
+    integrity="sha512-jY759AaudqoHU/YyIeqCerpqCeXyLgZeuIHlJogMe6FMTCxC6Vz&#43;4Lhl0kmqAzAmbF9/kmzm5iGGQIeTYdyBeQ==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.34dfb4e6b05b47b0a3599f50035f9bbb18c2d36a26aa4c0ea7acc4936489d4c2a55f65683d53e3c4215337e6a8c02e554881af2da86b5783c96837ae3d4e98f6.js"
+    integrity="sha512-NN&#43;05rBbR7CjWZ9QA1&#43;buxjC02omqkwOp6zEk2SJ1MKlX2VoPVPjxCFTN&#43;aowC5VSIGvLahrV4PJaDeuPU6Y9g==" data-copy="" data-copied=""></script>
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="qemu from zero 2 hero" />
+<meta property="og:description" content="算是了却了大二入门kernel pwn未果的心结" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ljahum.github.io/articles/qemu021/" /><meta property="og:image" content="https://ljahum.github.io/articles/qemu021/featured.png"/><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2023-08-09T13:23:11+00:00" />
+<meta property="article:modified_time" content="2023-08-09T13:23:11+00:00" /><meta property="og:site_name" content="#cd /home" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ljahum.github.io/articles/qemu021/featured.png"/>
+<meta name="twitter:title" content="qemu from zero 2 hero"/>
+<meta name="twitter:description" content="算是了却了大二入门kernel pwn未果的心结"/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Projects",
+    "name": "qemu from zero 2 hero",
+    "headline": "qemu from zero 2 hero",
+    
+    "abstract": "算是了却了大二入门kernel pwn未果的心结",
+    "inLanguage": "en",
+    "url" : "https:\/\/ljahum.github.io\/articles\/qemu021\/",
+    "author" : {
+      "@type": "Person",
+      "name": "ベーコン"
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-08-09T13:23:11\u002b00:00",
+    "datePublished": "2023-08-09T13:23:11\u002b00:00",
+    
+    "dateModified": "2023-08-09T13:23:11\u002b00:00",
+    
+    "keywords": ["bin"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1047"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="ベーコン" />
+  
+  
+  
+  <link href="https://github.com/ljahum" rel="me" />
+  
+  
+  <link href="https://www.pinterest.jp/roomoflja/" rel="me" />
+  
+  
+  <link href="mailto:roomoflja@gmail.com" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">#cd /home</a>
+
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/articles/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Projects">
+        Draft
+    </p>
+</a>
+
+
+            
+            
+  <a href="/about/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="About">
+        About
+    </p>
+</a>
+
+
+            
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a  href="/achieve/"   class="text-base font-medium text-gray-500 hover:text-gray-900" title="archive">
+      Archive
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/categories/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Categories">
+            Categories
+          </p>
+        </a>
+        
+        <a href="/tags/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+          </p>
+        </a>
+        
+        <a href="https://ljahum.notion.site/Bass-Ment-073326638a86449c9a06d6467fed470f?pvs=4" 
+          target="_blank"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Notion
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/articles/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Projects">
+            Draft
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="About">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                     
+  <li class="mt-1">
+    <a class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="archive">
+            Archive
+        </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Categories">
+            Categories
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/tags/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="https://ljahum.notion.site/Bass-Ment-073326638a86449c9a06d6467fed470f?pvs=4"  target="_blank"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Notion
+        </p>
+    </a>
+</li>
+
+<li class="mb-2"></li>
+
+
+
+                    
+                    
+
+                </ul>
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/articles/qemu021/featured.png);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      qemu from zero 2 hero
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-08-09 13:23:11 &#43;0000 UTC">9 August 2023</time><span class="px-2 text-primary-500">&middot;</span><span>1047 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+    
+    <div class="flex">
+  
+  
+  
+  
+  <img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width="96" height="96"
+    alt="ベーコン" src="/img/author_huc106e4a72b78e2bb0b6ed302cdd3a312_22077_192x192_fill_q75_box_center.jpg" />
+  
+  
+  <div class="place-self-center">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Author
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      ベーコン
+    </div>
+    
+    
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">ljahum-beacon</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/ljahum"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.pinterest.jp/roomoflja/"
+          target="_blank"
+          aria-label="Pinterest"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="mailto:roomoflja@gmail.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+    
+
+    
+
+    
+
+    
+    <div class="mb-5"></div>
+    
+  
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#源码安装qemu">源码安装qemu</a></li>
+    <li><a href="#编译运行">编译运行</a></li>
+    <li><a href="#qemu用户模式调试">qemu用户模式调试</a></li>
+    <li><a href="#调试动态链接文件">调试动态链接文件</a></li>
+    <li><a href="#系统模式">系统模式</a></li>
+    <li><a href="#模拟运行arm64架构内核"><strong><strong>模拟运行ARM64架构内核</strong></strong></a>
+      <ul>
+        <li><a href="#挂载">挂载</a></li>
+        <li><a href="#交叉编译-strace-并安装">交叉编译 strace 并安装</a></li>
+        <li><a href="#make-error">make error</a></li>
+        <li><a href="#makeinfo-not-found">makeinfo not found</a></li>
+        <li><a href="#运行">运行</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#源码安装qemu">源码安装qemu</a></li>
+    <li><a href="#编译运行">编译运行</a></li>
+    <li><a href="#qemu用户模式调试">qemu用户模式调试</a></li>
+    <li><a href="#调试动态链接文件">调试动态链接文件</a></li>
+    <li><a href="#系统模式">系统模式</a></li>
+    <li><a href="#模拟运行arm64架构内核"><strong><strong>模拟运行ARM64架构内核</strong></strong></a>
+      <ul>
+        <li><a href="#挂载">挂载</a></li>
+        <li><a href="#交叉编译-strace-并安装">交叉编译 strace 并安装</a></li>
+        <li><a href="#make-error">make error</a></li>
+        <li><a href="#makeinfo-not-found">makeinfo not found</a></li>
+        <li><a href="#运行">运行</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="max-w-prose mb-20">
+          <blockquote>
+<p>算是了却了大二入门kernel pwn未果的心结</p>
+</blockquote>
+<ul>
+<li>Ubuntu 20</li>
+<li>qume7.2.4</li>
+</ul>
+<div id="源码安装qemu" class="anchor"></div>
+<h2 class="relative group">源码安装qemu 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%ba%90%e7%a0%81%e5%ae%89%e8%a3%85qemu" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>apt intsall版本太低</p>
+<p><a href="https://www.qemu.org/download/"   target="_blank">
+    https://www.qemu.org/download/</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">wget</span> <span class="nl">https</span><span class="p">:</span><span class="c1">//download.qemu.org/qemu-7.2.4.tar.xz
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">tar</span> <span class="n">xvJf</span> <span class="n">qemu</span><span class="o">-</span><span class="mf">7.2.4</span><span class="p">.</span><span class="n">tar</span><span class="p">.</span><span class="n">xz</span>
+</span></span><span class="line"><span class="cl"><span class="n">cd</span> <span class="n">qemu</span><span class="o">-</span><span class="mf">7.2.4</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="o">/</span><span class="n">configure</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">make</span> <span class="o">-</span><span class="n">j8</span>  <span class="err">#</span> <span class="err">多核编译</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">make</span> <span class="n">insatll</span>
+</span></span></code></pre></div><p>中间缺什么apt直接装就是</p>
+<p>make install 可能会环境变量添加失败，无所谓，直接如下运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">qemu</span><span class="o">-</span><span class="n">aarch64</span>
+</span></span></code></pre></div><p>安装mips  amd64所需的libc（瞎装一通）</p>
+<p>在/user下应该能找到交叉编译所需要的库</p>
+<p>qemu</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt; ls /usr/
+</span></span><span class="line"><span class="cl">aarch64-linux-gnu/  include/  lib64/    local/             sbin/
+</span></span><span class="line"><span class="cl">bin/                lib/      libexec/  mipsel-linux-gnu/  share/
+</span></span><span class="line"><span class="cl">games/              lib32/    libx32/   mips-linux-gnu/    src/
+</span></span><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt; ls /usr/aarch64-linux-gnu/
+</span></span><span class="line"><span class="cl">bin/  include/  lib/
+</span></span><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt;
+</span></span></code></pre></div><div id="编译运行" class="anchor"></div>
+<h2 class="relative group">编译运行 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bc%96%e8%af%91%e8%bf%90%e8%a1%8c" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>写个玩具</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;hello world</span><span class="se">\n</span><span class="s">input ur emotion</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">200</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%s&#34;</span><span class="p">,</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;u say : %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nf">strcmp</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="s">&#34;hello&#34;</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you good</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nf">strcmp</span><span class="p">(</span><span class="n">str</span> <span class="p">,</span> <span class="s">&#34;end&#34;</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you bad</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// printf(&#34;end\n&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><code>aarch64-linux-gnu-gcc ./main.c -o amd64out -static</code></p>
+<p>运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt; ls /usr/aarch64-linux-gnu/
+</span></span><span class="line"><span class="cl">bin/  include/  lib/
+</span></span><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt; qemu-aarch64 amd64out
+</span></span><span class="line"><span class="cl">hello world
+</span></span><span class="line"><span class="cl">input ur emotion
+</span></span><span class="line"><span class="cl">hello
+</span></span><span class="line"><span class="cl">u say : hello
+</span></span><span class="line"><span class="cl">you good
+</span></span><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt; file amd64out
+</span></span><span class="line"><span class="cl">amd64out: ELF 64-bit LSB executable, ARM aarch64, version <span class="m">1</span> <span class="o">(</span>GNU/Linux<span class="o">)</span>, statically linked, BuildID<span class="o">[</span>sha1<span class="o">]=</span>84b60fe12f86c039ffcd221a4e32a1c766677293, <span class="k">for</span> GNU/Linux 3.7.0, not stripped
+</span></span><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt;
+</span></span></code></pre></div><div id="qemu用户模式调试" class="anchor"></div>
+<h2 class="relative group">qemu用户模式调试 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#qemu%e7%94%a8%e6%88%b7%e6%a8%a1%e5%bc%8f%e8%b0%83%e8%af%95" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>先安装gdb-multiarch</p>
+<p><code>sudo apt install gdb-multiarch</code></p>
+<p>qemu启动脚本</p>
+<p>-L 指定动态连接库位置 此时用于是静态链接 所以可加可不加</p>
+<p>-g指定 挂载端口</p>
+<p>qemurun.sh</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>sudo /usr/local/test/bin/qemu-aarch64 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -L /usr/aarch64-linux-gnu/ <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -g <span class="m">1234</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    ./amd64out
+</span></span></code></pre></div><p>gdb启动脚本</p>
+<p>gdbrun.sh</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>gdb-multiarch -q ./amd64out -x dbgscript
+</span></span></code></pre></div><p>gdb-multiarch 行内命令脚本</p>
+<p>dbgscript:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#dbgscript</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> architecture aarch64
+</span></span><span class="line"><span class="cl">b main
+</span></span><span class="line"><span class="cl">target remote 127.0.0.1:1234
+</span></span><span class="line"><span class="cl">c
+</span></span></code></pre></div><p>先运行qemu启动脚本</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt; sudo ./qemurun.sh
+</span></span><span class="line"><span class="cl">hello world
+</span></span><span class="line"><span class="cl">input ur emotion
+</span></span><span class="line"><span class="cl">end
+</span></span><span class="line"><span class="cl">u say : end
+</span></span></code></pre></div><p>再运行gdb启动脚本</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt; sudo ./gdbrun.sh
+</span></span><span class="line"><span class="cl">pwndbg: loaded <span class="m">147</span> pwndbg commands and <span class="m">46</span> shell commands. Type pwndbg <span class="o">[</span>--shell <span class="p">|</span> --all<span class="o">]</span> <span class="o">[</span>filter<span class="o">]</span> <span class="k">for</span> a list.
+</span></span><span class="line"><span class="cl">pwndbg: created <span class="nv">$rebase</span>, <span class="nv">$ida</span> GDB functions <span class="o">(</span>can be used with print/break<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Reading symbols from ./amd64out...
+</span></span><span class="line"><span class="cl"><span class="o">(</span>No debugging symbols found in ./amd64out<span class="o">)</span>
+</span></span><span class="line"><span class="cl">The target architecture is assumed to be aarch64
+</span></span><span class="line"><span class="cl">Breakpoint <span class="m">1</span> at 0x928
+</span></span><span class="line"><span class="cl">warning: remote target does not support file transfer, attempting to access files from <span class="nb">local</span> filesystem.
+</span></span><span class="line"><span class="cl">0x0000005502814100 in ?? <span class="o">()</span> from /lib/ld-linux-aarch64.so.1
+</span></span><span class="line"><span class="cl">warning: Could not load shared library symbols <span class="k">for</span> /lib/libc.so.6.
+</span></span><span class="line"><span class="cl">Do you need <span class="s2">&#34;set solib-search-path&#34;</span> or <span class="s2">&#34;set sysroot&#34;</span>?
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Breakpoint 1, 0x0000005500000928 in main <span class="o">()</span>
+</span></span><span class="line"><span class="cl">------- tip of the day <span class="o">(</span>disable with <span class="nb">set</span> show-tips off<span class="o">)</span> -------
+</span></span><span class="line"><span class="cl">Want to NOP some instructions? Use patch &lt;address&gt; <span class="s1">&#39;nop; nop; nop&#39;</span>
+</span></span><span class="line"><span class="cl">LEGEND: STACK <span class="p">|</span> HEAP <span class="p">|</span> CODE <span class="p">|</span> DATA <span class="p">|</span> RWX <span class="p">|</span> RODATA
+</span></span><span class="line"><span class="cl">────────────<span class="o">[</span> REGISTERS / show-flags off / show-compact-regs off <span class="o">]</span>─────────────
+</span></span><span class="line"><span class="cl">*X0   0x5500010000 ◂— 0x10102464c457f
+</span></span><span class="line"><span class="cl">*X1   0x5502812568 —▸ 0x550281279f ◂— <span class="s1">&#39;./amd64out-lib&#39;</span>
+</span></span><span class="line"><span class="cl">*X2   0x5502812578 —▸ 0x55028127ae ◂— <span class="s1">&#39;SUDO_GID=0&#39;</span>
+</span></span><span class="line"><span class="cl">*X3   0x550000091c <span class="o">(</span>main<span class="o">)</span> ◂— stp x29, x30, <span class="o">[</span>sp, <span class="c1">#-0xe0]!</span>
+</span></span><span class="line"><span class="cl"> X4   0x0
+</span></span><span class="line"><span class="cl">*X5   0xb25a824f20c39041
+</span></span><span class="line"><span class="cl">*X6   0x55029c8b10 ◂— 0x0
+</span></span><span class="line"><span class="cl">*X7   0x1
+</span></span><span class="line"><span class="cl">*X8   0xffffffffffffffff
+</span></span><span class="line"><span class="cl">*X9   0xfffffff
+</span></span><span class="line"><span class="cl"> X10  0x0
+</span></span><span class="line"><span class="cl"> X11  0x0
+</span></span><span class="line"><span class="cl">*X12  0x550285ce48 ◂— 0x0
+</span></span><span class="line"><span class="cl"> X13  0x0
+</span></span><span class="line"><span class="cl"> X14  0x0
+</span></span><span class="line"><span class="cl">*X15  0x6fffff47
+</span></span><span class="line"><span class="cl">*X16  0x1
+</span></span><span class="line"><span class="cl">*X17  0x5502879d28 ◂— 0xb0000a64a9ab7bfd
+</span></span><span class="line"><span class="cl">*X18  0x73516240
+</span></span><span class="line"><span class="cl">*X19  0x55000009f8 <span class="o">(</span>__libc_csu_init<span class="o">)</span> ◂— stp x29, x30, <span class="o">[</span>sp, <span class="c1">#-0x40]!</span>
+</span></span><span class="line"><span class="cl"> X20  0x0
+</span></span><span class="line"><span class="cl">*X21  0x5500000810 <span class="o">(</span>_start<span class="o">)</span> ◂— mov x29, <span class="c1">#0</span>
+</span></span><span class="line"><span class="cl"> X22  0x0
+</span></span><span class="line"><span class="cl"> X23  0x0
+</span></span><span class="line"><span class="cl"> X24  0x0
+</span></span><span class="line"><span class="cl"> X25  0x0
+</span></span><span class="line"><span class="cl"> X26  0x0
+</span></span><span class="line"><span class="cl"> X27  0x0
+</span></span><span class="line"><span class="cl"> X28  0x0
+</span></span><span class="line"><span class="cl">*X29  0x5502812330 —▸ 0x5502812410 ◂— 0x0
+</span></span><span class="line"><span class="cl">*X30  0x5502879e10 ◂— 0xf9402fe0940055f4
+</span></span><span class="line"><span class="cl">*SP   0x5502812330 —▸ 0x5502812410 ◂— 0x0
+</span></span><span class="line"><span class="cl">*PC   0x5500000928 <span class="o">(</span>main+12<span class="o">)</span> ◂— ldr x0, <span class="o">[</span>x0, <span class="c1">#0xfe0]</span>
+</span></span><span class="line"><span class="cl">─────────────────────<span class="o">[</span> DISASM / aarch64 / <span class="nb">set</span> emulate on <span class="o">]</span>─────────────────────
+</span></span><span class="line"><span class="cl"> ► 0x5500000928 &lt;main+12&gt;    ldr    x0, <span class="o">[</span>x0, <span class="c1">#0xfe0]</span>
+</span></span><span class="line"><span class="cl">   0x550000092c &lt;main+16&gt;    ldr    x1, <span class="o">[</span>x0<span class="o">]</span>
+</span></span><span class="line"><span class="cl">   0x5500000930 &lt;main+20&gt;    str    x1, <span class="o">[</span>sp, <span class="c1">#0xd8]</span>
+</span></span><span class="line"><span class="cl">   0x5500000934 &lt;main+24&gt;    mov    x1, <span class="c1">#0</span>
+</span></span><span class="line"><span class="cl">   0x5500000938 &lt;main+28&gt;    adrp   x0, <span class="c1">#0x5500000000</span>
+</span></span><span class="line"><span class="cl">   0x550000093c &lt;main+32&gt;    add    x0, x0, <span class="c1">#0xa98</span>
+</span></span><span class="line"><span class="cl">   0x5500000940 &lt;main+36&gt;    bl     <span class="c1">#puts@plt                 &lt;puts@plt&gt;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">   0x5500000944 &lt;main+40&gt;    add    x0, sp, <span class="c1">#0x10</span>
+</span></span><span class="line"><span class="cl">   0x5500000948 &lt;main+44&gt;    mov    x1, x0
+</span></span><span class="line"><span class="cl">   0x550000094c &lt;main+48&gt;    adrp   x0, <span class="c1">#0x5500000000</span>
+</span></span><span class="line"><span class="cl">   0x5500000950 &lt;main+52&gt;    add    x0, x0, <span class="c1">#0xab8</span>
+</span></span><span class="line"><span class="cl">───────────────────────────────────<span class="o">[</span> STACK <span class="o">]</span>───────────────────────────────────
+</span></span><span class="line"><span class="cl">00:0000│ x29 sp 0x5502812330 —▸ 0x5502812410 ◂— 0x0
+</span></span><span class="line"><span class="cl">01:0008│        0x5502812338 —▸ 0x5502879e10 ◂— 0xf9402fe0940055f4
+</span></span><span class="line"><span class="cl">02:0010│        0x5502812340 ◂— 0x0
+</span></span><span class="line"><span class="cl">03:0018│        0x5502812348 ◂— 0xffffffff
+</span></span><span class="line"><span class="cl">04:0020│        0x5502812350 ◂— 0x0
+</span></span><span class="line"><span class="cl">05:0028│        0x5502812358 —▸ 0x55028678b8 ◂— 0xc001200005b6e /* <span class="s1">&#39;n[&#39;</span> */
+</span></span><span class="line"><span class="cl">06:0030│        0x5502812360 —▸ 0x5502846a00 —▸ 0x5502859000 ◂— 0x3010102464c457f
+</span></span><span class="line"><span class="cl">07:0038│        0x5502812368 ◂— 0x0
+</span></span><span class="line"><span class="cl">─────────────────────────────────<span class="o">[</span> BACKTRACE <span class="o">]</span>─────────────────────────────────
+</span></span><span class="line"><span class="cl"> ► <span class="m">0</span>     0x5500000928 main+12
+</span></span><span class="line"><span class="cl">───────────────────────────────────────────────────────────────────────────────
+</span></span><span class="line"><span class="cl">pwndbg&gt;
+</span></span></code></pre></div><p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/qemufromzero2hero.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>按 n 单步开调</p>
+<div id="调试动态链接文件" class="anchor"></div>
+<h2 class="relative group">调试动态链接文件 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%b0%83%e8%af%95%e5%8a%a8%e6%80%81%e9%93%be%e6%8e%a5%e6%96%87%e4%bb%b6" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>不添加 -static 编译</p>
+<p><code>aarch64-linux-gnu-gcc ./main.c -o amd64out-lib</code></p>
+<p>此时需要 -L 指定 /libs 目录的位置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>sudo /usr/local/test/bin/qemu-aarch64 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -L /usr/aarch64-linux-gnu/ <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    ./amd64out-lib
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ljahum@ljahum-vm ~/D/test&gt; sudo ./qemurun.sh
+</span></span><span class="line"><span class="cl">hello world
+</span></span><span class="line"><span class="cl">input ur emotion
+</span></span><span class="line"><span class="cl">hello
+</span></span><span class="line"><span class="cl">u say : hello
+</span></span><span class="line"><span class="cl">you good
+</span></span></code></pre></div><div id="系统模式" class="anchor"></div>
+<h2 class="relative group">系统模式 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%b3%bb%e7%bb%9f%e6%a8%a1%e5%bc%8f" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<blockquote>
+<p>TO DO</p>
+</blockquote>
+<div id="模拟运行arm64架构内核" class="anchor"></div>
+<h2 class="relative group"><strong><strong>模拟运行ARM64架构内核</strong></strong> 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%a8%a1%e6%8b%9f%e8%bf%90%e8%a1%8carm64%e6%9e%b6%e6%9e%84%e5%86%85%e6%a0%b8" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<blockquote>
+<p>本来想做个aarch64跑系统模式  没想到翻到了内核的文章</p>
+</blockquote>
+<p><a href="https://blog.csdn.net/weixin_39541632/category_9432131.html"   target="_blank">
+    https://blog.csdn.net/weixin_39541632/category_9432131.html</a></p>
+<p>容易出错的点：</p>
+<div id="挂载" class="anchor"></div>
+<h3 class="relative group">挂载 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%8c%82%e8%bd%bd" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ mkdir -p tmpfs
+</span></span><span class="line"><span class="cl">$ sudo mount -t ext4 linux_rootfs.ext4 tmpfs/ -o loop
+</span></span><span class="line"><span class="cl">$ sudo cp -af linux_rootfs/* tmpfs/
+</span></span><span class="line"><span class="cl">$ sudo umount tmpfs
+</span></span><span class="line"><span class="cl">$ sudo chmod <span class="m">777</span> linux_rootfs.ext4
+</span></span></code></pre></div><p>挂载拷贝在 /root 下进行</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/20230811010323.png" alt="" />
+    
+  </figure>
+
+
+qemu aarch64启动命令写到 run.sh里面
+
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/20230811010406.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>给予权限后运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo chmod <span class="m">777</span> ./*
+</span></span><span class="line"><span class="cl">sudo ./run.sh
+</span></span></code></pre></div><p>用户名默认root
+
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/20230811010436.png" alt="" />
+    
+  </figure>
+
+</p>
+<div id="交叉编译-strace-并安装" class="anchor"></div>
+<h3 class="relative group">交叉编译 strace 并安装 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%ba%a4%e5%8f%89%e7%bc%96%e8%af%91-strace-%e5%b9%b6%e5%ae%89%e8%a3%85" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>在root下clone strace</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@ljahum-vm:~# ls ./strace/
+</span></span><span class="line"><span class="cl">aclocal.m4      config.status   LGPL-2.1-or-later                                README-hacking
+</span></span><span class="line"><span class="cl">attic           configure       m4                                               README.md
+</span></span><span class="line"><span class="cl">AUTHORS         configure.ac    maint                                            src
+</span></span><span class="line"><span class="cl">autom4te.cache  COPYING         Makefile                                         strace.spec
+</span></span><span class="line"><span class="cl">bootstrap       CREDITS.in      Makefile.am                                      strace.spec.in
+</span></span><span class="line"><span class="cl">build-aux       debian          Makefile.in                                      strace.svg
+</span></span><span class="line"><span class="cl">bundled         dist            NEWS                                             tests
+</span></span><span class="line"><span class="cl">ChangeLog-CVS   doc             README                                           tests-m32
+</span></span><span class="line"><span class="cl">ci              INSTALL         README-configure                                 tests-mx32
+</span></span><span class="line"><span class="cl">config.log      INSTALL-git.md  README-github_gitlab-autogenerated-archives.txt  tmp.sh
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/root
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~#
+</span></span></code></pre></div><p>在/root 下解压gdb</p>
+<p>解压gdb8的命令</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/20230811010449.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>在make前的</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure --host<span class="o">=</span>aarch64-linux-gnu --target<span class="o">=</span>aarch64-linux-gnu --program-prefix<span class="o">=</span>aarch64-linux- <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--prefix<span class="o">=</span>/home/jiaming/Documents/jailhouse-rpi4/qemu-arm64/gdb-8.0/gdb-build
+</span></span></code></pre></div><p>可以把&ndash;prefix后面的目标目录换成自己user的目录</p>
+<hr>
+<div id="make-error" class="anchor"></div>
+<h3 class="relative group">make error 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#make-error" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>如果make install出现了</p>
+<p><a href="https://blog.csdn.net/weixin_44602409/article/details/115716913"   target="_blank">
+    https://blog.csdn.net/weixin_44602409/article/details/115716913</a></p>
+<p>的bug1</p>
+<p>修改以下文件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@ljahum-vm:~/gdb-8.0# ls -l ./gdb/nat/linux-ptrace.*
+</span></span><span class="line"><span class="cl">-rw-rw-rw- <span class="m">1</span> ljahum <span class="m">200</span> <span class="m">18011</span> 8月  <span class="m">10</span> 22:58 ./gdb/nat/linux-ptrace.c
+</span></span><span class="line"><span class="cl">-rw-rw-rw- <span class="m">1</span> ljahum <span class="m">200</span>  <span class="m">7709</span> 8月  <span class="m">10</span> 22:59 ./gdb/nat/linux-ptrace.h
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~/gdb-8.0# <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/root/gdb-8.0
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~/gdb-8.0#
+</span></span></code></pre></div><p>linux-ptrace.c</p>
+<p>注释掉</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/20230811010536.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>linux-ptrace.h</p>
+<p>加入</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/20230811010536.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>重新make -j8</p>
+<p>再make install</p>
+<div id="makeinfo-not-found" class="anchor"></div>
+<h3 class="relative group">makeinfo not found 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#makeinfo-not-found" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<hr>
+<p><code>sudo apt-get install texinfo</code></p>
+<p>makeinfo没有安装的错误</p>
+<div id="运行" class="anchor"></div>
+<h3 class="relative group">运行 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%bf%90%e8%a1%8c" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>编写gdb启动脚本</p>
+<p>编写qemu启动脚本</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@ljahum-vm:~# vim rungdb.sh
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# vim dbgscript
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# chmod <span class="m">777</span> ./*
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# cat run
+</span></span><span class="line"><span class="cl">rungdb.sh  run.sh     
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# cat rungdb.sh 
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/bash</span>
+</span></span><span class="line"><span class="cl">aarch64-linux-gdb ./linux-4.14.221/vmlinux  -x dbgscript
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# cat dbgscript 
+</span></span><span class="line"><span class="cl">target remote localhost:1234
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# cat run
+</span></span><span class="line"><span class="cl">rungdb.sh  run.sh     
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# cat run
+</span></span><span class="line"><span class="cl">rungdb.sh  run.sh     
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~# cat run.sh 
+</span></span><span class="line"><span class="cl">/usr/local/test/bin/qemu-system-aarch64 	<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-m <span class="m">1024</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-cpu cortex-a57 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-M virt -nographic <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-smp <span class="m">4</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-kernel linux-4.14.221/arch/arm64/boot/Image <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-append <span class="s2">&#34;noinintrd sched_debug root=/dev/vda rootfstype=ext4 rw crashkernel=256M loglevel=8&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-drive <span class="k">if</span><span class="o">=</span>none,file<span class="o">=</span>linux_rootfs.ext4,id<span class="o">=</span>hd0 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-device virtio-blk-device,drive<span class="o">=</span>hd0 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	-S -s
+</span></span><span class="line"><span class="cl">root@ljahum-vm:~#
+</span></span></code></pre></div><p>先运行qemu再运行gdb</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/20230811010641.png" alt="" />
+    
+  </figure>
+
+</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/20230811010706.png" alt="" />
+    
+  </figure>
+
+
+看起来非常上流</p>
+<p>会看镜像的成色</p>
+<p>完全符合我对Cortex-A57芯片的想象</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@lja-PC:~# lscpu 
+</span></span><span class="line"><span class="cl">Architecture:        aarch64
+</span></span><span class="line"><span class="cl">Byte Order:          Little Endian
+</span></span><span class="line"><span class="cl">CPU<span class="o">(</span>s<span class="o">)</span>:              <span class="m">4</span>
+</span></span><span class="line"><span class="cl">On-line CPU<span class="o">(</span>s<span class="o">)</span> list: 0-3
+</span></span><span class="line"><span class="cl">Thread<span class="o">(</span>s<span class="o">)</span> per core:  <span class="m">1</span>
+</span></span><span class="line"><span class="cl">Core<span class="o">(</span>s<span class="o">)</span> per socket:  <span class="m">4</span>
+</span></span><span class="line"><span class="cl">Socket<span class="o">(</span>s<span class="o">)</span>:           <span class="m">1</span>
+</span></span><span class="line"><span class="cl">NUMA node<span class="o">(</span>s<span class="o">)</span>:        <span class="m">1</span>
+</span></span><span class="line"><span class="cl">Vendor ID:           ARM
+</span></span><span class="line"><span class="cl">Model:               <span class="m">0</span>
+</span></span><span class="line"><span class="cl">Model name:          Cortex-A57
+</span></span><span class="line"><span class="cl">Stepping:            r1p0
+</span></span><span class="line"><span class="cl">BogoMIPS:            125.00
+</span></span><span class="line"><span class="cl">NUMA node0 CPU<span class="o">(</span>s<span class="o">)</span>:   0-3
+</span></span><span class="line"><span class="cl">Flags:               fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+</span></span><span class="line"><span class="cl">root@lja-PC:~# ifconfig 
+</span></span><span class="line"><span class="cl">enp0s1: <span class="nv">flags</span><span class="o">=</span>4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu <span class="m">1500</span>
+</span></span><span class="line"><span class="cl">        ether 52:54:00:12:34:56  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Ethernet<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        RX packets <span class="m">0</span>  bytes <span class="m">0</span> <span class="o">(</span>0.0 B<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
+</span></span><span class="line"><span class="cl">        TX packets <span class="m">0</span>  bytes <span class="m">0</span> <span class="o">(</span>0.0 B<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">lo: <span class="nv">flags</span><span class="o">=</span>73&lt;UP,LOOPBACK,RUNNING&gt;  mtu <span class="m">65536</span>
+</span></span><span class="line"><span class="cl">        inet 127.0.0.1  netmask 255.0.0.0
+</span></span><span class="line"><span class="cl">        loop  txqueuelen <span class="m">1000</span>  <span class="o">(</span>Local Loopback<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        RX packets <span class="m">2088</span>  bytes <span class="m">204552</span> <span class="o">(</span>199.7 KiB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        RX errors <span class="m">0</span>  dropped <span class="m">0</span>  overruns <span class="m">0</span>  frame <span class="m">0</span>
+</span></span><span class="line"><span class="cl">        TX packets <span class="m">2088</span>  bytes <span class="m">204552</span> <span class="o">(</span>199.7 KiB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        TX errors <span class="m">0</span>  dropped <span class="m">0</span> overruns <span class="m">0</span>  carrier <span class="m">0</span>  collisions <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">root@lja-PC:~#
+</span></span></code></pre></div><p>可以给网卡配置和虚拟机同网段的ip来传文件（但看起来不需要）</p>
+
+        </div>
+                
+        
+
+        
+
+          
+      </div>
+     
+     <script>
+        var oid = "views_articles\\qemu021\\index.md"
+        var oid_likes = "likes_articles\\qemu021\\index.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/articles/cntest/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >中文测试 中文測試 Chinese test</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-07-30 13:23:11 &#43;0000 UTC">30 July 2023</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2023
+      ベーコン
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://ljahum.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
