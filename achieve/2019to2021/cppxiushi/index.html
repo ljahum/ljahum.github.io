@@ -68,7 +68,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ljahum.github.io/achieve/2019to2021/cppxiushi/" /><meta property="article:section" content="achieve" />
 <meta property="article:published_time" content="2020-03-14T15:12:51+00:00" />
-<meta property="article:modified_time" content="2020-03-14T15:12:51+00:00" /><meta property="og:site_name" content="#cd /home" />
+<meta property="article:modified_time" content="2020-03-14T15:12:51+00:00" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="修饰函数规则"/>
@@ -159,7 +159,10 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px] bg-neutral dark:bg-neutral-800" style="z-index:100">
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -494,6 +497,9 @@
 
 
 
+  </div>
+</div>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -609,7 +615,7 @@
     
      <div
       class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
 
          <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
@@ -783,7 +789,7 @@ U表示结构类型，通常后跟结构体的类型名，用“@@”表示结�
 <code>CopyInfo(const CTest &amp;src)</code></p>
 <p>函数CopyInfo只有一个参数，是对类CTest的const引用参数，其函数修饰名为:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="o">?</span><span class="n">CopyInfo</span> <span class="err">@</span><span class="n">CTest</span>   <span class="err">@@</span><span class="n">IAE</span>     <span class="n">X</span>       <span class="n">ABV1</span>         <span class="err">@@</span><span class="n">Z</span>
-</span></span><span class="line"><span class="cl">				  <span class="k">protected</span>    <span class="err">为</span><span class="n">const</span><span class="err">类型的引用</span>
+</span></span><span class="line"><span class="cl">				  <span class="k">protected</span>    <span class="err">为</span><span class="n">const类型的引用</span>
 </span></span></code></pre></div><p>InsightClass是一个<strong>共有的const函数</strong>，它的成员函数标识是“@@QBE&quot;:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="o">?</span><span class="n">InsightClass</span><span class="err">@</span><span class="n">CTest</span>  <span class="err">@@</span><span class="n">QBE</span>   <span class="n">J</span> <span class="n">K</span>  <span class="err">@</span><span class="n">Z</span><span class="err">”。</span> 
 </span></span><span class="line"><span class="cl">					<span class="k">public</span>

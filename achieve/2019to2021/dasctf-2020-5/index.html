@@ -68,7 +68,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ljahum.github.io/achieve/2019to2021/dasctf-2020-5/" /><meta property="article:section" content="achieve" />
 <meta property="article:published_time" content="2020-05-26T01:16:19+00:00" />
-<meta property="article:modified_time" content="2020-05-26T01:16:19+00:00" /><meta property="og:site_name" content="#cd /home" />
+<meta property="article:modified_time" content="2020-05-26T01:16:19+00:00" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="安恒五月赛-2020-re部分"/>
@@ -159,7 +159,10 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px] bg-neutral dark:bg-neutral-800" style="z-index:100">
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -494,6 +497,9 @@
 
 
 
+  </div>
+</div>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -609,7 +615,7 @@
     
      <div
       class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
 
          <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
@@ -771,7 +777,7 @@
 </span></span><span class="line"><span class="cl">    <span class="n">fseek</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">SEEK_END</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="n">ftell</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span><span class="c1">//这样可以得到文大小
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">cheak</span><span class="p">(</span><span class="n">size</span><span class="p">);</span> 
-</span></span><span class="line"><span class="cl"><span class="err">文件大小</span>  <span class="n">pe</span><span class="err">信息位置</span>   <span class="err">长度</span>
+</span></span><span class="line"><span class="cl"><span class="err">文件大小</span>  <span class="n">pe信息位置</span>   <span class="err">长度</span>
 </span></span><span class="line"><span class="cl"><span class="mh">0xBE03</span>   <span class="mh">0x1C40</span>       <span class="mi">64</span> 	<span class="err">逆序</span>
 </span></span><span class="line"><span class="cl"><span class="mh">0xBDF1</span>   <span class="mh">0x1c20</span>       <span class="mi">32</span> 	<span class="err">正序</span>
 </span></span></code></pre></div><p>然后继续撸脚本把文件提取出来，先新建一个空的“new”文件在执行以下代码</p>
@@ -836,7 +842,7 @@
 <p>在 0x004015C0 处的函数是个标准的base64，交叉引用一下可以小刀输入的位置和判断的位置，进行找一下可以在 0x00401BEE处的函数了找到给密文赋值的语句</p>
 <p>稍微注意一下赋值的地址就可以把密文拼出来了</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="mh">0x00401AD7</span><span class="err">处</span>
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="kr">__cdecl</span> <span class="n">fun</span><span class="p">(</span><span class="kt">int</span> <span class="n">a1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="kr">__cdecl</span> <span class="nf">fun</span><span class="p">(</span><span class="kt">int</span> <span class="n">a1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="n">tab</span> <span class="o">=</span> <span class="sc">&#39;Q&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="n">byte_40D041</span> <span class="o">=</span> <span class="sc">&#39;k&#39;</span><span class="p">;</span>
