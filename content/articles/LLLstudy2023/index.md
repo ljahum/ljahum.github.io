@@ -19,7 +19,6 @@ hiddenFromHomePage: false
 math:
   enable: true
 ---
-<!--more-->
 {{< katex >}}
 
 # 两个格密码相关的狠活
