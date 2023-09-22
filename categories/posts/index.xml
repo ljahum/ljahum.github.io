@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Thu, 21 Sep 2023 00:07:00 +0800</lastBuildDate><atom:link href="https://ljahum.github.io/categories/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Sep 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://ljahum.github.io/achieve/about/</link>
@@ -16,6 +16,16 @@
       <guid>https://ljahum.github.io/achieve/about/</guid>
       <description></description>
       
+    </item>
+    
+    <item>
+      <title>notes of CryptoCTF 2023 </title>
+      <link>https://ljahum.github.io/articles/cryptoctf2023note/</link>
+      <pubDate>Thu, 21 Sep 2023 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/cryptoctf2023note/</guid>
+      <description>https://github.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/cryptoctf2023note/featured.png" />
     </item>
     
     <item>
