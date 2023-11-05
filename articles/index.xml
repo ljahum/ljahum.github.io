@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on #cd /home</title>
-    <link>https://ljahum258.github.io/articles/</link>
+    <link>https://ljahum.github.io/articles/</link>
     <description>Recent content in Projects on #cd /home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Sat, 04 Nov 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum258.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Nov 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rsa all in two</title>
-      <link>https://ljahum258.github.io/articles/rsaallintwo/</link>
+      <link>https://ljahum.github.io/articles/rsaallintwo/</link>
       <pubDate>Sat, 04 Nov 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/articles/rsaallintwo/</guid>
+      <guid>https://ljahum.github.io/articles/rsaallintwo/</guid>
       <description>rsa all in two # leak (p^q)&amp;raquo;nbits # from Crypto.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/articles/rsaallintwo/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/rsaallintwo/featured.png" />
     </item>
     
     <item>
       <title>10月小结</title>
-      <link>https://ljahum258.github.io/articles/10month/</link>
+      <link>https://ljahum.github.io/articles/10month/</link>
       <pubDate>Fri, 29 Sep 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/articles/10month/</guid>
+      <guid>https://ljahum.github.io/articles/10month/</guid>
       <description>10月小结 # github号被封了，抑郁了。被阿美莉卡狠狠卡脖子了</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/articles/10month/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/10month/featured.png" />
     </item>
     
     <item>
       <title>notes of CryptoCTF 2023 </title>
-      <link>https://ljahum258.github.io/articles/cryptoctf2023note/</link>
+      <link>https://ljahum.github.io/articles/cryptoctf2023note/</link>
       <pubDate>Thu, 21 Sep 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/articles/cryptoctf2023note/</guid>
+      <guid>https://ljahum.github.io/articles/cryptoctf2023note/</guid>
       <description>https://github.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/articles/cryptoctf2023note/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/cryptoctf2023note/featured.png" />
     </item>
     
     <item>
       <title>2 examples of CTF LLL crypto in 2023</title>
-      <link>https://ljahum258.github.io/articles/lllstudy2023/</link>
+      <link>https://ljahum.github.io/articles/lllstudy2023/</link>
       <pubDate>Thu, 21 Sep 2023 00:07:00 +0800</pubDate>
       
-      <guid>https://ljahum258.github.io/articles/lllstudy2023/</guid>
+      <guid>https://ljahum.github.io/articles/lllstudy2023/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/articles/lllstudy2023/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/lllstudy2023/featured.png" />
     </item>
     
     <item>
       <title>qemu from zero 2 hero</title>
-      <link>https://ljahum258.github.io/articles/qemu021/</link>
+      <link>https://ljahum.github.io/articles/qemu021/</link>
       <pubDate>Wed, 09 Aug 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/articles/qemu021/</guid>
+      <guid>https://ljahum.github.io/articles/qemu021/</guid>
       <description>算是了却了大二入门kernel pwn未果的心结</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/articles/qemu021/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/qemu021/featured.png" />
     </item>
     
     <item>
       <title>中文测试 中文測試 Chinese test</title>
-      <link>https://ljahum258.github.io/articles/cntest/</link>
+      <link>https://ljahum.github.io/articles/cntest/</link>
       <pubDate>Sun, 30 Jul 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/articles/cntest/</guid>
+      <guid>https://ljahum.github.io/articles/cntest/</guid>
       <description>about # 123123 id：ljahum@Syclover</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/articles/cntest/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/cntest/featured.png" />
     </item>
     
     <item>
       <title>A simple study of OCB2</title>
-      <link>https://ljahum258.github.io/articles/ocb2/</link>
+      <link>https://ljahum.github.io/articles/ocb2/</link>
       <pubDate>Sun, 29 Aug 2021 00:07:00 +0800</pubDate>
       
-      <guid>https://ljahum258.github.io/articles/ocb2/</guid>
+      <guid>https://ljahum.github.io/articles/ocb2/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/articles/ocb2/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/ocb2/featured.png" />
     </item>
     
   </channel>

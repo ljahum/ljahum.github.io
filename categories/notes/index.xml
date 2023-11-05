@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>notes on #cd /home</title>
-    <link>https://ljahum258.github.io/categories/notes/</link>
+    <link>https://ljahum.github.io/categories/notes/</link>
     <description>Recent content in notes on #cd /home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Tue, 23 Feb 2021 00:07:06 +0000</lastBuildDate><atom:link href="https://ljahum258.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Feb 2021 00:07:06 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sagemath入门笔记.md</title>
-      <link>https://ljahum258.github.io/achieve/2019to2021/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Tue, 23 Feb 2021 00:07:06 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/achieve/2019to2021/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/sagemath%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;p&gt;[toc]&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>爱德华曲线-蒙哥马利.md</title>
-      <link>https://ljahum258.github.io/achieve/2019to2021/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/</link>
       <pubDate>Tue, 23 Feb 2021 00:06:51 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/achieve/2019to2021/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E7%88%B1%E5%BE%B7%E5%8D%8E%E6%9B%B2%E7%BA%BF-%E8%92%99%E5%93%A5%E9%A9%AC%E5%88%A9/</guid>
       <description>[toc]</description>
       
     </item>
     
     <item>
       <title>ntru密码算法.md</title>
-      <link>https://ljahum258.github.io/achieve/2019to2021/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/</link>
       <pubDate>Mon, 22 Feb 2021 19:22:03 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/achieve/2019to2021/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/ntru%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95/</guid>
       <description>[toc]</description>
       
     </item>
     
     <item>
       <title>连分数代码.md</title>
-      <link>https://ljahum258.github.io/achieve/2019to2021/%E8%BF%9E%E5%88%86%E6%95%B0%E4%BB%A3%E7%A0%81/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/%E8%BF%9E%E5%88%86%E6%95%B0%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Mon, 22 Feb 2021 19:19:39 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/achieve/2019to2021/%E8%BF%9E%E5%88%86%E6%95%B0%E4%BB%A3%E7%A0%81/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/%E8%BF%9E%E5%88%86%E6%95%B0%E4%BB%A3%E7%A0%81/</guid>
       <description>[toc]</description>
       
     </item>
     
     <item>
       <title>sagemath基础</title>
-      <link>https://ljahum258.github.io/achieve/2019to2021/sagemath/</link>
+      <link>https://ljahum.github.io/achieve/2019to2021/sagemath/</link>
       <pubDate>Tue, 24 Nov 2020 20:46:21 +0000</pubDate>
       
-      <guid>https://ljahum258.github.io/achieve/2019to2021/sagemath/</guid>
+      <guid>https://ljahum.github.io/achieve/2019to2021/sagemath/</guid>
       <description>#整数域,有理数域和实数域 ZZ(3) QQ(0.</description>
       
     </item>
