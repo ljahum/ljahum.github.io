@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2023 on #cd /home</title>
-    <link>https://ljahum.github.io/categories/2023/</link>
+    <link>https://ljahum258.github.io/categories/2023/</link>
     <description>Recent content in 2023 on #cd /home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Sun, 30 Jul 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/2023/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum258.github.io/categories/2023/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中文测试 中文測試 Chinese test</title>
-      <link>https://ljahum.github.io/articles/cntest/</link>
+      <link>https://ljahum258.github.io/articles/cntest/</link>
       <pubDate>Sun, 30 Jul 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum.github.io/articles/cntest/</guid>
+      <guid>https://ljahum258.github.io/articles/cntest/</guid>
       <description>about # 123123 id：ljahum@Syclover</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/cntest/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/articles/cntest/featured.png" />
     </item>
     
   </channel>

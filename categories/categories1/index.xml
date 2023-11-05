@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>categories1 on #cd /home</title>
-    <link>https://ljahum.github.io/categories/categories1/</link>
+    <link>https://ljahum258.github.io/categories/categories1/</link>
     <description>Recent content in categories1 on #cd /home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Thu, 20 Jul 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/categories1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jul 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum258.github.io/categories/categories1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://ljahum.github.io/about/</link>
+      <link>https://ljahum258.github.io/about/</link>
       <pubDate>Thu, 20 Jul 2023 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum.github.io/about/</guid>
+      <guid>https://ljahum258.github.io/about/</guid>
       <description>Info # 「以前の名前はljahumですが、ベーコンとも呼んでください。」</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/about/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum258.github.io/about/featured.jpg" />
     </item>
     
   </channel>
