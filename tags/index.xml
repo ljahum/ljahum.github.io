@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Sat, 04 Nov 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Dec 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dev</title>
+      <link>https://ljahum.github.io/tags/dev/</link>
+      <pubDate>Sat, 09 Dec 2023 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/tags/dev/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>net</title>
+      <link>https://ljahum.github.io/tags/net/</link>
+      <pubDate>Sat, 09 Dec 2023 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/tags/net/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>bin</title>
+      <link>https://ljahum.github.io/tags/bin/</link>
+      <pubDate>Tue, 21 Nov 2023 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/tags/bin/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>crypto</title>
       <link>https://ljahum.github.io/tags/crypto/</link>
@@ -24,16 +54,6 @@
       <pubDate>Sat, 04 Nov 2023 13:23:11 +0000</pubDate>
       
       <guid>https://ljahum.github.io/tags/math/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>bin</title>
-      <link>https://ljahum.github.io/tags/bin/</link>
-      <pubDate>Wed, 09 Aug 2023 13:23:11 +0000</pubDate>
-      
-      <guid>https://ljahum.github.io/tags/bin/</guid>
       <description></description>
       
     </item>
