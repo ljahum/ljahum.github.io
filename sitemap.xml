@@ -23,12 +23,36 @@
     
       <url>
             <loc>https://ljahum.github.io/</loc>
-            <lastmod>2023-12-09T13:23:11+00:00</lastmod>
+            <lastmod>2023-12-20T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
     
   
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/</loc>
+            <lastmod>2023-12-20T13:23:11+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/antiminer/</loc>
+            <lastmod>2023-12-20T13:23:11+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
     
   
     
@@ -42,21 +66,6 @@
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ljahum.github.io/articles/</loc>
-            <lastmod>2023-12-09T13:23:11+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
     
   
     

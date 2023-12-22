@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 ベーコン</copyright>
-    <lastBuildDate>Tue, 21 Nov 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/bin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/bin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>逆矿机下载器</title>
+      <link>https://ljahum.github.io/articles/antiminer/</link>
+      <pubDate>Wed, 20 Dec 2023 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/antiminer/</guid>
+      <description>逆矿机下载器 # 有一台vps被弱口令干了</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/antiminer/featured.png" />
+    </item>
+    
     <item>
       <title>data2023-c2分析 </title>
       <link>https://ljahum.github.io/articles/datacon2023/</link>
