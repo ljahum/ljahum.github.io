@@ -100,7 +100,7 @@
     "keywords": ["bin",null],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2024"
+    "wordCount": "2030"
   }]
   </script>
 
@@ -160,11 +160,7 @@
   </div>
   
   
-  <div class="min-h-[148px]"></div>
-<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
-  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
-  <div class="relative max-w-[64rem] ml-auto mr-auto">
-    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -499,16 +495,6 @@
 
 
 
-  </div>
-</div>
-<script>
-  window.addEventListener('scroll', function (e) {
-    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    var background_blur = document.getElementById('menu-blur');
-    background_blur.style.opacity = (scroll / 300);
-  });
-</script>
-
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -589,7 +575,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-12-20 13:23:11 &#43;0000 UTC">20 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>2024 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">10 mins</span>
+  <time datetime="2023-12-20 13:23:11 &#43;0000 UTC">20 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>2030 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">10 mins</span>
   
 
   
@@ -711,7 +697,7 @@
     
      <div
       class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
 
          <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
@@ -1488,9 +1474,14 @@
             style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span>        
     
 </h3>
+<p>程序把shell命令用rc4加密在了硬编码里面，那么最啥波一的办法就是逆向算法然后手动写解密脚本</p>
+<p>我们选择断网调试，但程序会exce调用子进程，在子进程里面解密，</p>
+<p>但我又不想attach上去，那么想想办法能不能直接在父进程解密</p>
+<p>嘻嘻😋😋😋😋</p>
+<hr>
 <p>在518行有一个ret值会判段pid</p>
-<p>如果当前为父进程则596行<code>execvp(shll, varg);</code></p>
-<p>varg装载默认变量执行 <code>sh &lt;程序名&gt;.elf</code></p>
+<p>如果当前为父进程(pid=0)则596行<code>execvp(shll, varg);</code></p>
+<p>varg装载默认变量执行 <code>sh &lt;程序名&gt;.elf</code> , 相当于自己再调用自己</p>
 <p>如果为子进程则varg装载shell命令</p>
 <p>执行 <code>echo helloworld</code></p>
 <blockquote>
