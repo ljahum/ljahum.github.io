@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 ベーコン</copyright>
-    <lastBuildDate>Wed, 20 Dec 2023 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://ljahum.github.io/achieve/about/</link>
@@ -26,6 +26,16 @@
       <guid>https://ljahum.github.io/achieve/to_noiton/</guid>
       <description></description>
       
+    </item>
+    
+    <item>
+      <title>flowdroid使用</title>
+      <link>https://ljahum.github.io/articles/flowdroidusage/</link>
+      <pubDate>Mon, 15 Jan 2024 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/flowdroidusage/</guid>
+      <description>辛粘块洛！ # 环境 win11 ide：idea2023 jdk17、jdk8 最近在做隐私相关的工作，手工逆向CTF还行，在商用app里面大浪淘沙太痛苦了</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/flowdroidusage/featured.jpg" />
     </item>
     
     <item>
@@ -124,7 +134,7 @@
       <pubDate>Thu, 20 Jul 2023 13:23:11 +0000</pubDate>
       
       <guid>https://ljahum.github.io/about/</guid>
-      <description>Info # 「ljahumですが、ベーコンとも呼んでください。」</description>
+      <description>Info # 「ljahum/ベーコンですが</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/about/featured.jpg" />
     </item>
     

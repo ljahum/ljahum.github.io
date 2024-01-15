@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>flowdroid使用 &middot; #cd /home</title>
+  <meta name="title" content="flowdroid使用 &middot; #cd /home" />
+  
+  
+  <meta name="keywords" content="bin, " />
+  
+  
+  <link rel="canonical" href="https://ljahum.github.io/articles/flowdroidusage/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.8d8ef9f406ae76aa0753f63221ea827aba6a09e5f22e065eb881e526880c7ba14c4c2c42e95cfee0b865d249aa0330266c5f7f926ce6e6218640879361dc8179.css"
+    integrity="sha512-jY759AaudqoHU/YyIeqCerpqCeXyLgZeuIHlJogMe6FMTCxC6Vz&#43;4Lhl0kmqAzAmbF9/kmzm5iGGQIeTYdyBeQ==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.34dfb4e6b05b47b0a3599f50035f9bbb18c2d36a26aa4c0ea7acc4936489d4c2a55f65683d53e3c4215337e6a8c02e554881af2da86b5783c96837ae3d4e98f6.js"
+    integrity="sha512-NN&#43;05rBbR7CjWZ9QA1&#43;buxjC02omqkwOp6zEk2SJ1MKlX2VoPVPjxCFTN&#43;aowC5VSIGvLahrV4PJaDeuPU6Y9g==" data-copy="" data-copied=""></script>
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="flowdroid使用" />
+<meta property="og:description" content="辛粘块洛！ # 环境 win11 ide：idea2023 jdk17、jdk8 最近在做隐私相关的工作，手工逆向CTF还行，在商用app里面大浪淘沙太痛苦了" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ljahum.github.io/articles/flowdroidusage/" /><meta property="og:image" content="https://ljahum.github.io/articles/flowdroidusage/featured.jpg"/><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2024-01-15T13:23:11+00:00" />
+<meta property="article:modified_time" content="2024-01-15T13:23:11+00:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ljahum.github.io/articles/flowdroidusage/featured.jpg"/>
+<meta name="twitter:title" content="flowdroid使用"/>
+<meta name="twitter:description" content="辛粘块洛！ # 环境 win11 ide：idea2023 jdk17、jdk8 最近在做隐私相关的工作，手工逆向CTF还行，在商用app里面大浪淘沙太痛苦了"/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Projects",
+    "name": "flowdroid使用",
+    "headline": "flowdroid使用",
+    
+    "abstract": "辛粘块洛！ # 环境 win11 ide：idea2023 jdk17、jdk8 最近在做隐私相关的工作，手工逆向CTF还行，在商用app里面大浪淘沙太痛苦了",
+    "inLanguage": "en",
+    "url" : "https:\/\/ljahum.github.io\/articles\/flowdroidusage\/",
+    "author" : {
+      "@type": "Person",
+      "name": "ベーコン"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-01-15T13:23:11\u002b00:00",
+    "datePublished": "2024-01-15T13:23:11\u002b00:00",
+    
+    "dateModified": "2024-01-15T13:23:11\u002b00:00",
+    
+    "keywords": ["bin"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "904"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="ベーコン" />
+  
+  
+  
+  <link href="https://github.com/ljahum" rel="me" />
+  
+  
+  <link href="https://www.pinterest.jp/roomoflja/" rel="me" />
+  
+  
+  <link href="mailto:roomoflja@gmail.com" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">#cd /home</a>
+
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/articles/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Projects">
+        Draft
+    </p>
+</a>
+
+
+            
+            
+  <a href="/about/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="About">
+        About
+    </p>
+</a>
+
+
+            
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a  href="/achieve/"   class="text-base font-medium text-gray-500 hover:text-gray-900" title="archive">
+      Archive
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/categories/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Categories">
+            Categories
+          </p>
+        </a>
+        
+        <a href="/tags/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+          </p>
+        </a>
+        
+        <a href="https://ljahum.notion.site/Bass-Ment-073326638a86449c9a06d6467fed470f?pvs=4" 
+          target="_blank"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Notion
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/articles/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Projects">
+            Draft
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="About">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                     
+  <li class="mt-1">
+    <a class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="archive">
+            Archive
+        </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Categories">
+            Categories
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/tags/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="https://ljahum.notion.site/Bass-Ment-073326638a86449c9a06d6467fed470f?pvs=4"  target="_blank"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Notion
+        </p>
+    </a>
+</li>
+
+<li class="mb-2"></li>
+
+
+
+                    
+                    
+
+                </ul>
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/articles/flowdroidusage/featured.jpg);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      flowdroid使用
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-01-15 13:23:11 &#43;0000 UTC">15 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>904 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+    
+    <div class="flex">
+  
+  
+  
+  
+  <img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width="96" height="96"
+    alt="ベーコン" src="/img/author_hu17cee0bfacff75e0d2391324bf5172b9_44596_192x192_fill_q75_box_center.jpg" />
+  
+  
+  <div class="place-self-center">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Author
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      ベーコン
+    </div>
+    
+    
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">ljahum-beacon</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/ljahum"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.pinterest.jp/roomoflja/"
+          target="_blank"
+          aria-label="Pinterest"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="mailto:roomoflja@gmail.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+    
+
+    
+
+    
+
+    
+    <div class="mb-5"></div>
+    
+  
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#抄个生成函数调用图的代码--输出cge格式">抄个生成函数调用图的代码  输出cge格式</a></li>
+    <li><a href="#test">TEST</a></li>
+    <li><a href="#flowdroid-jar包使用">flowdroid jar包使用</a></li>
+    <li><a href="#编写自己的sourcesandsinkstxt">编写自己的SourcesAndSinks.txt</a></li>
+    <li><a href="#confusing">confusing</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#抄个生成函数调用图的代码--输出cge格式">抄个生成函数调用图的代码  输出cge格式</a></li>
+    <li><a href="#test">TEST</a></li>
+    <li><a href="#flowdroid-jar包使用">flowdroid jar包使用</a></li>
+    <li><a href="#编写自己的sourcesandsinkstxt">编写自己的SourcesAndSinks.txt</a></li>
+    <li><a href="#confusing">confusing</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="max-w-prose mb-20">
+          <div id="辛粘块洛" class="anchor"></div>
+<h1 class="relative group">辛粘块洛！ 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%be%9b%e7%b2%98%e5%9d%97%e6%b4%9b" aria-label="Anchor">#</a></span>        
+    
+</h1>
+<ul>
+<li>环境 win11</li>
+<li>ide：idea2023</li>
+<li>jdk17、jdk8</li>
+</ul>
+<blockquote>
+<p>最近在做隐私相关的工作，手工逆向CTF还行，在商用app里面大浪淘沙太痛苦了</p>
+<p>来玩一玩上古污点分析工具，虽然有磕盐爷对其进行了二开，搞出了很优秀的工具</p>
+<p>但由于目标仅仅限于发小论文，缺乏维护</p>
+<p>代码基本主打一个废</p>
+<p>花了一天时间看了看怎么玩这个东西，感觉还行，食之无味弃之可惜</p>
+</blockquote>
+<p>导入dependencies</p>
+<p>官网给的用不了，上网找了一个</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="n">xml</span> <span class="n">version</span><span class="o">=</span><span class="s2">&#34;1.0&#34;</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;UTF-8&#34;</span><span class="o">?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">project</span> <span class="n">xmlns</span><span class="o">=</span><span class="s2">&#34;http://maven.apache.org/POM/4.0.0&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="nl">xmlns:</span><span class="n">xsi</span><span class="o">=</span><span class="s2">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="nl">xsi:</span><span class="n">schemaLocation</span><span class="o">=</span><span class="s2">&#34;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">modelVersion</span><span class="o">&gt;</span><span class="mf">4.0</span><span class="o">.</span><span class="mi">0</span><span class="o">&lt;</span><span class="s">/modelVersion&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">    &lt;groupId&gt;org.example&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">untitled</span><span class="o">&lt;</span><span class="s">/artifactId&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">    &lt;version&gt;1.0-SNAPSHOT&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">properties</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="n">maven</span><span class="o">.</span><span class="na">compiler</span><span class="o">.</span><span class="na">source</span><span class="o">&gt;</span><span class="mi">11</span><span class="o">&lt;</span><span class="s">/maven.compiler.source&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">        &lt;maven.compiler.target&gt;11&lt;/</span><span class="n">maven</span><span class="o">.</span><span class="na">compiler</span><span class="o">.</span><span class="na">target</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="n">project</span><span class="o">.</span><span class="na">build</span><span class="o">.</span><span class="na">sourceEncoding</span><span class="o">&gt;</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span><span class="o">&lt;</span><span class="s">/project.build.sourceEncoding&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">    &lt;/</span><span class="n">properties</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">dependencies</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">de</span><span class="o">.</span><span class="na">fraunhofer</span><span class="o">.</span><span class="na">sit</span><span class="o">.</span><span class="na">sse</span><span class="o">.</span><span class="na">flowdroid</span><span class="o">&lt;</span><span class="s">/groupId&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">            &lt;artifactId&gt;soot-infoflow&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="mf">2.10</span><span class="o">.</span><span class="mi">0</span><span class="o">&lt;</span><span class="s">/version&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">        &lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">de</span><span class="o">.</span><span class="na">fraunhofer</span><span class="o">.</span><span class="na">sit</span><span class="o">.</span><span class="na">sse</span><span class="o">.</span><span class="na">flowdroid</span><span class="o">&lt;</span><span class="s">/groupId&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">            &lt;artifactId&gt;soot-infoflow-summaries&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="mf">2.10</span><span class="o">.</span><span class="mi">0</span><span class="o">&lt;</span><span class="s">/version&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">        &lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">de</span><span class="o">.</span><span class="na">fraunhofer</span><span class="o">.</span><span class="na">sit</span><span class="o">.</span><span class="na">sse</span><span class="o">.</span><span class="na">flowdroid</span><span class="o">&lt;</span><span class="s">/groupId&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">            &lt;artifactId&gt;soot-infoflow-android&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="mf">2.10</span><span class="o">.</span><span class="mi">0</span><span class="o">&lt;</span><span class="s">/version&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">        &lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">org</span><span class="o">.</span><span class="na">codehaus</span><span class="o">.</span><span class="na">woodstox</span><span class="o">&lt;</span><span class="s">/groupId&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">            &lt;artifactId&gt;stax2-api&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="mf">3.1</span><span class="o">.</span><span class="mi">1</span><span class="o">&lt;</span><span class="s">/version&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">        &lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;!--</span> <span class="nl">https:</span><span class="c1">//mvnrepository.com/artifact/org.codehaus.woodstox/woodstox-core-asl --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">org</span><span class="o">.</span><span class="na">codehaus</span><span class="o">.</span><span class="na">woodstox</span><span class="o">&lt;</span><span class="s">/groupId&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">            &lt;artifactId&gt;woodstox-core-asl&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="mf">4.0</span><span class="o">.</span><span class="mi">6</span><span class="o">&lt;</span><span class="s">/version&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">        &lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;!--</span> <span class="nl">https:</span><span class="c1">//mvnrepository.com/artifact/it.uniroma1.dis.wsngroup.gexf4j/gexf4j --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">it</span><span class="o">.</span><span class="na">uniroma1</span><span class="o">.</span><span class="na">dis</span><span class="o">.</span><span class="na">wsngroup</span><span class="o">.</span><span class="na">gexf4j</span><span class="o">&lt;</span><span class="s">/groupId&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">            &lt;artifactId&gt;gexf4j&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span><span class="o">&lt;</span><span class="s">/version&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">        &lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="s">/dependencies&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">&lt;/</span><span class="n">project</span><span class="o">&gt;</span>
+</span></span></code></pre></div><div id="抄个生成函数调用图的代码--输出cge格式" class="anchor"></div>
+<h2 class="relative group">抄个生成函数调用图的代码  输出cge格式 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%8a%84%e4%b8%aa%e7%94%9f%e6%88%90%e5%87%bd%e6%95%b0%e8%b0%83%e7%94%a8%e5%9b%be%e7%9a%84%e4%bb%a3%e7%a0%81--%e8%be%93%e5%87%bacge%e6%a0%bc%e5%bc%8f" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p><code>CGExporter.java</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">example</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.EdgeType</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.Gexf</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.Graph</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.Mode</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.Node</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.data.Attribute</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.data.AttributeClass</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.data.AttributeList</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.data.AttributeType</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.impl.GexfImpl</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.impl.StaxGraphWriter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">it.uniroma1.dis.wsngroup.gexf4j.core.impl.data.AttributeListImpl</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.File</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.FileWriter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.Writer</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CGExporter</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Gexf</span> <span class="n">gexf</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Graph</span> <span class="n">graph</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Attribute</span> <span class="n">codeArray</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">AttributeList</span> <span class="n">attrList</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">CGExporter</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">gexf</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GexfImpl</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">graph</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">gexf</span><span class="o">.</span><span class="na">getGraph</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">gexf</span><span class="o">.</span><span class="na">getMetadata</span><span class="o">().</span><span class="na">setCreator</span><span class="o">(</span><span class="s2">&#34;liu3237&#34;</span><span class="o">).</span><span class="na">setDescription</span><span class="o">(</span><span class="s2">&#34;App method invoke graph&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">gexf</span><span class="o">.</span><span class="na">setVisualization</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">graph</span><span class="o">.</span><span class="na">setDefaultEdgeType</span><span class="o">(</span><span class="n">EdgeType</span><span class="o">.</span><span class="na">DIRECTED</span><span class="o">).</span><span class="na">setMode</span><span class="o">(</span><span class="n">Mode</span><span class="o">.</span><span class="na">STATIC</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">attrList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AttributeListImpl</span><span class="o">(</span><span class="n">AttributeClass</span><span class="o">.</span><span class="na">NODE</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">graph</span><span class="o">.</span><span class="na">getAttributeLists</span><span class="o">().</span><span class="na">add</span><span class="o">(</span><span class="n">attrList</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//可以给每个节点设置一些属性，这里设置的属性名是 codeArray，实际上后面没用到
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">this</span><span class="o">.</span><span class="na">codeArray</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">attrList</span><span class="o">.</span><span class="na">createAttribute</span><span class="o">(</span><span class="s2">&#34;0&#34;</span><span class="o">,</span> <span class="n">AttributeType</span><span class="o">.</span><span class="na">STRING</span><span class="o">,</span><span class="s2">&#34;codeArray&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">exportMIG</span><span class="o">(</span><span class="n">String</span> <span class="n">graphName</span><span class="o">,</span> <span class="n">String</span> <span class="n">storeDir</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">outPath</span> <span class="o">=</span> <span class="n">storeDir</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="n">graphName</span> <span class="o">+</span> <span class="s2">&#34;.gexf&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">StaxGraphWriter</span> <span class="n">graphWriter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StaxGraphWriter</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">File</span> <span class="n">f</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="n">outPath</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Writer</span> <span class="n">out</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileWriter</span><span class="o">(</span><span class="n">f</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">graphWriter</span><span class="o">.</span><span class="na">writeToStream</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">gexf</span><span class="o">,</span> <span class="n">out</span><span class="o">,</span> <span class="s2">&#34;UTF-8&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Node</span> <span class="nf">getNodeByID</span><span class="o">(</span><span class="n">String</span> <span class="n">Id</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">graph</span><span class="o">.</span><span class="na">getNodes</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Node</span> <span class="n">nodeFinded</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">Node</span> <span class="n">node</span> <span class="o">:</span> <span class="n">nodes</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">String</span> <span class="n">nodeID</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">getId</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">nodeID</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">Id</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">nodeFinded</span> <span class="o">=</span> <span class="n">node</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">break</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">nodeFinded</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">linkNodeByID</span><span class="o">(</span><span class="n">String</span> <span class="n">sourceID</span><span class="o">,</span> <span class="n">String</span> <span class="n">targetID</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Node</span> <span class="n">sourceNode</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">getNodeByID</span><span class="o">(</span><span class="n">sourceID</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Node</span> <span class="n">targetNode</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">getNodeByID</span><span class="o">(</span><span class="n">targetID</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">sourceNode</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">targetNode</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(!</span><span class="n">sourceNode</span><span class="o">.</span><span class="na">hasEdgeTo</span><span class="o">(</span><span class="n">targetID</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">String</span> <span class="n">edgeID</span> <span class="o">=</span> <span class="n">sourceID</span> <span class="o">+</span> <span class="s2">&#34;--&gt;&#34;</span> <span class="o">+</span> <span class="n">targetID</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sourceNode</span><span class="o">.</span><span class="na">connectTo</span><span class="o">(</span><span class="n">edgeID</span><span class="o">,</span> <span class="s2">&#34;&#34;</span><span class="o">,</span> <span class="n">EdgeType</span><span class="o">.</span><span class="na">DIRECTED</span><span class="o">,</span> <span class="n">targetNode</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">createNode</span><span class="o">(</span><span class="n">String</span> <span class="n">m</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">id</span> <span class="o">=</span> <span class="n">m</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">codes</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">getNodeByID</span><span class="o">(</span><span class="n">id</span><span class="o">)</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Node</span> <span class="n">node</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">graph</span><span class="o">.</span><span class="na">createNode</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">node</span><span class="o">.</span><span class="na">setLabel</span><span class="o">(</span><span class="n">id</span><span class="o">).</span><span class="na">getAttributeValues</span><span class="o">().</span><span class="na">addValue</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">codeArray</span><span class="o">,</span> <span class="n">codes</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">node</span><span class="o">.</span><span class="na">setSize</span><span class="o">(</span><span class="mi">20</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p><code>CGGenerator.java</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">example</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.net.URL</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.Map</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">soot.MethodOrMethodContext</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">soot.Scene</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">soot.SootMethod</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">soot.jimple.infoflow.android.SetupApplication</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">soot.jimple.toolkits.callgraph.CallGraph</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">soot.jimple.toolkits.callgraph.Targets</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.FileReader</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CGGenerator</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//设置android的jar包目录  你自己的AndroidSdk位置，下载安卓studio自动安装
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="n">String</span> <span class="n">androidPlatformPath</span> <span class="o">=</span> <span class="s2">&#34;D:\\AndroidSdk\\platforms&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//设置要分析的APK文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="n">String</span> <span class="n">appPath</span> <span class="o">=</span> <span class="s2">&#34;C:\\Users\\test_user\\Desktop\\flowdroidJarTest\\FlowDroid-2.9\\DroidBench\\app-release.apk&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="n">String</span> <span class="n">outputPath</span> <span class="o">=</span> <span class="s2">&#34;C:\\Users\\test_user\\Desktop\\untitled\\src\\main\\apps\\output&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="n">Object</span> <span class="n">ob</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">static</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">Boolean</span><span class="o">&gt;</span> <span class="n">visited</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">Boolean</span><span class="o">&gt;();</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">static</span> <span class="n">CGExporter</span> <span class="n">cge</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CGExporter</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">SetupApplication</span> <span class="n">app</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SetupApplication</span><span class="o">(</span><span class="n">androidPlatformPath</span><span class="o">,</span> <span class="n">appPath</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">soot</span><span class="o">.</span><span class="na">G</span><span class="o">.</span><span class="na">reset</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">//github上作者记录的AndroidCallbacks
+</span></span></span><span class="line"><span class="cl"><span class="c1">//这里用于检测leaks和生成ceg图无关
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">String</span> <span class="n">file</span> <span class="o">=</span> <span class="s2">&#34;C:\\Users\\test_user\\Desktop\\untitled\\src\\main\\java\\AndroidCallbacks2.txt&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">app</span><span class="o">.</span><span class="na">setCallbackFile</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">app</span><span class="o">.</span><span class="na">constructCallgraph</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//SootMethod 获取函数调用图
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">SootMethod</span> <span class="n">entryPoint</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="na">getDummyMainMethod</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">CallGraph</span> <span class="n">cg</span> <span class="o">=</span> <span class="n">Scene</span><span class="o">.</span><span class="na">v</span><span class="o">().</span><span class="na">getCallGraph</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//可视化函数调用图
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">visit</span><span class="o">(</span><span class="n">cg</span><span class="o">,</span><span class="n">entryPoint</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//导出函数调用图
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">cge</span><span class="o">.</span><span class="na">exportMIG</span><span class="o">(</span><span class="s2">&#34;flowdroidCFG&#34;</span><span class="o">,</span> <span class="n">outputPath</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//可视化函数调用图的函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">visit</span><span class="o">(</span><span class="n">CallGraph</span> <span class="n">cg</span><span class="o">,</span><span class="n">SootMethod</span> <span class="n">m</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//在soot中，函数的signature就是由该函数的类名，函数名，参数类型，以及返回值类型组成的字符串
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">String</span> <span class="n">identifier</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="na">getSignature</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//记录是否已经处理过该点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">visited</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">identifier</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//以函数的signature为label在图中添加该节点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">cge</span><span class="o">.</span><span class="na">createNode</span><span class="o">(</span><span class="n">identifier</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取调用该函数的函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">MethodOrMethodContext</span><span class="o">&gt;</span> <span class="n">ptargets</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Targets</span><span class="o">(</span><span class="n">cg</span><span class="o">.</span><span class="na">edgesInto</span><span class="o">(</span><span class="n">m</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">ptargets</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span><span class="o">(</span><span class="n">ptargets</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span>
+</span></span><span class="line"><span class="cl">            <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">SootMethod</span> <span class="n">p</span> <span class="o">=</span> <span class="o">(</span><span class="n">SootMethod</span><span class="o">)</span> <span class="n">ptargets</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="o">(</span><span class="n">p</span> <span class="o">==</span> <span class="kc">null</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s2">&#34;p is null&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">                <span class="o">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="o">(!</span><span class="n">visited</span><span class="o">.</span><span class="na">containsKey</span><span class="o">(</span><span class="n">p</span><span class="o">.</span><span class="na">getSignature</span><span class="o">())){</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">visit</span><span class="o">(</span><span class="n">cg</span><span class="o">,</span><span class="n">p</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">                <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取该函数调用的函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">MethodOrMethodContext</span><span class="o">&gt;</span> <span class="n">ctargets</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Targets</span><span class="o">(</span><span class="n">cg</span><span class="o">.</span><span class="na">edgesOutOf</span><span class="o">(</span><span class="n">m</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">ctargets</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span><span class="o">(</span><span class="n">ctargets</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span>
+</span></span><span class="line"><span class="cl">            <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">SootMethod</span> <span class="n">c</span> <span class="o">=</span> <span class="o">(</span><span class="n">SootMethod</span><span class="o">)</span> <span class="n">ctargets</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="o">(</span><span class="n">c</span> <span class="o">==</span> <span class="kc">null</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s2">&#34;c is null&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">                <span class="o">}</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//将被调用的函数加入图中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">cge</span><span class="o">.</span><span class="na">createNode</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="na">getSignature</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//添加一条指向该被调函数的边
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">cge</span><span class="o">.</span><span class="na">linkNodeByID</span><span class="o">(</span><span class="n">identifier</span><span class="o">,</span> <span class="n">c</span><span class="o">.</span><span class="na">getSignature</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="o">(!</span><span class="n">visited</span><span class="o">.</span><span class="na">containsKey</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="na">getSignature</span><span class="o">())){</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//递归
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="n">visit</span><span class="o">(</span><span class="n">cg</span><span class="o">,</span><span class="n">c</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">                <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>这个代码可以在jdk17、11的环境下直接跑</p>
+<p>其他地方先不用管，更改sdk版本、apk位置、AndroidCallbacks直接下载下来就ok了</p>
+<div id="test" class="anchor"></div>
+<h2 class="relative group">TEST 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#test" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>简简单单写个demo</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">android.util.Log</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.File</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">layout1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">secret</span> <span class="o">=</span> <span class="n">getSecret</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">secret</span> <span class="o">+</span> <span class="s2">&#34;123&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="s2">&#34;456&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">func</span><span class="o">(</span><span class="n">tmp</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">String</span>  <span class="nf">getSecret</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;Hello&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">func</span><span class="o">(</span><span class="n">String</span> <span class="n">tmp</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s2">&#34;Tag&#34;</span><span class="o">,</span> <span class="n">tmp</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>跑完了会在output目录生成个flowdroidCFG.gexf</p>
+<p>下载个Gephi打开</p>
+<p>调整下参数得到如下</p>
+<p>分析出来结果如下</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/flowdroidUsage/Untitled.png" alt="Untitled" />
+    
+  </figure>
+
+</p>
+<p>很丑，过滤一下<code>myapplication</code> 的节点</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/flowdroidUsage/Untitled%201.png" alt="Untitled" />
+    
+  </figure>
+
+</p>
+<p>全选右键复制到新图</p>
+<p>调整一下大小和颜色得到以下</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/flowdroidUsage/Untitled%202.png" alt="Untitled" />
+    
+  </figure>
+
+</p>
+<p>很奇怪没有<code>getSecret</code></p>
+<div id="flowdroid-jar包使用" class="anchor"></div>
+<h2 class="relative group">flowdroid jar包使用 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flowdroid-jar%e5%8c%85%e4%bd%bf%e7%94%a8" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>官网下载</p>
+<ul>
+<li>soot-infoflow-cmd-2.9.0-jar-with-dependencies.jar</li>
+<li>FlowDroid-2.9.zip解压</li>
+</ul>
+<p>做三件事</p>
+<p>建立以下三个文件夹并放入对应文件</p>
+<p>你的app</p>
+<p>FlowDroid-2.9\DroidBench\xxx.apk</p>
+<p>FlowDroid-2.9\soot-infoflow-cmd\targe\soot-infoflow-cmd-2.9.0-jar-with-dependencies.jar</p>
+<p>把</p>
+<blockquote>
+<p>D:\AndroidSdk\platforms\android-33\android.jar</p>
+</blockquote>
+<p>复制到</p>
+<p>FlowDroid-2.9\android\android.jar</p>
+<div id="编写自己的sourcesandsinkstxt" class="anchor"></div>
+<h2 class="relative group">编写自己的SourcesAndSinks.txt 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bc%96%e5%86%99%e8%87%aa%e5%b7%b1%e7%9a%84sourcesandsinkstxt" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<pre tabindex="0"><code>_SOURCE_代表起点
+
+_SINK_代表终点
+
+如果有路径从_SOURCE_ to  _SINK_则表示一次leak
+</code></pre><p>% 代表注释</p>
+<p>这种格式函数的id可以从<code>CGGenerator</code> 生成的图导出的Excel表格获取</p>
+<p>很奇怪输出的Excel和Gephi给出的表格并不完全一样，去掉了回环的路径</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Target</th>
+<th>Type</th>
+<th>Label</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;dummyMainClass: com.example.myapplication.MainActivity dummyMainMethod_com_example_myapplication_MainActivity(android.content.Intent)&gt;</td>
+<td>&lt;com.example.myapplication.MainActivity: void <init>()&gt;</td>
+<td>Directed</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>&lt;com.example.myapplication.MainActivity: void onCreate(android.os.Bundle)&gt;</td>
+<td>&lt;com.example.myapplication.MainActivity: void func(java.lang.String)&gt;</td>
+<td>Directed</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>&lt;dummyMainClass: com.example.myapplication.MainActivity dummyMainMethod_com_example_myapplication_MainActivity(android.content.Intent)&gt;</td>
+<td>&lt;com.example.myapplication.MainActivity: void onCreate(android.os.Bundle)&gt;</td>
+<td>Directed</td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">javax</span><span class="o">.</span><span class="na">servlet</span><span class="o">.</span><span class="na">ServletRequest</span><span class="o">:</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span> <span class="n">getParameter</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">javax</span><span class="o">.</span><span class="na">persistence</span><span class="o">.</span><span class="na">EntityManager</span><span class="o">:</span> <span class="n">javax</span><span class="o">.</span><span class="na">persistence</span><span class="o">.</span><span class="na">TypedQuery</span> <span class="n">createQuery</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">,</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Class</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">javax</span><span class="o">.</span><span class="na">servlet</span><span class="o">.</span><span class="na">http</span><span class="o">.</span><span class="na">HttpServletResponse</span><span class="o">:</span> <span class="kt">void</span> <span class="n">sendRedirect</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">File</span><span class="o">:</span> <span class="kt">boolean</span> <span class="n">delete</span><span class="o">()&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">File</span><span class="o">:</span> <span class="kt">boolean</span> <span class="n">delete</span><span class="o">()&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="n">String</span> <span class="n">getSecret</span><span class="o">(</span><span class="kt">void</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="kt">void</span> <span class="n">onCreate</span><span class="o">(</span><span class="n">android</span><span class="o">.</span><span class="na">os</span><span class="o">.</span><span class="na">Bundle</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="kt">void</span> <span class="n">func</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">:</span> <span class="kt">int</span> <span class="n">hashCode</span><span class="o">()&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">RuntimeException</span><span class="o">:</span> <span class="kt">void</span> <span class="o">&lt;</span><span class="n">init</span><span class="o">&gt;(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span><span class="o">:</span> <span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span> <span class="n">putBoolean</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">,</span><span class="kt">boolean</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span><span class="o">:</span> <span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span> <span class="n">putFloat</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">,</span><span class="kt">float</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span><span class="o">:</span> <span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span> <span class="n">putInt</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">,</span><span class="kt">int</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span><span class="o">:</span> <span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span> <span class="n">putLong</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">,</span><span class="kt">long</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span><span class="o">:</span> <span class="n">android</span><span class="o">.</span><span class="na">content</span><span class="o">.</span><span class="na">SharedPreferences</span><span class="n">$Editor</span> <span class="n">putString</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">,</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span></code></pre></div><p>编写启动脚本</p>
+<blockquote>
+<p>github issus上的老哥说jdk1.8才能稳定运行。。。</p>
+</blockquote>
+<p>哥们在powershell上跑的，在cmd或者bash上跑要自己改一下格式</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="o">&amp;</span> <span class="s1">&#39;C:\Program Files\Java\jre-1.8\bin\java.exe&#39;</span> <span class="o">-</span><span class="n">jar</span> <span class="n">soot</span><span class="o">-</span><span class="n">infoflow</span><span class="o">-</span><span class="n">cmd</span><span class="s">/target/</span><span class="n">soot</span><span class="o">-</span><span class="n">infoflow</span><span class="o">-</span><span class="n">cmd</span><span class="o">-</span><span class="mf">2.9</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">jar</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">dependencies</span><span class="o">.</span><span class="na">jar</span> <span class="err">`</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span><span class="n">a</span> <span class="o">.</span><span class="s">/DroidBench/</span><span class="n">app</span><span class="o">-</span><span class="n">release</span><span class="o">.</span><span class="na">apk</span> <span class="err">`</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span><span class="n">p</span> <span class="n">android</span><span class="s">/android.jar `
+</span></span></span><span class="line"><span class="cl"><span class="s">-s soot-infoflow-android/</span><span class="n">SourcesAndSinksTest</span><span class="o">.</span><span class="na">txt</span> <span class="err">`</span>
+</span></span><span class="line"><span class="cl"><span class="err">#</span> <span class="o">-</span><span class="n">o</span> <span class="n">sootOutput</span> 
+</span></span></code></pre></div><p>运行，然后就可以开一把紧张刺激的英雄联盟了慢慢等了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">memory</span><span class="o">.</span><span class="na">MemoryWarningSystem</span> <span class="o">-</span> <span class="n">Shutting</span> <span class="n">down</span> <span class="n">the</span> <span class="n">memory</span> <span class="n">warning</span> <span class="n">system</span><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">SetupApplication</span><span class="n">$InPlaceInfoflow</span> <span class="o">-</span> <span class="n">Memory</span> <span class="n">consumption</span> <span class="n">after</span> <span class="n">path</span> <span class="nl">building:</span> <span class="mi">452</span> <span class="n">MB</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">SetupApplication</span><span class="n">$InPlaceInfoflow</span> <span class="o">-</span> <span class="n">Path</span> <span class="n">reconstruction</span> <span class="n">took</span> <span class="mi">2</span> <span class="n">seconds</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">SetupApplication</span><span class="n">$InPlaceInfoflow</span> <span class="o">-</span> <span class="n">The</span> <span class="n">sink</span> <span class="n">virtualinvoke</span> <span class="n">r0</span><span class="o">.&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="kt">void</span> <span class="n">func</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;(</span><span class="n">$r2</span><span class="o">)</span> <span class="k">in</span> <span class="n">method</span> <span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="kt">void</span> <span class="n">onCreate</span><span class="o">(</span><span class="n">android</span><span class="o">.</span><span class="na">os</span><span class="o">.</span><span class="na">Bundle</span><span class="o">)&gt;</span> <span class="n">was</span> <span class="n">called</span> <span class="n">with</span> <span class="n">values</span> <span class="n">from</span> <span class="n">the</span> <span class="n">following</span> <span class="nl">sources:</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">SetupApplication</span><span class="n">$InPlaceInfoflow</span> <span class="o">-</span> <span class="o">-</span> <span class="n">$i2</span> <span class="o">=</span> <span class="n">virtualinvoke</span> <span class="n">$r3</span><span class="o">.&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Object</span><span class="o">:</span> <span class="kt">int</span> <span class="n">hashCode</span><span class="o">()&gt;()</span> <span class="k">in</span> <span class="n">method</span> <span class="o">&lt;</span><span class="n">androidx</span><span class="o">.</span><span class="na">collection</span><span class="o">.</span><span class="na">SimpleArrayMap</span><span class="o">:</span> <span class="kt">int</span> <span class="n">hashCode</span><span class="o">()&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">SetupApplication</span><span class="n">$InPlaceInfoflow</span> <span class="o">-</span> <span class="o">-</span> <span class="n">$i1</span> <span class="o">=</span> <span class="n">virtualinvoke</span> <span class="n">$r2</span><span class="o">.&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Object</span><span class="o">:</span> <span class="kt">int</span> <span class="n">hashCode</span><span class="o">()&gt;()</span> <span class="k">in</span> <span class="n">method</span> <span class="o">&lt;</span><span class="n">androidx</span><span class="o">.</span><span class="na">collection</span><span class="o">.</span><span class="na">SimpleArrayMap</span><span class="o">:</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Object</span> <span class="n">put</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Object</span><span class="o">,</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Object</span><span class="o">)&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">SetupApplication</span><span class="n">$InPlaceInfoflow</span> <span class="o">-</span> <span class="n">Data</span> <span class="n">flow</span> <span class="n">solver</span> <span class="n">took</span> <span class="mi">395</span> <span class="n">seconds</span><span class="o">.</span> <span class="n">Maximum</span> <span class="n">memory</span> <span class="nl">consumption:</span> <span class="mi">11391</span> <span class="n">MB</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">SetupApplication</span> <span class="o">-</span> <span class="n">Found</span> <span class="mi">1</span> <span class="n">leaks</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span><span class="n">base</span><span class="o">)</span> <span class="n">PS</span> <span class="nl">C:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">test_user</span><span class="err">\</span><span class="n">Desktop</span><span class="err">\</span><span class="n">flowdroidJarTest</span><span class="err">\</span><span class="n">FlowDroid</span><span class="o">-</span><span class="mf">2.9</span><span class="o">&gt;</span>
+</span></span></code></pre></div><p>生成运行会得到Found xxx leaks</p>
+<div id="confusing" class="anchor"></div>
+<h2 class="relative group">confusing 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#confusing" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>但是很奇怪的是，如果source和sink只包含main包里面的方法（），则找不到source和sink，</p>
+<p>SourcesAndSinks 包含MainActivity以外的函数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="n">String</span> <span class="n">getSecret</span><span class="o">(</span><span class="kt">void</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="kt">void</span> <span class="n">onCreate</span><span class="o">(</span><span class="n">android</span><span class="o">.</span><span class="na">os</span><span class="o">.</span><span class="na">Bundle</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="kt">void</span> <span class="n">func</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">:</span> <span class="kt">int</span> <span class="n">hashCode</span><span class="o">()&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">RuntimeException</span><span class="o">:</span> <span class="kt">void</span> <span class="o">&lt;</span><span class="n">init</span><span class="o">&gt;(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span></code></pre></div><p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/flowdroidUsage/Untitled%203.png" alt="Untitled" />
+    
+  </figure>
+
+</p>
+<p>SourcesAndSinks 不包含MainActivity以外的函数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="n">String</span> <span class="n">getSecret</span><span class="o">(</span><span class="kt">void</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="kt">void</span> <span class="n">onCreate</span><span class="o">(</span><span class="n">android</span><span class="o">.</span><span class="na">os</span><span class="o">.</span><span class="na">Bundle</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">com</span><span class="o">.</span><span class="na">example</span><span class="o">.</span><span class="na">myapplication</span><span class="o">.</span><span class="na">MainActivity</span><span class="o">:</span> <span class="kt">void</span> <span class="n">func</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">:</span> <span class="kt">int</span> <span class="n">hashCode</span><span class="o">()&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">RuntimeException</span><span class="o">:</span> <span class="kt">void</span> <span class="o">&lt;</span><span class="n">init</span><span class="o">&gt;(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
+</span></span></code></pre></div><p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/flowdroidUsage/Untitled%204.png" alt="Untitled" />
+    
+  </figure>
+
+</p>
+
+        </div>
+                
+        
+
+        
+
+          
+      </div>
+     
+     <script>
+        var oid = "views_articles\\flowdroidUsage\\index.md"
+        var oid_likes = "likes_articles\\flowdroidUsage\\index.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/articles/antiminer/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >逆矿机下载器</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-12-20 13:23:11 &#43;0000 UTC">20 December 2023</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      ベーコン
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://ljahum.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
