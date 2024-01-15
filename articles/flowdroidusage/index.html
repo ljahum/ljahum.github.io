@@ -100,7 +100,7 @@
     "keywords": ["bin"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "904"
+    "wordCount": "907"
   }]
   </script>
 
@@ -160,7 +160,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -495,6 +499,16 @@
 
 
 
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -575,7 +589,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-15 13:23:11 &#43;0000 UTC">15 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>904 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2024-01-15 13:23:11 &#43;0000 UTC">15 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span>907 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -697,7 +711,7 @@
     
      <div
       class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
 
          <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
@@ -1100,15 +1114,16 @@
 </ul>
 <p>做三件事</p>
 <p>建立以下三个文件夹并放入对应文件</p>
-<p>你的app</p>
+<p>1.你的app</p>
 <p>FlowDroid-2.9\DroidBench\xxx.apk</p>
+<ol start="2">
+<li></li>
+</ol>
 <p>FlowDroid-2.9\soot-infoflow-cmd\targe\soot-infoflow-cmd-2.9.0-jar-with-dependencies.jar</p>
-<p>把</p>
-<blockquote>
-<p>D:\AndroidSdk\platforms\android-33\android.jar</p>
-</blockquote>
-<p>复制到</p>
-<p>FlowDroid-2.9\android\android.jar</p>
+<ol start="3">
+<li>把</li>
+</ol>
+<p>AndroidSdk（你的安卓sdk目录）\platforms\android-33\android.jar复制到FlowDroid-2.9\android\android.jar</p>
 <div id="编写自己的sourcesandsinkstxt" class="anchor"></div>
 <h2 class="relative group">编写自己的SourcesAndSinks.txt 
     <span
@@ -1123,8 +1138,8 @@ _SINK_代表终点
 
 如果有路径从_SOURCE_ to  _SINK_则表示一次leak
 </code></pre><p>% 代表注释</p>
-<p>这种格式函数的id可以从<code>CGGenerator</code> 生成的图导出的Excel表格获取</p>
-<p>很奇怪输出的Excel和Gephi给出的表格并不完全一样，去掉了回环的路径</p>
+<p><code>&lt;java.lang.String: int hashCode()&gt;</code>这种格式函数的id可以从<code>CGGenerator</code> 生成的图在gephi中用导出功能导出的Excel表格获取</p>
+<p>很奇怪输出的Excel和Gephi给出的表格并不完全一样，应该是去掉了回环的路径</p>
 <table>
 <thead>
 <tr>
@@ -1159,6 +1174,7 @@ _SINK_代表终点
 </tr>
 </tbody>
 </table>
+<p>SourcesAndSinks正文</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">javax</span><span class="o">.</span><span class="na">servlet</span><span class="o">.</span><span class="na">ServletRequest</span><span class="o">:</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span> <span class="n">getParameter</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SOURCE_</span>
 </span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">javax</span><span class="o">.</span><span class="na">persistence</span><span class="o">.</span><span class="na">EntityManager</span><span class="o">:</span> <span class="n">javax</span><span class="o">.</span><span class="na">persistence</span><span class="o">.</span><span class="na">TypedQuery</span> <span class="n">createQuery</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">,</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Class</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
 </span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="o">&lt;</span><span class="n">javax</span><span class="o">.</span><span class="na">servlet</span><span class="o">.</span><span class="na">http</span><span class="o">.</span><span class="na">HttpServletResponse</span><span class="o">:</span> <span class="kt">void</span> <span class="n">sendRedirect</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">String</span><span class="o">)&gt;</span> <span class="o">-&gt;</span> <span class="n">_SINK_</span>
@@ -1189,7 +1205,7 @@ _SINK_代表终点
 </span></span><span class="line"><span class="cl"><span class="o">-</span><span class="n">p</span> <span class="n">android</span><span class="s">/android.jar `
 </span></span></span><span class="line"><span class="cl"><span class="s">-s soot-infoflow-android/</span><span class="n">SourcesAndSinksTest</span><span class="o">.</span><span class="na">txt</span> <span class="err">`</span>
 </span></span><span class="line"><span class="cl"><span class="err">#</span> <span class="o">-</span><span class="n">o</span> <span class="n">sootOutput</span> 
-</span></span></code></pre></div><p>运行，然后就可以开一把紧张刺激的英雄联盟了慢慢等了</p>
+</span></span></code></pre></div><p>运行，然后就可以开一把紧张刺激的英雄联盟慢慢等了</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="o">...</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">memory</span><span class="o">.</span><span class="na">MemoryWarningSystem</span> <span class="o">-</span> <span class="n">Shutting</span> <span class="n">down</span> <span class="n">the</span> <span class="n">memory</span> <span class="n">warning</span> <span class="n">system</span><span class="o">...</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="n">main</span><span class="o">]</span> <span class="n">INFO</span> <span class="n">soot</span><span class="o">.</span><span class="na">jimple</span><span class="o">.</span><span class="na">infoflow</span><span class="o">.</span><span class="na">android</span><span class="o">.</span><span class="na">SetupApplication</span><span class="n">$InPlaceInfoflow</span> <span class="o">-</span> <span class="n">Memory</span> <span class="n">consumption</span> <span class="n">after</span> <span class="n">path</span> <span class="nl">building:</span> <span class="mi">452</span> <span class="n">MB</span>
@@ -1248,6 +1264,8 @@ _SINK_代表终点
   </figure>
 
 </p>
+<p>Reference：<a href="http://google.com/"   target="_blank">
+    インターネット</a></p>
 
         </div>
                 
