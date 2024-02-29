@@ -7,14 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 ベーコン</copyright>
-    <lastBuildDate>Tue, 20 Feb 2024 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Feb 2024 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2024寒假战斗</title>
+      <title>搞点贴纸</title>
+      <link>https://ljahum.github.io/articles/vnctf2024/</link>
+      <pubDate>Sun, 25 Feb 2024 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/vnctf2024/</guid>
+      <description>VNCTF 2024 wp # re # TBOXs # 全是花，懒得去了，手撕汇编吧</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/vnctf2024/featured.png" />
+    </item>
+    
+    <item>
+      <title>lattigo</title>
       <link>https://ljahum.github.io/articles/2024spring/</link>
       <pubDate>Tue, 20 Feb 2024 13:23:11 +0000</pubDate>
       
       <guid>https://ljahum.github.io/articles/2024spring/</guid>
-      <description>VNCTF 2024 wp # re # TBOXs # 全是花，懒得去了，手撕汇编吧</description>
+      <description>L3HCTF 2024 # 过年过得好无聊啊</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/2024spring/featured.png" />
     </item>
     

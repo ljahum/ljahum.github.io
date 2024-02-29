@@ -23,16 +23,7 @@
     
       <url>
             <loc>https://ljahum.github.io/</loc>
-            <lastmod>2024-02-20T13:23:11+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ljahum.github.io/articles/2024spring/</loc>
-            <lastmod>2024-02-20T13:23:11+00:00</lastmod>
+            <lastmod>2024-02-25T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -53,12 +44,30 @@
     
       <url>
             <loc>https://ljahum.github.io/articles/</loc>
-            <lastmod>2024-02-20T13:23:11+00:00</lastmod>
+            <lastmod>2024-02-25T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
     
   
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/vnctf2024/</loc>
+            <lastmod>2024-02-25T13:23:11+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/2024spring/</loc>
+            <lastmod>2024-02-20T13:23:11+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
     
   
     
