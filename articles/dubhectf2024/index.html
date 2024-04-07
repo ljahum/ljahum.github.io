@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>一个多素数RSA &middot; #cd /home</title>
-  <meta name="title" content="一个多素数RSA &middot; #cd /home" />
+  <title>一个多素数RSA && 一个debug &middot; #cd /home</title>
+  <meta name="title" content="一个多素数RSA && 一个debug &middot; #cd /home" />
   
   
   <meta name="keywords" content="crypto, math, " />
@@ -63,7 +63,7 @@
   
   
   
-  <meta property="og:title" content="一个多素数RSA" />
+  <meta property="og:title" content="一个多素数RSA &amp;&amp; 一个debug" />
 <meta property="og:description" content="今天下雨" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ljahum.github.io/articles/dubhectf2024/" /><meta property="og:image" content="https://ljahum.github.io/articles/dubhectf2024/featured.png"/><meta property="article:section" content="articles" />
@@ -72,7 +72,7 @@
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ljahum.github.io/articles/dubhectf2024/featured.png"/>
-<meta name="twitter:title" content="一个多素数RSA"/>
+<meta name="twitter:title" content="一个多素数RSA &amp;&amp; 一个debug"/>
 <meta name="twitter:description" content="今天下雨"/>
 
   
@@ -81,8 +81,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Projects",
-    "name": "一个多素数RSA",
-    "headline": "一个多素数RSA",
+    "name": "一个多素数RSA \u0026\u0026 一个debug",
+    "headline": "一个多素数RSA \u0026\u0026 一个debug",
     
     "abstract": "今天下雨",
     "inLanguage": "en",
@@ -100,7 +100,7 @@
     "keywords": ["crypto","math"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "854"
+    "wordCount": "886"
   }]
   </script>
 
@@ -676,7 +676,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      一个多素数RSA
+      一个多素数RSA && 一个debug
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -719,7 +719,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-04-06 13:23:11 &#43;0000 UTC">6 April 2024</time><span class="px-2 text-primary-500">&middot;</span><span>854 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2024-04-06 13:23:11 &#43;0000 UTC">6 April 2024</time><span class="px-2 text-primary-500">&middot;</span><span>886 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -766,6 +766,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#dubhectf2024-common-prime-rsa">DubheCTF2024-Common Prime RSA</a></li>
+    <li><a href="#debug">debug</a></li>
   </ul>
 </nav>
   </div>
@@ -780,6 +781,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#dubhectf2024-common-prime-rsa">DubheCTF2024-Common Prime RSA</a></li>
+    <li><a href="#debug">debug</a></li>
   </ul>
 </nav>
   </div>
@@ -1123,7 +1125,47 @@ $$</p>
 </span></span><span class="line"><span class="cl">    <span class="n">flag</span> <span class="o">=</span> <span class="s1">&#39;DubheCTF{{</span><span class="si">{:x}</span><span class="s1">}}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">d</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">128</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>  <span class="c1"># DubheCTF{b896a5fef7abec06cd2e6256be4ba40b}</span>
 </span></span><span class="line"><span class="cl">    
-</span></span></code></pre></div>
+</span></span></code></pre></div><div id="debug" class="anchor"></div>
+<h2 class="relative group">debug 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#debug" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>去年使用blowfish主题以来</p>
+<p>饱受公式渲染不正确的困扰，今天误打误撞解决了这个小问题</p>
+<p>如果你发现你的blowfish主题的公式在本地http server和gitpage中渲染的样式不同</p>
+<p>并出现了 &ldquo;failed to find a valid digest&quot;报错</p>
+<p>是因为</p>
+<p><a href="https://github.com/golang/go/issues/59234"   target="_blank">
+    https://github.com/golang/go/issues/59234</a></p>
+<p>而hugo为修补这一问题加入JS模板验证的属性</p>
+<p>具体方法为把文件的sha512指写在文件名里面</p>
+<pre tabindex="0"><code>public\lib\katex\katex.min.6a864286ffbc8a663f5353bb2881d7bcef3b10ecc2b8a3b41a116da43e86d82ca3a3fc4f79381d7f7fdb721075d2207e0288cc4c390c1c33cb28dc4f255a8373.js:
+</code></pre><p>然后开发写bug了</p>
+<blockquote>
+<p>哈哈</p>
+</blockquote>
+<p>解决办法要么生成静态网页的时候使用development模式</p>
+<p>要么在  \config_default\config.toml 加入以下内容</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">security</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">security</span><span class="p">.</span><span class="nx">gotemplates</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">allowActionJSTmpl</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><p>然后重新build再push就ok了</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/DubheCTF2024/image-2.png" alt="Alt text" />
+    
+  </figure>
+
+</p>
+<p>笑死  因为可以允许js脚本了，之前一直不能用的搜索功能也能用了</p>
+
         </div>
                 
         
