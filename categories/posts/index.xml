@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 ベーコン</copyright>
-    <lastBuildDate>Sat, 06 Apr 2024 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 May 2024 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://ljahum.github.io/achieve/about/</link>
@@ -16,6 +16,26 @@
       <guid>https://ljahum.github.io/achieve/about/</guid>
       <description></description>
       
+    </item>
+    
+    <item>
+      <title>高校运维2024</title>
+      <link>https://ljahum.github.io/articles/yunwei2024/</link>
+      <pubDate>Mon, 06 May 2024 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/yunwei2024/</guid>
+      <description>死掉了</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/yunwei2024/featured.png" />
+    </item>
+    
+    <item>
+      <title>四月</title>
+      <link>https://ljahum.github.io/articles/practice/</link>
+      <pubDate>Mon, 15 Apr 2024 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/practice/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/practice/featured.png" />
     </item>
     
     <item>
