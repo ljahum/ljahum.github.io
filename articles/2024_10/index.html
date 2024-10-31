@@ -100,7 +100,7 @@
     "keywords": ["crypto","math","bin"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2007"
+    "wordCount": "2013"
   }]
   </script>
 
@@ -290,7 +290,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -625,6 +629,16 @@
 
 
 
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -705,7 +719,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-31 13:23:11 &#43;0000 UTC">31 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2007 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">10 mins</span>
+  <time datetime="2024-10-31 13:23:11 &#43;0000 UTC">31 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2013 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">10 mins</span>
   
 
   
@@ -740,7 +754,7 @@
     
      <div
       class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
 
          <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
@@ -768,6 +782,7 @@
         <li><a href="#pwn2">pwn2</a></li>
       </ul>
     </li>
+    <li><a href="#拼搏百天">拼搏百天</a></li>
     <li><a href="#go-on">go on</a></li>
   </ul>
 </nav>
@@ -799,6 +814,7 @@
         <li><a href="#pwn2">pwn2</a></li>
       </ul>
     </li>
+    <li><a href="#拼搏百天">拼搏百天</a></li>
     <li><a href="#go-on">go on</a></li>
   </ul>
 </nav>
@@ -1524,7 +1540,27 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># payload = b&#39;sh\x00\x00&#39;*0x15+p32(add_sys)+b&#39;a&#39;*4+p32(stack_add)</span>
 </span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
-</span></span></code></pre></div><div id="go-on" class="anchor"></div>
+</span></span></code></pre></div><div id="拼搏百天" class="anchor"></div>
+<h2 class="relative group">拼搏百天 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%8b%bc%e6%90%8f%e7%99%be%e5%a4%a9" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>立了个flag要刷算法题</p>
+<p>争取明年开学之前刷够50道中高难度的算法题吧~~~</p>
+<ul>
+<li>
+<p><a href="https://leetcode.cn/u/cra2y-elbakyanhhj/"   target="_blank">
+    leetcode传送门</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ljahum/CodePower/tree/main/leetcode"   target="_blank">
+    codenote</a></p>
+</li>
+</ul>
+<div id="go-on" class="anchor"></div>
 <h2 class="relative group">go on 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
