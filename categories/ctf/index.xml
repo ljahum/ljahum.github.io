@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 ベーコン</copyright>
-    <lastBuildDate>Thu, 31 Oct 2024 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Nov 2024 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>11月小结</title>
+      <link>https://ljahum.github.io/articles/november/</link>
+      <pubDate>Tue, 19 Nov 2024 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/november/</guid>
+      <description>华子杯 线下pwn4 # 华子杯2024线下，啊太久没做pwn了，修了两个签到，记个工具脚本的使用</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/november/featured.png" />
+    </item>
+    
     <item>
       <title>2024_10</title>
       <link>https://ljahum.github.io/articles/2024_10/</link>

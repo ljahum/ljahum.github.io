@@ -23,7 +23,7 @@
     
       <url>
             <loc>https://ljahum.github.io/</loc>
-            <lastmod>2024-10-31T13:23:11+00:00</lastmod>
+            <lastmod>2024-12-22T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -31,17 +31,11 @@
   
     
       <url>
-            <loc>https://ljahum.github.io/articles/2024_10/</loc>
-            <lastmod>2024-10-31T13:23:11+00:00</lastmod>
+            <loc>https://ljahum.github.io/articles/12%E6%9C%88%E5%AE%89%E5%8D%93%E6%8A%98%E8%85%BE/</loc>
+            <lastmod>2024-12-22T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
-    
-  
-    
-  
-    
-  
     
   
     
@@ -53,12 +47,36 @@
     
       <url>
             <loc>https://ljahum.github.io/articles/</loc>
-            <lastmod>2024-10-31T13:23:11+00:00</lastmod>
+            <lastmod>2024-12-22T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
     
   
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/november/</loc>
+            <lastmod>2024-11-19T13:23:11+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/2024_10/</loc>
+            <lastmod>2024-10-31T13:23:11+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
     
   
     
