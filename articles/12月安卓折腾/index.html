@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>12月安卓折腾 &middot; #cd /home</title>
-  <meta name="title" content="12月安卓折腾 &middot; #cd /home" />
+  <title>12月安卓折腾 nictf复现 &middot; #cd /home</title>
+  <meta name="title" content="12月安卓折腾 nictf复现 &middot; #cd /home" />
   
   
   <meta name="keywords" content="bin, " />
@@ -63,7 +63,7 @@
   
   
   
-  <meta property="og:title" content="12月安卓折腾" />
+  <meta property="og:title" content="12月安卓折腾 nictf复现" />
 <meta property="og:description" content="&ldquo;你怎么搞安卓逆向连个能抓包的机器都没有&rdquo;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ljahum.github.io/articles/12%E6%9C%88%E5%AE%89%E5%8D%93%E6%8A%98%E8%85%BE/" /><meta property="og:image" content="https://ljahum.github.io/articles/12%E6%9C%88%E5%AE%89%E5%8D%93%E6%8A%98%E8%85%BE/featured.png"/><meta property="article:section" content="articles" />
@@ -72,7 +72,7 @@
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ljahum.github.io/articles/12%E6%9C%88%E5%AE%89%E5%8D%93%E6%8A%98%E8%85%BE/featured.png"/>
-<meta name="twitter:title" content="12月安卓折腾"/>
+<meta name="twitter:title" content="12月安卓折腾 nictf复现"/>
 <meta name="twitter:description" content="&ldquo;你怎么搞安卓逆向连个能抓包的机器都没有&rdquo;"/>
 
   
@@ -81,8 +81,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Projects",
-    "name": "12月安卓折腾",
-    "headline": "12月安卓折腾",
+    "name": "12月安卓折腾 nictf复现",
+    "headline": "12月安卓折腾 nictf复现",
     
     "abstract": "\u0026ldquo;你怎么搞安卓逆向连个能抓包的机器都没有\u0026rdquo;",
     "inLanguage": "en",
@@ -100,7 +100,7 @@
     "keywords": ["bin"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1284"
+    "wordCount": "1301"
   }]
   </script>
 
@@ -676,7 +676,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      12月安卓折腾
+      12月安卓折腾 nictf复现
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -719,7 +719,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-22 13:23:11 &#43;0000 UTC">22 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1284 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
+  <time datetime="2024-12-22 13:23:11 &#43;0000 UTC">22 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1301 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
   
 
   
@@ -771,9 +771,12 @@
         <li><a href="#抓到包了">抓到包了</a></li>
       </ul>
     </li>
-    <li><a href="#复现文章草稿">复现文章草稿</a>
+    <li><a href="#tips-1">tips</a></li>
+    <li><a href="#复现-n1ctf-ezapk">复现 n1ctf ezapk</a>
       <ul>
+        <li><a href="#frida-使用">frida 使用</a></li>
         <li><a href="#脚本存档">脚本存档</a></li>
+        <li><a href="#展望">展望</a></li>
       </ul>
     </li>
   </ul>
@@ -795,9 +798,12 @@
         <li><a href="#抓到包了">抓到包了</a></li>
       </ul>
     </li>
-    <li><a href="#复现文章草稿">复现文章草稿</a>
+    <li><a href="#tips-1">tips</a></li>
+    <li><a href="#复现-n1ctf-ezapk">复现 n1ctf ezapk</a>
       <ul>
+        <li><a href="#frida-使用">frida 使用</a></li>
         <li><a href="#脚本存档">脚本存档</a></li>
+        <li><a href="#展望">展望</a></li>
       </ul>
     </li>
   </ul>
@@ -833,9 +839,17 @@
 <p>pixel3 安卓12  版本号：blueline-sp1a.210812.016.c1</p>
 <p>啊还得是pixel官网就有资料终于不用导出找一加的包了</p>
 <p>已安装环境：（点点点工程师）</p>
+<ol>
+<li>
 <p>暂时用magisk了 装不上apatch（有bug） 没时间搞kernelsu +=</p>
+</li>
+<li>
 <p>reqable 证书</p>
+</li>
+<li>
 <p>很普通的 frida 16</p>
+</li>
+</ol>
 <div id="tips" class="anchor"></div>
 <h3 class="relative group">tips 
     <span
@@ -889,7 +903,16 @@
   </figure>
 
 </p>
-<p>教程很详细但有几个注意事项</p>
+<p>把机器交给web大哥尝试对这颜色app搞点破坏，结果被导师on call于是计划终止</p>
+<div id="tips-1" class="anchor"></div>
+<h2 class="relative group">tips 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#tips-1" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>官方教程很详细但有几个注意事项</p>
 <ol>
 <li>建议magisk一件安装reqable官方模块</li>
 <li>扫码链接的时候注意网段选择，不然扫半天二维码扫不上很沙比</li>
@@ -906,12 +929,12 @@
   </figure>
 
 </p>
-<div id="复现文章草稿" class="anchor"></div>
-<h2 class="relative group">复现文章草稿 
+<div id="复现-n1ctf-ezapk" class="anchor"></div>
+<h2 class="relative group">复现 n1ctf ezapk 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e5%a4%8d%e7%8e%b0%e6%96%87%e7%ab%a0%e8%8d%89%e7%a8%bf" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%a4%8d%e7%8e%b0-n1ctf-ezapk" aria-label="Anchor">#</a></span>        
     
 </h2>
 <p>原文已经相当详细了</p>
@@ -966,11 +989,18 @@ LOAD:00000000000004C8                            0x2DC&gt;
 LOAD:00000000000004E0                 Elf64_Sym &lt;aNcajgg9kvem4 - byte_608, 0x12, 0, 0xD, NCaJGG9kvem4, \ ; &#34;NCaJGG9kvem4&#34;
 LOAD:00000000000004E0                            0x364&gt;
 LOAD:00000000000004F8                 Elf64_Sym &lt;aAe7kmlpkuubb - byte_608, 0x12, 0, 0xD, aE7KMLpKuUbB, \ ; &#34;aE7KMLpKuUbB&#34;
-</code></pre><p>frida:</p>
+</code></pre><div id="frida-使用" class="anchor"></div>
+<h3 class="relative group">frida 使用 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#frida-%e4%bd%bf%e7%94%a8" aria-label="Anchor">#</a></span>        
+    
+</h3>
 <p>1 版本需要一致(搞半天又忘看版本了)</p>
 <p>2 download目录没有执行权限 传到 /data/local 就行</p>
 <p>输入 n1ctf{111111}</p>
-<p>多按几次出现</p>
+<p>多按几次出现以下字符串，调试机比模拟器好用不止一个档次。。。</p>
 <pre tabindex="0"><code>GetStringUTFChars called from:
 0x7099fcf17c libnative1.so!0x1b17c
 0x711f0d9a48 libart.so!art_quick_generic_jni_trampoline+0x98
@@ -978,8 +1008,10 @@ LOAD:00000000000004F8                 Elf64_Sym &lt;aAe7kmlpkuubb - byte_608, 0x
 0x711f256c50 libart.so!_ZN3art17InvokeWithVarArgsIP10_jmethodIDEENS_6JValueERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectT_St9__va_list+0x1b8
 0x711f3b4b00 libart.so!_ZN3art3JNIILb0EE26CallNonvirtualObjectMethodEP7_JNIEnvP8_jobjectP7_jclassP10_jmethodIDz+0x15c
 0x71055d07e0
-</code></pre><p>进libNative1里面找 000000000001B17C
-是在000000000001B148里面调用的</p>
+</code></pre><p>进libNative1里面找 000000000001B17C</p>
+<p>发现是在000000000001B148里面调用的</p>
+<p>很喜欢师兄的一句话，arm汇编得查字典看，所以关注BLR之类的函数调用是最省事的</p>
+<p>现在由于LLM的加持，传统人肉逆向的性价比越来越小了</p>
 <pre tabindex="0"><code>.text:000000000001B148
 .text:000000000001B148 ; =============== S U B R O U T I N E =======================================
 .text:000000000001B148
@@ -1022,7 +1054,7 @@ libnative2.so function returned at 0x7102fa52c0 SZ3pMtlDTA7Q
 libnative2.so function called at 0x7102fa5ab0 UqhYy0F049n5
 libnative2.so function returned at 0x7102fa5ab0 UqhYy0F049n5
 </code></pre><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">调用顺序</span>
+</span></span><span class="line"><span class="cl"><span class="err">可见调用顺序</span>
 </span></span><span class="line"><span class="cl"><span class="n">iusp9aVAyoMI</span> <span class="n">xor</span>
 </span></span><span class="line"><span class="cl"><span class="n">SZ3pMtlDTA7Q</span> <span class="n">rc4</span>
 </span></span><span class="line"><span class="cl"><span class="n">UqhYy0F049rc</span> <span class="n">base64</span>
@@ -1231,9 +1263,18 @@ libnative2.so function returned at 0x7102fa5ab0 UqhYy0F049n5
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>tips：看arm的可以先关注</p>
 <p>BL BLX BLR BX  等函数调用的命令 其余的查字典</p>
-<blockquote>
-<p>看起来手动注入不是个轻松活，能用框架还是用框架吧，纯c\cpp写着太难受了55</p>
-</blockquote>
+<div id="展望" class="anchor"></div>
+<h3 class="relative group">展望 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%b1%95%e6%9c%9b" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>java和cpp层的hook发展历史和外挂的发展历史是高度重合的，而现在主流外挂已经发展到了dma这种真正的 &ldquo;外&rdquo; 挂，反外挂的手段也从单纯的内存对抗转到其他领域，传统手艺终究是只能以学习为目的了</p>
+<p>曾几何时，逆向大手子们以比拼谁的调试器玩得溜，谁的内存找的快，谁的汇编功底扎实为乐</p>
+<p>短短几年，新方法新技术来势汹汹涌入了安全的蓝海</p>
+<p>技术在变，方法在变，而服务用户（整活）的业务目的是不变的</p>
 
         </div>
                 
@@ -1265,7 +1306,7 @@ libnative2.so function returned at 0x7102fa5ab0 UqhYy0F049n5
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/articles/november/">
+            <a class="flex group mr-3" href="/articles/2025androidflaw/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1277,11 +1318,11 @@ libnative2.so function returned at 0x7102fa5ab0 UqhYy0F049n5
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >11月小结</span
+                  >古早安卓漏洞学习</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-11-19 13:23:11 &#43;0000 UTC">19 November 2024</time>
+                    <time datetime="2024-12-20 13:23:11 &#43;0000 UTC">20 December 2024</time>
                   
                 </span>
               </span>
@@ -1316,7 +1357,7 @@ libnative2.so function returned at 0x7102fa5ab0 UqhYy0F049n5
     
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
       &copy;
-      2024
+      2025
       ベーコン
     </p>
     

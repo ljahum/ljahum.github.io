@@ -6,10 +6,10 @@
     <description>Recent content in bin on #cd /home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 ベーコン</copyright>
+    <copyright>© 2025 ベーコン</copyright>
     <lastBuildDate>Sun, 22 Dec 2024 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/tags/bin/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>12月安卓折腾</title>
+      <title>12月安卓折腾 nictf复现</title>
       <link>https://ljahum.github.io/articles/12%E6%9C%88%E5%AE%89%E5%8D%93%E6%8A%98%E8%85%BE/</link>
       <pubDate>Sun, 22 Dec 2024 13:23:11 +0000</pubDate>
       
@@ -19,17 +19,27 @@
     </item>
     
     <item>
-      <title>11月小结</title>
-      <link>https://ljahum.github.io/articles/november/</link>
-      <pubDate>Tue, 19 Nov 2024 13:23:11 +0000</pubDate>
+      <title>古早安卓漏洞学习</title>
+      <link>https://ljahum.github.io/articles/2025androidflaw/</link>
+      <pubDate>Fri, 20 Dec 2024 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum.github.io/articles/november/</guid>
-      <description>华子杯 线下pwn4 # 华子杯2024线下，啊太久没做pwn了，修了两个签到，记个工具脚本的使用</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/november/featured.png" />
+      <guid>https://ljahum.github.io/articles/2025androidflaw/</guid>
+      <description>本科生课件的一部分</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/2025androidflaw/featured.png" />
     </item>
     
     <item>
-      <title>2024_10</title>
+      <title>11月华子杯</title>
+      <link>https://ljahum.github.io/articles/202411/</link>
+      <pubDate>Tue, 19 Nov 2024 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/202411/</guid>
+      <description>华子杯 线下pwn4 # 华子杯2024线下，啊太久没做pwn了，修了两个签到，记个工具脚本的使用</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/202411/featured.png" />
+    </item>
+    
+    <item>
+      <title>2024 10月CTF归档</title>
       <link>https://ljahum.github.io/articles/2024_10/</link>
       <pubDate>Thu, 31 Oct 2024 13:23:11 +0000</pubDate>
       
@@ -39,17 +49,17 @@
     </item>
     
     <item>
-      <title>高校运维2024</title>
-      <link>https://ljahum.github.io/articles/yunwei2024/</link>
+      <title>高校运维大赛2024</title>
+      <link>https://ljahum.github.io/articles/2024yunwei/</link>
       <pubDate>Mon, 06 May 2024 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum.github.io/articles/yunwei2024/</guid>
+      <guid>https://ljahum.github.io/articles/2024yunwei/</guid>
       <description>死掉了</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/yunwei2024/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/2024yunwei/featured.png" />
     </item>
     
     <item>
-      <title>感谢老铁送的咖啡杯</title>
+      <title>vnctf2024   </title>
       <link>https://ljahum.github.io/articles/vnctf2024/</link>
       <pubDate>Sun, 25 Feb 2024 13:23:11 +0000</pubDate>
       
@@ -59,7 +69,7 @@
     </item>
     
     <item>
-      <title>lattigo</title>
+      <title>lattice学习</title>
       <link>https://ljahum.github.io/articles/2024spring/</link>
       <pubDate>Tue, 20 Feb 2024 13:23:11 +0000</pubDate>
       
@@ -70,12 +80,12 @@
     
     <item>
       <title>flowdroid使用</title>
-      <link>https://ljahum.github.io/articles/flowdroidusage/</link>
+      <link>https://ljahum.github.io/articles/2023flowdroidusage/</link>
       <pubDate>Mon, 15 Jan 2024 13:23:11 +0000</pubDate>
       
-      <guid>https://ljahum.github.io/articles/flowdroidusage/</guid>
+      <guid>https://ljahum.github.io/articles/2023flowdroidusage/</guid>
       <description>辛粘块洛！ # 环境 win11 ide：idea2023 jdk17、jdk8 最近在做隐私相关的工作，手工逆向CTF还行，在商用app里面大浪淘沙太痛苦了</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/flowdroidusage/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/2023flowdroidusage/featured.jpg" />
     </item>
     
     <item>

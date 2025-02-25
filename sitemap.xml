@@ -57,7 +57,16 @@
   
     
       <url>
-            <loc>https://ljahum.github.io/articles/november/</loc>
+            <loc>https://ljahum.github.io/articles/2025androidflaw/</loc>
+            <lastmod>2024-12-20T13:23:11+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/202411/</loc>
             <lastmod>2024-11-19T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -99,7 +108,7 @@
   
     
       <url>
-            <loc>https://ljahum.github.io/articles/yunwei2024/</loc>
+            <loc>https://ljahum.github.io/articles/2024yunwei/</loc>
             <lastmod>2024-05-06T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -108,7 +117,7 @@
   
     
       <url>
-            <loc>https://ljahum.github.io/articles/practice/</loc>
+            <loc>https://ljahum.github.io/articles/20244crypto/</loc>
             <lastmod>2024-04-15T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -144,7 +153,7 @@
   
     
       <url>
-            <loc>https://ljahum.github.io/articles/flowdroidusage/</loc>
+            <loc>https://ljahum.github.io/articles/2023flowdroidusage/</loc>
             <lastmod>2024-01-15T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
