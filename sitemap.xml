@@ -84,26 +84,17 @@
   
     
       <url>
-            <loc>https://ljahum.github.io/articles/202411/</loc>
-            <lastmod>2024-11-19T13:23:11+00:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
             <loc>https://ljahum.github.io/articles/2024_10/</loc>
             <lastmod>2024-10-31T13:23:11+00:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
+    
+  
+    
+  
+    
+  
     
   
     
@@ -994,6 +985,14 @@
       <url>
             <loc>https://ljahum.github.io/achieve/2019to2021/%E5%88%9D%E6%8E%A2ras%E5%8A%A0%E5%AF%86/</loc>
             <lastmod>2020-03-05T00:35:13+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://ljahum.github.io/articles/202411/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
