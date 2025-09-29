@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 ljahum</copyright>
-    <lastBuildDate>Mon, 10 Mar 2025 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Sep 2025 13:23:11 +0000</lastBuildDate><atom:link href="https://ljahum.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://ljahum.github.io/achieve/about/</link>
@@ -29,13 +29,33 @@
     </item>
     
     <item>
-      <title>app testing 领域文章阅读</title>
+      <title>syscall学习</title>
       <link>https://ljahum.github.io/articles/2025paperreading/</link>
-      <pubDate>Mon, 10 Mar 2025 13:23:11 +0000</pubDate>
+      <pubDate>Sat, 20 Sep 2025 13:23:11 +0000</pubDate>
       
       <guid>https://ljahum.github.io/articles/2025paperreading/</guid>
-      <description>没啥原因，就是想看了</description>
+      <description>记一下近期逆向看到的一些好玩的东西</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/2025paperreading/featured.png" />
+    </item>
+    
+    <item>
+      <title>2025tx游戏安全PC初赛</title>
+      <link>https://ljahum.github.io/articles/ace2025/</link>
+      <pubDate>Tue, 15 Apr 2025 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/ace2025/</guid>
+      <description>前期分析 # 拖进ida发现会对加载sys文件并运行，sys驱动里面有反调一直监控，所以ida attach上去 会自动退出</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/ace2025/featured.png" />
+    </item>
+    
+    <item>
+      <title>app testing 领域文章阅读</title>
+      <link>https://ljahum.github.io/articles/2025restudy/</link>
+      <pubDate>Mon, 10 Mar 2025 13:23:11 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/2025restudy/</guid>
+      <description>没啥原因，就是想看了</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/2025restudy/featured.png" />
     </item>
     
     <item>

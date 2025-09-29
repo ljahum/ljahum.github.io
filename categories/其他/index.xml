@@ -58,5 +58,15 @@
       
     </item>
     
+    <item>
+      <title>2025腾讯游戏安全大赛PC初赛</title>
+      <link>https://ljahum.github.io/articles/202411/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ljahum.github.io/articles/202411/</guid>
+      <description>华子杯 线下pwn4 # 华子杯2024线下，啊太久没做pwn了，修了两个签到，记个工具脚本的使用</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ljahum.github.io/articles/202411/featured.png" />
+    </item>
+    
   </channel>
 </rss>

@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>app testing 领域文章阅读 &middot; #cd /home</title>
-  <meta name="title" content="app testing 领域文章阅读 &middot; #cd /home" />
+  <title>syscall学习 &middot; #cd /home</title>
+  <meta name="title" content="syscall学习 &middot; #cd /home" />
   
   
   <meta name="keywords" content="bin, " />
@@ -63,17 +63,17 @@
   
   
   
-  <meta property="og:title" content="app testing 领域文章阅读" />
-<meta property="og:description" content="没啥原因，就是想看了" />
+  <meta property="og:title" content="syscall学习" />
+<meta property="og:description" content="记一下近期逆向看到的一些好玩的东西" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ljahum.github.io/articles/2025paperreading/" /><meta property="og:image" content="https://ljahum.github.io/articles/2025paperreading/featured.png"/><meta property="article:section" content="articles" />
-<meta property="article:published_time" content="2025-03-10T13:23:11+00:00" />
-<meta property="article:modified_time" content="2025-03-10T13:23:11+00:00" />
+<meta property="article:published_time" content="2025-09-20T13:23:11+00:00" />
+<meta property="article:modified_time" content="2025-09-20T13:23:11+00:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ljahum.github.io/articles/2025paperreading/featured.png"/>
-<meta name="twitter:title" content="app testing 领域文章阅读"/>
-<meta name="twitter:description" content="没啥原因，就是想看了"/>
+<meta name="twitter:title" content="syscall学习"/>
+<meta name="twitter:description" content="记一下近期逆向看到的一些好玩的东西"/>
 
   
   <script type="application/ld+json">
@@ -81,10 +81,10 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Projects",
-    "name": "app testing 领域文章阅读",
-    "headline": "app testing 领域文章阅读",
+    "name": "syscall学习",
+    "headline": "syscall学习",
     
-    "abstract": "没啥原因，就是想看了",
+    "abstract": "记一下近期逆向看到的一些好玩的东西",
     "inLanguage": "en",
     "url" : "https:\/\/ljahum.github.io\/articles\/2025paperreading\/",
     "author" : {
@@ -92,15 +92,15 @@
       "name": "ljahum"
     },
     "copyrightYear": "2025",
-    "dateCreated": "2025-03-10T13:23:11\u002b00:00",
-    "datePublished": "2025-03-10T13:23:11\u002b00:00",
+    "dateCreated": "2025-09-20T13:23:11\u002b00:00",
+    "datePublished": "2025-09-20T13:23:11\u002b00:00",
     
-    "dateModified": "2025-03-10T13:23:11\u002b00:00",
+    "dateModified": "2025-09-20T13:23:11\u002b00:00",
     
     "keywords": ["bin"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "97"
+    "wordCount": "972"
   }]
   </script>
 
@@ -290,7 +290,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -625,6 +629,16 @@
 
 
 
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -662,7 +676,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      app testing 领域文章阅读
+      syscall学习
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -705,7 +719,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-03-10 13:23:11 &#43;0000 UTC">10 March 2025</time><span class="px-2 text-primary-500">&middot;</span><span>97 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2025-09-20 13:23:11 &#43;0000 UTC">20 September 2025</time><span class="px-2 text-primary-500">&middot;</span><span>972 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -740,7 +754,7 @@
     
      <div
       class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
 
          <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
@@ -751,10 +765,19 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#ncf-概念">NCF 概念</a></li>
-    <li><a href="#llm-检测ncf的几种方法">LLM 检测NCF的几种方法</a></li>
-    <li><a href="#property-based-testing">Property-based Testing</a></li>
-    <li><a href="#decomposed-prompting">Decomposed Prompting</a></li>
+    <li><a href="#syscall实现openprocess">syscall实现openprocess</a>
+      <ul>
+        <li><a href="#逆向">逆向</a></li>
+        <li><a href="#处理参数">处理参数</a></li>
+        <li><a href="#效果">效果</a></li>
+      </ul>
+    </li>
+    <li><a href="#kctf2025-day4知识点">kctf2025 day4知识点</a>
+      <ul>
+        <li><a href="#int3触发vsh">int3触发vsh</a></li>
+        <li><a href="#读取ntdll并利用syscall调用">读取ntdll并利用syscall调用</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -768,10 +791,19 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#ncf-概念">NCF 概念</a></li>
-    <li><a href="#llm-检测ncf的几种方法">LLM 检测NCF的几种方法</a></li>
-    <li><a href="#property-based-testing">Property-based Testing</a></li>
-    <li><a href="#decomposed-prompting">Decomposed Prompting</a></li>
+    <li><a href="#syscall实现openprocess">syscall实现openprocess</a>
+      <ul>
+        <li><a href="#逆向">逆向</a></li>
+        <li><a href="#处理参数">处理参数</a></li>
+        <li><a href="#效果">效果</a></li>
+      </ul>
+    </li>
+    <li><a href="#kctf2025-day4知识点">kctf2025 day4知识点</a>
+      <ul>
+        <li><a href="#int3触发vsh">int3触发vsh</a></li>
+        <li><a href="#读取ntdll并利用syscall调用">读取ntdll并利用syscall调用</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -789,100 +821,389 @@
         <div class="max-w-prose mb-20">
           
 
-<blockquote>
-<p>没啥原因，就是想看了</p>
-</blockquote>
-<div id="ncf-概念" class="anchor"></div>
-<h2 class="relative group">NCF 概念 
+<p>记一下近期逆向看到的一些好玩的东西</p>
+<div id="syscall实现openprocess" class="anchor"></div>
+<h2 class="relative group">syscall实现openprocess 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#ncf-%e6%a6%82%e5%bf%b5" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#syscall%e5%ae%9e%e7%8e%b0openprocess" aria-label="Anchor">#</a></span>        
     
 </h2>
-<p>传统测试中关注导致crush的漏洞或者能产生危害的漏洞（crush-&gt;expolition）</p>
-<p>而 non-crash functional (NCF) 问题用工具比较难以检测，一个常见的类别是前端ui显示错误，但是后端接口正常，这种问题很难被检测到</p>
-<p>用一个文章里面的example来解释，存储照片时把空格解析成%20，很影响用户体验，也很影响后面的小功能继续开发</p>
-<p>
-
-
-
-
-  <figure>
-    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/refs/heads/main/2025paperreading/image.png" alt="Alt text" />
-    
-  </figure>
-
-</p>
-<p>经常折腾编码的小伙伴一定体验过存东西的时候不管编码问题直接大力飞砖</p>
-<p>然后开发新功能直接火葬场  debug三天三夜也找不到问题所在这种事</p>
-<div id="llm-检测ncf的几种方法" class="anchor"></div>
-<h2 class="relative group">LLM 检测NCF的几种方法 
+<div id="逆向" class="anchor"></div>
+<h3 class="relative group">逆向 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#llm-%e6%a3%80%e6%b5%8bncf%e7%9a%84%e5%87%a0%e7%a7%8d%e6%96%b9%e6%b3%95" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e9%80%86%e5%90%91" aria-label="Anchor">#</a></span>        
     
-</h2>
-<p>intuition上来讲，传统的工具无法做到对NCF的良好检测是因为不厚human like，LLM的出现在intuition上提供的一种比较human like的check方法</p>
-<p>A Study of Using Multimodal LLMs for Non-Crash Functional Bug Detection in Android Apps讲得比较宽泛，做了很多概念上的研究和努力</p>
-<p>目前看到比较好的方法是另一篇Zhe Liu团队正在预印的文章Vision-driven Non-crash Functional Bug Detection for Mobile Apps</p>
-<p><a href="https://github.com/testtestA6/VisionDroid"   target="_blank">
-    https://github.com/testtestA6/VisionDroid</a></p>
-<p>其中提供了详细的prompt供我们学习，这个项目结合</p>
-<ol>
-<li>NCF检测这个新需求</li>
-<li>截图+文本信息 形成视觉提示使LLM更好理解上下文</li>
-<li>交互式多模态LLM问答任务</li>
-</ol>
-<p>来增强对于NCF的检测，其中  截图+文本信息形成视觉提示  和  LLM测APP NCF的方法检测在古书中早有记载</p>
-<p>但看起来文章完成了有机结合，发挥了主观能动性，体现了温故而知新的学习态度</p>
-<div id="property-based-testing" class="anchor"></div>
-<h2 class="relative group">Property-based Testing 
+</h3>
+<p>逆向KernelBase.dll找openprocess源码</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">HANDLE</span> <span class="kr">__stdcall</span> <span class="nf">OpenProcess</span><span class="p">(</span><span class="n">DWORD</span> <span class="n">dwDesiredAccess</span><span class="p">,</span> <span class="n">BOOL</span> <span class="n">bInheritHandle</span><span class="p">,</span> <span class="n">DWORD</span> <span class="n">dwProcessId</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">NTSTATUS</span> <span class="n">v3</span><span class="p">;</span> <span class="c1">// eax
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kt">unsigned</span> <span class="n">__int128</span> <span class="n">v5</span><span class="p">;</span> <span class="c1">// [rsp+20h] [rbp-48h] BYREF
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">struct</span> <span class="n">_OBJECT_ATTRIBUTES</span> <span class="n">v6</span><span class="p">;</span> <span class="c1">// [rsp+30h] [rbp-38h] BYREF
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">HANDLE</span> <span class="n">v7</span><span class="p">;</span> <span class="c1">// [rsp+88h] [rbp+20h] BYREF
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="nf">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">v6</span><span class="p">.</span><span class="n">Attributes</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">v6</span><span class="p">.</span><span class="n">RootDirectory</span> <span class="o">=</span> <span class="mi">0LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">v5</span> <span class="o">=</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kr">__int64</span><span class="p">)(</span><span class="kt">int</span><span class="p">)</span><span class="n">dwProcessId</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">*</span><span class="p">(</span><span class="n">_QWORD</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">v6</span><span class="p">.</span><span class="n">Length</span> <span class="o">=</span> <span class="mi">48LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">v7</span> <span class="o">=</span> <span class="mi">0LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">v6</span><span class="p">.</span><span class="n">Attributes</span> <span class="o">=</span> <span class="n">bInheritHandle</span> <span class="o">?</span> <span class="mi">2</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">v6</span><span class="p">.</span><span class="n">ObjectName</span> <span class="o">=</span> <span class="mi">0LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">v3</span> <span class="o">=</span> <span class="nf">NtOpenProcess</span><span class="p">(</span><span class="o">&amp;</span><span class="n">v7</span><span class="p">,</span> <span class="n">dwDesiredAccess</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v6</span><span class="p">,</span> <span class="p">(</span><span class="n">PCLIENT_ID</span><span class="p">)</span><span class="o">&amp;</span><span class="n">v5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span> <span class="n">v3</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">v7</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">BaseSetLastNTError</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">)</span><span class="n">v3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>随便找个程序调用一下openprocess，跟到NtOpenProcess里面，可以看到使用的0x26号系统调用，参数和寄存器的对应暂时不管</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">00007FF9846236E0 | 4C:8BD1                  | mov r10,rcx                             |
+00007FF9846236E3 | B8 26000000              | mov eax,26                              | 26:&#39;&amp;&#39;
+00007FF9846236E8 | F60425 0803FE7F 01       | test byte ptr ds:[7FFE0308],1           |
+00007FF9846236F0 | 75 03                    | jne ntdll.7FF9846236F5                  |
+00007FF9846236F2 | 0F05                     | syscall                                 |
+00007FF9846236F4 | C3                       | ret                                     |
+00007FF9846236F5 | CD 2E                    | int 2E                                  |
+00007FF9846236F7 | C3                       | ret                                     |
+</code></pre><p>编写汇编</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">.code
+	asm_OpenProcess proc
+		mov r10,rcx
+        mov eax,26h
+		syscall
+		ret
+	asm_opp endp
+end
+</code></pre><p>在ida中查找NtOpenProcess的定义</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="p">.</span><span class="nl">idata</span><span class="p">:</span><span class="mo">00000001</span><span class="mi">80297290</span> <span class="p">;</span> <span class="nf">NTSTATUS</span> <span class="p">(</span><span class="kr">__stdcall</span> <span class="o">*</span><span class="n">NtOpenProcess</span><span class="p">)(</span><span class="n">PHANDLE</span> <span class="n">ProcessHandle</span><span class="p">,</span> <span class="n">ACCESS_MASK</span> <span class="n">DesiredAccess</span><span class="p">,</span> <span class="n">POBJECT_ATTRIBUTES</span> <span class="n">ObjectAttributes</span><span class="p">,</span> <span class="n">PCLIENT_ID</span> <span class="n">ClientId</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nl">idata</span><span class="p">:</span><span class="mo">00000001</span><span class="mi">80297290</span>                 <span class="n">extrn</span> <span class="nl">__imp_NtOpenProcess</span><span class="p">:</span><span class="n">qword</span>
+</span></span></code></pre></div><p>修改一下定义，需要使其用纯C的语境下使用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">extern</span> <span class="s">&#34;C&#34;</span> <span class="n">NTSTATUS</span> <span class="nf">asm_OpenProcess</span><span class="p">(</span><span class="n">PHANDLE</span> <span class="n">ProcessHandle</span><span class="p">,</span> <span class="n">ACCESS_MASK</span> <span class="n">DesiredAccess</span><span class="p">,</span> <span class="n">POBJECT_ATTRIBUTES</span> <span class="n">ObjectAttributes</span><span class="p">,</span> <span class="n">PCLIENT_ID</span> <span class="n">ClientId</span><span class="p">);</span>
+</span></span></code></pre></div><div id="处理参数" class="anchor"></div>
+<h3 class="relative group">处理参数 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#property-based-testing" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%a4%84%e7%90%86%e5%8f%82%e6%95%b0" aria-label="Anchor">#</a></span>        
     
-</h2>
-<p>Property-Based Testing for Validating User Privacy-Related Functionalities in Social Media Apps</p>
-<blockquote>
-<p>这篇文章纯软工测试方面了</p>
-</blockquote>
-<p>属性驱动测试（Property-Based Testing）是一种软件测试方法，它的主要思想是通过定义属性和约束，测试系统的行为是否符合预期的规范</p>
-<p>Fuzz Testing和Property-based Testing是有区别的区别</p>
-<p>他们的行为和侧重不一样</p>
-<p>Property-based Testing 希望系统符合预期</p>
-<p>Fuzz Testing希望系统不符合预期</p>
-<p>Property-based Testing被多用在app testing中可能是为了用约束属性的方式来尽量模拟用户输入，从而找到更多事实有用的bug</p>
-<p>嗯fuzzing可能出来一些永远不可能被触发的漏洞</p>
-<div id="decomposed-prompting" class="anchor"></div>
-<h2 class="relative group">Decomposed Prompting 
+</h3>
+<p>ida9对结构体的处理很舒服，可以直接复制出来用</p>
+<p>PHANDLE不用管，ACCESS_MASK是dword</p>
+<p>从ida把POBJECT_ATTRIBUTES和PCLIENT_ID的结构体复制出来，</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="mo">0000000</span><span class="mi">8</span> <span class="k">typedef</span> <span class="k">struct</span> <span class="n">_OBJECT_ATTRIBUTES</span> <span class="o">*</span><span class="n">POBJECT_ATTRIBUTES</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mo">00000000</span> <span class="k">struct</span> <span class="n">_OBJECT_ATTRIBUTES</span> <span class="c1">// sizeof=0x30
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000000</span> <span class="p">{</span>                                       <span class="c1">// XREF: PerfpRegisterCounterSet+56/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000000</span>                                         <span class="c1">// PerfpRegisterCounterSet+99/w ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000000</span>     <span class="n">ULONG</span> <span class="n">Length</span><span class="p">;</span>                       <span class="c1">// XREF: BaseRegOpenKeyInternal+11B/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000000</span>                                         <span class="c1">// BaseRegOpenKeyInternal+153/w ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000004</span>     <span class="c1">// padding byte
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000005</span>     <span class="c1">// padding byte
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000006</span>     <span class="c1">// padding byte
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000007</span>     <span class="c1">// padding byte
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000000</span><span class="mi">8</span>     <span class="n">HANDLE</span> <span class="n">RootDirectory</span><span class="p">;</span>               <span class="c1">// XREF: BaseRegOpenKeyInternal+158/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000000</span><span class="mi">8</span>                                         <span class="c1">// BaseRegOpenKeyInternal+15D/w ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000010</span>     <span class="n">PUNICODE_STRING</span> <span class="n">ObjectName</span><span class="p">;</span>         <span class="c1">// XREF: BaseRegOpenKeyInternal+123/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000010</span>                                         <span class="c1">// BaseRegOpenKeyInternal+283/w ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000001</span><span class="mi">8</span>     <span class="n">ULONG</span> <span class="n">Attributes</span><span class="p">;</span>                   <span class="c1">// XREF: BaseRegOpenKeyInternal+26F/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000001</span><span class="mi">8</span>                                         <span class="c1">// BaseRegOpenKeyInternal+2D3/w ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000001</span><span class="n">C</span>     <span class="c1">// padding byte
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000001</span><span class="n">D</span>     <span class="c1">// padding byte
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000001</span><span class="n">E</span>     <span class="c1">// padding byte
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mf">0000001F</span>     <span class="c1">// padding byte
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000020</span>     <span class="n">PVOID</span> <span class="n">SecurityDescriptor</span><span class="p">;</span>           <span class="c1">// XREF: BaseRegOpenKeyInternal+12B/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000020</span>                                         <span class="c1">// BaseRegOpenKeyInternal+28E/w ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000002</span><span class="mi">8</span>     <span class="n">PVOID</span> <span class="n">SecurityQualityOfService</span><span class="p">;</span>     <span class="c1">// XREF: QueryRegDefaultSortingVersion+50/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000002</span><span class="mi">8</span>                                         <span class="c1">// QueryRegSortVersionDll+61/w ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000030</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mo">0000000</span><span class="mi">8</span> <span class="k">typedef</span> <span class="k">struct</span> <span class="n">_CLIENT_ID</span> <span class="o">*</span><span class="n">PCLIENT_ID</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mo">00000000</span> <span class="k">struct</span> <span class="n">_CLIENT_ID</span> <span class="c1">// sizeof=0x10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000000</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="mo">00000000</span>     <span class="n">HANDLE</span> <span class="n">UniqueProcess</span><span class="p">;</span>               <span class="c1">// XREF: GetProcessVersion+A3/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000000</span>                                         <span class="c1">// ProcessIdToHandle+32/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000000</span><span class="mi">8</span>     <span class="n">HANDLE</span> <span class="n">UniqueThread</span><span class="p">;</span>                <span class="c1">// XREF: GetProcessVersion+81/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">0000000</span><span class="mi">8</span>                                         <span class="c1">// ProcessIdToHandle+3A/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="mo">00000010</span> <span class="p">};</span>
+</span></span></code></pre></div><p>把逆出来的东西修改一下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_CLIENT_ID</span> <span class="c1">// sizeof=0x10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">HANDLE</span> <span class="n">UniqueProcess</span><span class="p">;</span>              
+</span></span><span class="line"><span class="cl">    <span class="n">HANDLE</span> <span class="n">UniqueThread</span><span class="p">;</span>                
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="o">*</span> <span class="n">PCLIENT_ID</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_OBJECT_ATTRIBUTES</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ULONG</span> <span class="n">Length</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">HANDLE</span> <span class="n">RootDirectory</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">char</span> <span class="o">*</span> <span class="n">ObjectName</span><span class="p">;</span> <span class="c1">// PUNICODE_STRING 直接用char * 存放
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">ULONG</span> <span class="n">Attributes</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">PVOID</span> <span class="n">SecurityDescriptor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">PVOID</span> <span class="n">SecurityQualityOfService</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="o">*</span> <span class="n">POBJECT_ATTRIBUTES</span><span class="p">;</span>
+</span></span></code></pre></div><p>然后开始声明参数并初始化</p>
+<pre tabindex="0"><code>使用 {} 初始化后，每个成员会被初始化为其类型的&#34;零值&#34;：
+Length (ULONG) → 0
+RootDirectory (HANDLE) → nullptr
+ObjectName (char ) → nullptr
+Attributes (ULONG) → 0
+SecurityDescriptor (PVOID) → nullptr
+SecurityQualityOfService (PVOID) → nullptr
+</code></pre><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">HANDLE</span> <span class="n">hProcess</span><span class="p">{};</span>
+</span></span><span class="line"><span class="cl"><span class="n">_OBJECT_ATTRIBUTES</span> <span class="n">ObjectAttributes</span><span class="p">{};</span>
+</span></span><span class="line"><span class="cl"><span class="nf">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ObjectAttributes</span><span class="p">.</span><span class="n">Attributes</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">v6</span><span class="p">.</span><span class="n">RootDirectory</span> <span class="o">=</span> <span class="mi">0LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">v6</span><span class="p">.</span><span class="n">Length</span> <span class="o">=</span> <span class="mi">48LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">v6</span><span class="p">.</span><span class="n">Attributes</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">?</span> <span class="mi">2</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// bInheritHandle一般填false
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">v6</span><span class="p">.</span><span class="n">ObjectName</span> <span class="o">=</span> <span class="mi">0LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">_CLIENT_ID</span> <span class="n">v5</span><span class="p">{};</span>
+</span></span><span class="line"><span class="cl"><span class="n">v5</span><span class="p">.</span><span class="n">UniqueProcess</span> <span class="o">=</span> <span class="p">(</span><span class="n">HANDLE</span><span class="p">)</span><span class="n">pid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nf">asm_OpenProcess</span><span class="p">(</span><span class="o">&amp;</span><span class="n">hProcess</span><span class="p">,</span> <span class="n">PROCESS_VM_READ</span> <span class="o">|</span> <span class="n">PROCESS_QUERY_INFORMATION</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v6</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v5</span><span class="p">);</span>
+</span></span></code></pre></div><div id="效果" class="anchor"></div>
+<h3 class="relative group">效果 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#decomposed-prompting" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e6%95%88%e6%9e%9c" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>src:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;windows.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_CLIENT_ID</span> <span class="c1">// sizeof=0x10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">HANDLE</span> <span class="n">UniqueProcess</span><span class="p">;</span>               <span class="c1">// XREF: GetProcessVersion+A3/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">HANDLE</span> <span class="n">UniqueThread</span><span class="p">;</span>                <span class="c1">// XREF: GetProcessVersion+81/w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="o">*</span> <span class="n">PCLIENT_ID</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_OBJECT_ATTRIBUTES</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ULONG</span> <span class="n">Length</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">HANDLE</span> <span class="n">RootDirectory</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">char</span> <span class="o">*</span> <span class="n">ObjectName</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ULONG</span> <span class="n">Attributes</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">PVOID</span> <span class="n">SecurityDescriptor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">PVOID</span> <span class="n">SecurityQualityOfService</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="o">*</span> <span class="n">POBJECT_ATTRIBUTES</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// idata:0000000180297290 ; NTSTATUS (__stdcall *NtOpenProcess)(PHANDLE ProcessHandle, ACCESS_MASK DesiredAccess, POBJECT_ATTRIBUTES ObjectAttributes, PCLIENT_ID ClientId)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="s">&#34;C&#34;</span> <span class="n">NTSTATUS</span> <span class="nf">asm_OpenProcess</span><span class="p">(</span><span class="n">PHANDLE</span> <span class="n">ProcessHandle</span><span class="p">,</span> <span class="n">ACCESS_MASK</span> <span class="n">DesiredAccess</span><span class="p">,</span> <span class="n">POBJECT_ATTRIBUTES</span> <span class="n">ObjectAttributes</span><span class="p">,</span> <span class="n">PCLIENT_ID</span> <span class="n">ClientId</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 目标进程的PID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">DWORD</span> <span class="n">pid</span> <span class="o">=</span> <span class="mi">47128</span><span class="p">;</span> <span class="c1">// 替换为实际的进程ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// 要读取的内存地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">LPCVOID</span> <span class="n">address</span> <span class="o">=</span> <span class="p">(</span><span class="n">LPCVOID</span><span class="p">)</span><span class="mh">0x0007FF9844C0000</span><span class="p">;</span> <span class="c1">// 替换为实际的内存地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// 打开目标进程，获取进程句柄
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">HANDLE</span> <span class="n">hProcess</span><span class="p">{};</span>
+</span></span><span class="line"><span class="cl">    <span class="n">_OBJECT_ATTRIBUTES</span> <span class="n">ObjectAttributes</span><span class="p">{};</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ObjectAttributes</span><span class="p">.</span><span class="n">Attributes</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v6</span><span class="p">.</span><span class="n">RootDirectory</span> <span class="o">=</span> <span class="mi">0LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v6</span><span class="p">.</span><span class="n">Length</span> <span class="o">=</span> <span class="mi">48LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v6</span><span class="p">.</span><span class="n">Attributes</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">?</span> <span class="mi">2</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v6</span><span class="p">.</span><span class="n">ObjectName</span> <span class="o">=</span> <span class="mi">0LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">_CLIENT_ID</span> <span class="n">v5</span><span class="p">{};</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v5</span><span class="p">.</span><span class="n">UniqueProcess</span> <span class="o">=</span> <span class="p">(</span><span class="n">HANDLE</span><span class="p">)</span><span class="n">pid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">asm_OpenProcess</span><span class="p">(</span><span class="o">&amp;</span><span class="n">hProcess</span><span class="p">,</span> <span class="n">PROCESS_VM_READ</span> <span class="o">|</span> <span class="n">PROCESS_QUERY_INFORMATION</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v6</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">v5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">hProcess</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;无法打开进程。错误代码：&#34;</span> <span class="o">&lt;&lt;</span> <span class="nf">GetLastError</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 读取的数据缓冲区
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">SIZE_T</span> <span class="n">bytesRead</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">buffer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 从目标进程中读取内存
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">BOOL</span> <span class="n">success</span> <span class="o">=</span> <span class="nf">ReadProcessMemory</span><span class="p">(</span><span class="n">hProcess</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">buffer</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span> <span class="o">&amp;</span><span class="n">bytesRead</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">success</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;读取内存失败。错误代码：&#34;</span> <span class="o">&lt;&lt;</span> <span class="nf">GetLastError</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">CloseHandle</span><span class="p">(</span><span class="n">hProcess</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;读取到的数据：&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">hex</span> <span class="o">&lt;&lt;</span> <span class="n">buffer</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 关闭进程句柄
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nf">CloseHandle</span><span class="p">(</span><span class="n">hProcess</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>asm</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">.code
+	asm_OpenProcess proc
+		mov r10,rcx
+        mov eax,26h
+		syscall
+		ret
+	asm_opp endp
+end
+</code></pre><p>去读一个进程的baseadd开头几个字节</p>
+<p>读取到的数据：905a4d</p>
+<p>4d 5a 90 00 刚好是mz魔数</p>
+<div id="kctf2025-day4知识点" class="anchor"></div>
+<h2 class="relative group">kctf2025 day4知识点 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#kctf2025-day4%e7%9f%a5%e8%af%86%e7%82%b9" aria-label="Anchor">#</a></span>        
     
 </h2>
-<p>这是一篇将递归，子问题（dp）思维带入带LLM的文章</p>
-<p><a href="https://github.com/allenai/DecomP"   target="_blank">
-    https://github.com/allenai/DecomP</a></p>
-<p>
-
-
-
-
-  <figure>
-    <img class="my-0 rounded-md" src="https://raw.githubusercontent.com/ljahum/images/refs/heads/main/2025paperreading/image-1.png" alt="Alt text" />
+<div id="int3触发vsh" class="anchor"></div>
+<h3 class="relative group">int3触发vsh 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#int3%e8%a7%a6%e5%8f%91vsh" aria-label="Anchor">#</a></span>        
     
-  </figure>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="nf">AddVectoredExceptionHandler</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">KiTrapActions</span><span class="p">);</span><span class="c1">//优先级 1
+</span></span></span></code></pre></div><p>int 3写法,int 3字节码写在数组里面，用VirtualProtectEx给执行权限直接调用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">dynamicCode</span><span class="p">[</span><span class="mi">50</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="mh">0xCC</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="mh">0xC3</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="nf">VirtualProtectEx</span><span class="p">(</span><span class="nf">getCurrentProcessProc</span><span class="p">(),</span> <span class="n">dynamicCode</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">PAGE_EXECUTE_READWRITE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">oldProtect</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">FARPROC</span> <span class="n">trup</span> <span class="o">=</span> <span class="p">(</span><span class="n">FARPROC</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">dynamicCode</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">trup</span><span class="p">();</span>
+</span></span></code></pre></div><p>会自动将异常的相关信息封装在一个 <code>_EXCEPTION_POINTERS</code> 结构体中,这里用来清空调试信息</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">ExceptionInfo</span><span class="o">-&gt;</span><span class="n">ContextRecord</span><span class="o">-&gt;</span><span class="n">Dr0</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ExceptionInfo</span><span class="o">-&gt;</span><span class="n">ContextRecord</span><span class="o">-&gt;</span><span class="n">Dr1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ExceptionInfo</span><span class="o">-&gt;</span><span class="n">ContextRecord</span><span class="o">-&gt;</span><span class="n">Dr2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ExceptionInfo</span><span class="o">-&gt;</span><span class="n">ContextRecord</span><span class="o">-&gt;</span><span class="n">Dr3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span></code></pre></div><p>利用设置rip使运行逻辑有问题的尝试退出</p>
+<pre tabindex="0"><code>		else if (KiDebugType == KiDebugTypeDef::EndThread) {
+            ExceptionInfo-&gt;ContextRecord-&gt;Rip = 0x0;
 
-</p>
-<p>经常折腾动归的小朋友都折腾过f（10） = f（9）+f(8)z这种子问题思想</p>
-<p>Cot相当于写了个for循环然后再sum</p>
-<p>而Decomposed Prompting鼓励使用更加合理的方式规划子问题</p>
-<p>大道至简</p>
+        }
+</code></pre><div id="读取ntdll并利用syscall调用" class="anchor"></div>
+<h3 class="relative group">读取ntdll并利用syscall调用 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%af%bb%e5%8f%96ntdll%e5%b9%b6%e5%88%a9%e7%94%a8syscall%e8%b0%83%e7%94%a8" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>callssn.asm中定义了两个主要的函数</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">.data
+	nextCallSSN qword 000h
+	public nextCallSSN
+	funcAddr qword callssn
+	public funcAddr 
+.code
 
+
+align 16
+setNextCall proc
+	mov nextCallSSN,0
+	or nextCallSSN,rcx
+	ret
+setNextCall endp
+
+callssn proc
+	mov r10,0h
+	or r10,rcx
+	mov  rax,0h
+	or rax,nextCallSSN
+	syscall
+	ret
+callssn endp
+</code></pre><p>nextCallSSN用于设置下一次syscall的系统号</p>
+<p>callssn额外的部分不知道在干啥</p>
+<p>完整调用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">    <span class="c1">// 加载资源字符串，获取函数名 &#34;ZwQueryInformationProcess&#34; 的加密形式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">CHAR</span> <span class="n">zwQueryInformationProcessFuncName</span><span class="p">[</span><span class="n">ResourceLoadMaxLength</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="n">length</span> <span class="o">=</span> <span class="nf">LoadStringA</span><span class="p">(</span><span class="nf">getModuleHandleProc</span><span class="p">(</span><span class="nb">NULL</span><span class="p">),</span> <span class="n">IDS_ZwQueryInformationProcessFuncName</span><span class="p">,</span> <span class="n">zwQueryInformationProcessFuncName</span><span class="p">,</span> <span class="n">ResourceLoadMaxLength</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 解密函数名，生成明文字符串
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;*</span> <span class="n">funcName</span> <span class="o">=</span> <span class="nf">DecryptText</span><span class="p">(</span><span class="nf">string</span><span class="p">(</span><span class="n">zwQueryInformationProcessFuncName</span><span class="p">,</span> <span class="n">zwQueryInformationProcessFuncName</span> <span class="o">+</span> <span class="n">length</span><span class="p">),</span> <span class="o">*</span><span class="n">key</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">string</span> <span class="nf">funcNameStr</span><span class="p">(</span><span class="n">funcName</span><span class="o">-&gt;</span><span class="nf">begin</span><span class="p">(),</span> <span class="n">funcName</span><span class="o">-&gt;</span><span class="nf">end</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 从 Nt_SSNTable 中查找解密后的函数名对应的系统服务号 (SSN)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">ssn</span> <span class="o">=</span> <span class="n">Nt_SSNTable</span><span class="o">-&gt;</span><span class="nf">find</span><span class="p">(</span><span class="n">funcNameStr</span><span class="p">.</span><span class="nf">c_str</span><span class="p">())</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 释放解密后的函数名内存
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">delete</span> <span class="n">funcName</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 设置下一次调用的目标函数地址为 SSN 对应的函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">setNextCall</span><span class="p">(</span><span class="n">ssn</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 将 callssn 转换为 ZwQueryInformationProcess 类型的函数指针
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">ZwQueryInformationProcess</span> <span class="n">zwQueryInformationProcess</span> <span class="o">=</span> <span class="p">(</span><span class="n">ZwQueryInformationProcess</span><span class="p">)</span><span class="n">callssn</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义调试标志和实际长度变量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">DEBUGFLAG</span> <span class="n">debugflag</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ULONG</span> <span class="n">trueLength</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 调用 ZwQueryInformationProcess 检查当前进程是否处于调试状态
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">NTSTATUS</span> <span class="n">status</span> <span class="o">=</span> <span class="nf">zwQueryInformationProcess</span><span class="p">(</span><span class="nf">getCurrentProcessProc</span><span class="p">(),</span> <span class="n">ntdef</span><span class="o">::</span><span class="n">NTPROCESSINFOCLASS</span><span class="o">::</span><span class="n">ProcessDebugPort</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">debugflag</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">debugflag</span><span class="p">),</span> <span class="o">&amp;</span><span class="n">trueLength</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 如果调用成功并且进程处于调试状态，则设置 KiDebugType 为 NoAction
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nf">NT_SUCCESS</span><span class="p">(</span><span class="n">status</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">debugflag</span> <span class="o">==</span> <span class="n">DebugFlag_IsDebug</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">KiDebugType</span> <span class="o">=</span> <span class="n">KiDebugTypeDef</span><span class="o">::</span><span class="n">NoAction</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>主要起作用的相当于</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">NTSTATUS</span> <span class="n">status</span> <span class="o">=</span> <span class="nf">zwQueryInformationProcess</span><span class="p">(</span><span class="nf">getCurrentProcessProc</span><span class="p">(),</span> <span class="n">ntdef</span><span class="o">::</span><span class="n">NTPROCESSINFOCLASS</span><span class="o">::</span><span class="n">ProcessDebugPort</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">debugflag</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">debugflag</span><span class="p">),</span> <span class="o">&amp;</span><span class="n">trueLength</span><span class="p">);</span>
+</span></span></code></pre></div><pre tabindex="0"><code class="language-assembly" data-lang="assembly">.code
+zwQueryInformationProcess proc
+	mov r10,0h
+	or r10,rcx
+	mov  rax,0h
+	or rax,19h // ZwQueryInformationProcess 是 0x19
+	syscall
+	ret
+zwQueryInformationProcess endp
+end
+</code></pre><p>其实还是把syscall封装了几层</p>
+<p>指令cpuid</p>
+<p>调用：</p>
+<pre tabindex="0"><code>__asm
+	{
+		mov eax,fn_id	; 将参数赋值给eax
+		cpuid		    ; 执行cpuid指令
+		mov deax,eax	; 将寄存器值赋值给临时变量
+		mov debx,ebx
+		mov decx,ecx
+		mov dedx,edx
+	}
+	
+原型  __MACHINEX86_X64(void __cpuid(int[4], int))
+
+int cpuid[4];
+__cpuid(cpuid,1);
+</code></pre><p>cpuid[2]的地32表示是否在虚拟机中运行</p>
+<p>vmp里面用cpuid实现反调的代码</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// hardware detection
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">cpu_info</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nf">__cpuid</span><span class="p">(</span><span class="n">cpu_info</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">((</span><span class="n">cpu_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="mi">31</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#ifndef VMP_GNU
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    <span class="c1">// check Hyper-V root partition
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">cpu_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cpu_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cpu_info</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">__cpuid</span><span class="p">(</span><span class="n">cpu_info</span><span class="p">,</span> <span class="mh">0x40000000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">cpu_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x7263694d</span> <span class="o">&amp;&amp;</span> <span class="n">cpu_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x666f736f</span> <span class="o">&amp;&amp;</span> <span class="n">cpu_info</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="mh">0x76482074</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// “Microsoft Hv”
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">cpu_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">__cpuid</span><span class="p">(</span><span class="n">cpu_info</span><span class="p">,</span> <span class="mh">0x40000003</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">cpu_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="p">}</span>
+</span></span></code></pre></div>
         </div>
                 
         
@@ -913,7 +1234,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/articles/2025aosp/">
+            <a class="flex group mr-3" href="/articles/ace2025/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -925,11 +1246,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >wsl2 编译  AOSP 13</span
+                  >2025tx游戏安全PC初赛</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-02-20 13:23:11 &#43;0000 UTC">20 February 2025</time>
+                    <time datetime="2025-04-15 13:23:11 &#43;0000 UTC">15 April 2025</time>
                   
                 </span>
               </span>
